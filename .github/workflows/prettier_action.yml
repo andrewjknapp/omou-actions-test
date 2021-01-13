@@ -1,5 +1,5 @@
 # Attribution: https://github.com/marketplace/actions/prettier-action 
-#
+
 name: Continuous Integration
 
 # This action runs on all pull requests
