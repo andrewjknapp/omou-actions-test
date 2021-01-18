@@ -15,3 +15,5 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - run: npm i
     - run: npm run prettify
+    - run: git commit -m "Prettified Code"
+    - run: git push
