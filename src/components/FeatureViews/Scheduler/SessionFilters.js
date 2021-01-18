@@ -34,7 +34,7 @@ function SessionFilters({
                 <IconButton
                     aria-label={'more'}
                     aria-controls={'long-menu'}
-                    aria-haspopup="true"
+                    aria-haspopup='true'
                     onClick={handleClick}
                 >
                     <FilterIcon />

@@ -91,9 +91,9 @@ const CatsPage = () => {
     }
 
     return (
-        <div className="screensaver">
+        <div className='screensaver'>
             <section
-                className="screensaver__bouncer"
+                className='screensaver__bouncer'
                 style={{
                     backgroundColor: 'white',
                     height: `${apiImage.height}px`,

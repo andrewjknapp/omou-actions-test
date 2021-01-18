@@ -24,53 +24,53 @@ import { makeValidate } from 'mui-rff';
 
 const basicInfo = [
     <Fields.TextField
-        className="TextField"
+        className='TextField'
         fullWidth={false}
-        key="firstName"
-        label="First Name"
-        margin="dense"
-        name="firstName"
+        key='firstName'
+        label='First Name'
+        margin='dense'
+        name='firstName'
         required
-        variant="outlined"
+        variant='outlined'
     />,
     <Fields.TextField
-        className="TextField"
+        className='TextField'
         fullWidth={false}
-        key="lastName"
-        label="Last Name"
-        margin="dense"
-        name="lastName"
+        key='lastName'
+        label='Last Name'
+        margin='dense'
+        name='lastName'
         required
-        variant="outlined"
+        variant='outlined'
     />,
     <Fields.TextField
-        className="TextField"
+        className='TextField'
         fullWidth={false}
-        key="email"
-        label="Email"
-        margin="dense"
-        name="email"
+        key='email'
+        label='Email'
+        margin='dense'
+        name='email'
         required
-        type="email"
-        variant="outlined"
+        type='email'
+        variant='outlined'
     />,
     <Fields.PasswordInput
-        className="TextField"
+        className='TextField'
         fullWidth={false}
-        key="password"
-        margin="dense"
-        name="password"
+        key='password'
+        margin='dense'
+        name='password'
         required
-        variant="outlined"
+        variant='outlined'
     />,
     <Fields.TextField
-        className="TextField"
+        className='TextField'
         fullWidth={false}
-        key="phone"
-        label="Phone Number"
-        margin="dense"
-        name="phoneNumber"
-        variant="outlined"
+        key='phone'
+        label='Phone Number'
+        margin='dense'
+        name='phoneNumber'
+        variant='outlined'
     />,
 ];
 
@@ -173,26 +173,26 @@ const NewAccount = () => {
                             {basicInfo}
                             <br />
                             <Grid
-                                alignItems="center"
+                                alignItems='center'
                                 container
-                                justify="center"
+                                justify='center'
                             >
                                 <ResponsiveButton
                                     style={{ margin: '10px 20px' }}
                                     component={Link}
-                                    data-cy="return"
+                                    data-cy='return'
                                     to={{
                                         pathname: '/login',
                                         state: { email },
                                     }}
-                                    variant="contained"
+                                    variant='contained'
                                 >
                                     Back to login
                                 </ResponsiveButton>
                                 <ResponsiveButton
                                     style={{ margin: '10px 20px' }}
-                                    type="submit"
-                                    variant="contained"
+                                    type='submit'
+                                    variant='contained'
                                 >
                                     Create Account
                                 </ResponsiveButton>
@@ -204,20 +204,20 @@ const NewAccount = () => {
                         <>
                             <Typography
                                 style={{ margin: '80px 0' }}
-                                variant="body1"
+                                variant='body1'
                             >
                                 You can now log in to your new account.
                             </Typography>
                             <ResponsiveButton
-                                className="formButton"
-                                color="primary"
+                                className='formButton'
+                                color='primary'
                                 component={Link}
-                                data-cy="return"
+                                data-cy='return'
                                 to={{
                                     pathname: '/login',
                                     state: { email },
                                 }}
-                                variant="contained"
+                                variant='contained'
                             >
                                 Login
                             </ResponsiveButton>
@@ -230,7 +230,7 @@ const NewAccount = () => {
         const labels = ['Basic Information', 'Account Created'];
         return (
             <>
-                <Typography className="welcomeText formTitle">
+                <Typography className='welcomeText formTitle'>
                     Create a Parent Account
                 </Typography>
                 <ReactForm
@@ -241,7 +241,7 @@ const NewAccount = () => {
                             <Stepper
                                 activeStep={activeStep}
                                 alternativeLabel
-                                orientation="horizontal"
+                                orientation='horizontal'
                                 style={{
                                     margin: '-300px 0 -20px 0',
                                 }}
@@ -263,37 +263,37 @@ const NewAccount = () => {
 
     const renderNoForm = () => (
         <>
-            <Typography className="welcomeText">Create an Account</Typography>
-            <Typography className="iam">I am a ...</Typography>
+            <Typography className='welcomeText'>Create an Account</Typography>
+            <Typography className='iam'>I am a ...</Typography>
             <ToggleButtonGroup
-                aria-label="text alignment"
+                aria-label='text alignment'
                 exclusive
                 onChange={handleSelect}
                 value={type}
             >
                 <ToggleButton
-                    aria-label="parent"
-                    className="btn"
-                    value="parent"
+                    aria-label='parent'
+                    className='btn'
+                    value='parent'
                 >
                     Parent
                 </ToggleButton>
                 <ToggleButton
-                    aria-label="student"
-                    className="btn"
-                    value="student"
+                    aria-label='student'
+                    className='btn'
+                    value='student'
                 >
                     Student
                 </ToggleButton>
             </ToggleButtonGroup>
             {type === 'student' && (
                 <Typography
-                    className="iam"
+                    className='iam'
                     style={{
                         width: '75%',
                         margin: 'auto',
                     }}
-                    variant="body1"
+                    variant='body1'
                 >
                     For students, you will receive an email to create an account
                     when a parent adds you to their profile.
@@ -303,12 +303,12 @@ const NewAccount = () => {
     );
 
     return (
-        <div className="createAccContainer">
-            <Ellipse3 className="ellipse3" />
-            <Ellipse4 className="ellipse4" />
-            <Picture2 className="picture1" />
-            <div className="logo2">
-                <Typography align="left" className="title">
+        <div className='createAccContainer'>
+            <Ellipse3 className='ellipse3' />
+            <Ellipse4 className='ellipse4' />
+            <Picture2 className='picture1' />
+            <div className='logo2'>
+                <Typography align='left' className='title'>
                     omou
                 </Typography>
             </div>
@@ -316,7 +316,7 @@ const NewAccount = () => {
             <div className={`Login ${type === 'parent' && 'formLogin'}`}>
                 <Grid container>
                     <Grid item md={6} />
-                    <Grid className="createAccount" item md={6}>
+                    <Grid className='createAccount' item md={6}>
                         {type === 'parent' ? renderWithForm() : renderNoForm()}
                     </Grid>
                 </Grid>

@@ -43,9 +43,9 @@ export default function ConflictsDisplay() {
     const { sessions } = data;
 
     return (
-        <Grid container direction="column">
+        <Grid container direction='column'>
             <Grid item>
-                <Typography variant="h5">
+                <Typography variant='h5'>
                     Submit Out of Office Notice
                 </Typography>
                 <Typography>

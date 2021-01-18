@@ -53,12 +53,12 @@ const ManageCategories = () => {
     }, [api, categoryName, categoryDescription]);
 
     const categoryForm = () => (
-        <BackgroundPaper className="category-row new-category">
-            <Grid alignItems="center" container>
+        <BackgroundPaper className='category-row new-category'>
+            <Grid alignItems='center' container>
                 <Grid item xs={3}>
                     <TextField
-                        className="field"
-                        label="Category Name"
+                        className='field'
+                        label='Category Name'
                         onChange={handleChange(setCategoryName)}
                         required
                         value={categoryName}
@@ -66,8 +66,8 @@ const ManageCategories = () => {
                 </Grid>
                 <Grid item xs={7}>
                     <TextField
-                        className="field"
-                        label="Category Description"
+                        className='field'
+                        label='Category Description'
                         multiline
                         onChange={handleChange(setCategoryDescription)}
                         value={categoryDescription}
@@ -75,11 +75,11 @@ const ManageCategories = () => {
                 </Grid>
                 <Grid item xs={2}>
                     <ResponsiveButton
-                        className="add-category"
-                        color="primary"
+                        className='add-category'
+                        color='primary'
                         disabled={categoryName === ''}
                         onClick={submitCategory}
-                        variant="contained"
+                        variant='contained'
                     >
                         Add Category
                     </ResponsiveButton>
@@ -91,26 +91,26 @@ const ManageCategories = () => {
     const displayCategories = () => (
         <Grid container>
             <Grid item xs={12}>
-                <Grid className="accounts-table-heading" container>
+                <Grid className='accounts-table-heading' container>
                     <Grid item xs={3}>
-                        <Typography align="left" className="table-header">
+                        <Typography align='left' className='table-header'>
                             Category Name
                         </Typography>
                     </Grid>
                     <Grid item xs={7}>
-                        <Typography align="left" className="table-header">
+                        <Typography align='left' className='table-header'>
                             Description
                         </Typography>
                     </Grid>
                     <Grid item xs={2}>
-                        <Typography align="center" className="table-header">
+                        <Typography align='center' className='table-header'>
                             Edit
                         </Typography>
                     </Grid>
                 </Grid>
             </Grid>
             <Grid item xs={12}>
-                <Grid alignItems="center" container spacing={1}>
+                <Grid alignItems='center' container spacing={1}>
                     {categoryList.length > 0 ? (
                         categoryList
                             .sort(
@@ -125,7 +125,7 @@ const ManageCategories = () => {
                                 </Grid>
                             ))
                     ) : (
-                        <NoListAlert list="Course Categories" />
+                        <NoListAlert list='Course Categories' />
                     )}
                 </Grid>
             </Grid>
@@ -154,13 +154,13 @@ const ManageCategories = () => {
     };
 
     const viewCategoryRow = ({ name, description, id }) => (
-        <Paper elevation={2} className="category-row" square>
-            <Grid alignItems="center" container>
+        <Paper elevation={2} className='category-row' square>
+            <Grid alignItems='center' container>
                 <Grid item xs={3}>
-                    <Typography align="left">{name}</Typography>
+                    <Typography align='left'>{name}</Typography>
                 </Grid>
                 <Grid item xs={7}>
-                    <Typography align="left">{description}</Typography>
+                    <Typography align='left'>{description}</Typography>
                 </Grid>
                 <Grid item xs={2}>
                     <IconButton onClick={editCategory(id)}>
@@ -184,13 +184,13 @@ const ManageCategories = () => {
     };
 
     const editCategoryRow = ({ name, id, description }) => (
-        <Paper elevation={2} className="category-row" square>
-            <Grid alignItems="center" container>
+        <Paper elevation={2} className='category-row' square>
+            <Grid alignItems='center' container>
                 <Grid item xs={3}>
                     <TextField
                         defaultValue={name}
                         fullWidth
-                        label="Name"
+                        label='Name'
                         onChange={handleEditCategory('name', id)}
                         value={name}
                     />
@@ -199,14 +199,14 @@ const ManageCategories = () => {
                     <TextField
                         defaultValue={description}
                         fullWidth
-                        label="Description"
+                        label='Description'
                         onChange={handleEditCategory('description', id)}
                         value={description}
                     />
                 </Grid>
                 <Grid item xs={2}>
                     <ResponsiveButton
-                        className="button"
+                        className='button'
                         onClick={editCategory(id)}
                     >
                         UPDATE
@@ -222,7 +222,7 @@ const ManageCategories = () => {
 
     return (
         <div>
-            <Typography align="left" variant="h4">
+            <Typography align='left' variant='h4'>
                 Manage Categories
             </Typography>
             {categoryForm()}

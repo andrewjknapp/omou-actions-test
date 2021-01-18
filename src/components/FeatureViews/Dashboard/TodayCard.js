@@ -29,17 +29,17 @@ const TodayCard = ({ session }) => {
     const formattedStartTime = moment(startTime, 'HH:mm').format('h:mm a');
 
     return (
-        <Card className="today-card">
+        <Card className='today-card'>
             <CardActionArea
                 component={Link}
                 to={`/scheduler/view-session/${session.course.id}/${session.id}/${session.course.instructor.user.id}`}
             >
-                <CardContent className="today-details">
+                <CardContent className='today-details'>
                     <Tooltip title={session.course.title}>
                         <Typography
-                            variant="subtitle2"
+                            variant='subtitle2'
                             gutterBottom
-                            className="today-course-title"
+                            className='today-course-title'
                             noWrap={true}
                         >
                             {session.course.title}
@@ -47,19 +47,19 @@ const TodayCard = ({ session }) => {
                     </Tooltip>
                     <Divider />
                     <br />
-                    <Typography variant="body2" className="today-card-details">
+                    <Typography variant='body2' className='today-card-details'>
                         <span className={`material-icons ${classes.icons}`}>
                             alarm
                         </span>{' '}
                         {formattedStartTime}
                     </Typography>
-                    <Typography variant="body2" className="today-card-details">
+                    <Typography variant='body2' className='today-card-details'>
                         <span className={`material-icons ${classes.icons}`}>
                             face
                         </span>{' '}
                         {instructorFullName}
                     </Typography>
-                    <Typography variant="body2" className="today-card-details">
+                    <Typography variant='body2' className='today-card-details'>
                         <span className={`material-icons ${classes.icons}`}>
                             group
                         </span>{' '}

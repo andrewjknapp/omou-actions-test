@@ -45,24 +45,24 @@ const FormReceipt = ({ formData, format }) => (
             padding: '5px',
         }}
     >
-        <Typography align="left" style={{ fontSize: '24px' }}>
+        <Typography align='left' style={{ fontSize: '24px' }}>
             You've successfully submitted!
         </Typography>
-        <div className="confirmation-copy">
-            <Typography align="left" className="title">
+        <div className='confirmation-copy'>
+            <Typography align='left' className='title'>
                 Confirmation
             </Typography>
             {format.map((section) => (
                 <div key={section.name}>
-                    <Typography align="left" className="section-title">
+                    <Typography align='left' className='section-title'>
                         {section.label}
                     </Typography>
                     {section.fields.map((field) => (
                         <div key={field.name}>
-                            <Typography align="left" className="field-title">
+                            <Typography align='left' className='field-title'>
                                 {field.label}
                             </Typography>
-                            <Typography align="left" className="field-value">
+                            <Typography align='left' className='field-value'>
                                 {toDisplayValue(
                                     formData[section.name][field.name]
                                 )}

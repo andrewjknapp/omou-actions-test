@@ -23,10 +23,10 @@ import {
 
 export const CategoryList = (props) => (
     <List {...props}>
-        <Datagrid rowClick="edit">
-            <TextField source="id" />
-            <TextField source="name" />
-            <TextField source="description" />
+        <Datagrid rowClick='edit'>
+            <TextField source='id' />
+            <TextField source='name' />
+            <TextField source='description' />
         </Datagrid>
     </List>
 );
@@ -34,8 +34,8 @@ export const CategoryList = (props) => (
 export const CategoryCreate = (props) => (
     <Create {...props}>
         <SimpleForm>
-            <TextInput source="name" />
-            <TextInput source="description" />
+            <TextInput source='name' />
+            <TextInput source='description' />
         </SimpleForm>
     </Create>
 );
@@ -43,8 +43,8 @@ export const CategoryCreate = (props) => (
 export const CategoryEdit = (props) => (
     <Edit {...props}>
         <SimpleForm>
-            <TextInput source="name" />
-            <TextInput source="description" />
+            <TextInput source='name' />
+            <TextInput source='description' />
         </SimpleForm>
     </Edit>
 );
@@ -52,9 +52,9 @@ export const CategoryEdit = (props) => (
 export const CategoryShow = (props) => (
     <Show {...props}>
         <SimpleShowLayout>
-            <TextField source="id" />
-            <TextField source="description" />
-            <TextField source="name" />
+            <TextField source='id' />
+            <TextField source='description' />
+            <TextField source='name' />
         </SimpleShowLayout>
     </Show>
 );
@@ -62,11 +62,11 @@ export const CategoryShow = (props) => (
 // Schools
 export const SchoolList = (props) => (
     <List {...props}>
-        <Datagrid rowClick="edit">
-            <TextField source="id" />
-            <TextField source="name" />
-            <TextField source="zipcode" />
-            <TextField source="district" />
+        <Datagrid rowClick='edit'>
+            <TextField source='id' />
+            <TextField source='name' />
+            <TextField source='zipcode' />
+            <TextField source='district' />
         </Datagrid>
     </List>
 );
@@ -74,9 +74,9 @@ export const SchoolList = (props) => (
 export const SchoolCreate = (props) => (
     <Create {...props}>
         <SimpleForm>
-            <TextInput source="name" />
-            <TextInput source="zipcode" />
-            <TextInput source="district" />
+            <TextInput source='name' />
+            <TextInput source='zipcode' />
+            <TextInput source='district' />
         </SimpleForm>
     </Create>
 );
@@ -84,10 +84,10 @@ export const SchoolCreate = (props) => (
 export const SchoolShow = (props) => (
     <Show {...props}>
         <SimpleShowLayout>
-            <TextField source="id" />
-            <TextField source="name" />
-            <TextField source="zipcode" />
-            <TextField source="district" />
+            <TextField source='id' />
+            <TextField source='name' />
+            <TextField source='zipcode' />
+            <TextField source='district' />
         </SimpleShowLayout>
     </Show>
 );
@@ -95,9 +95,9 @@ export const SchoolShow = (props) => (
 export const SchoolEdit = (props) => (
     <Edit {...props}>
         <SimpleForm>
-            <TextInput source="name" />
-            <TextInput source="zipcode" />
-            <TextInput source="district" />
+            <TextInput source='name' />
+            <TextInput source='zipcode' />
+            <TextInput source='district' />
         </SimpleForm>
     </Edit>
 );
@@ -114,34 +114,34 @@ const amountTypeChoices = [
 ];
 
 const discountShowFields = [
-    <TextField key="id" source="id" />,
-    <TextField key="name" source="name" />,
-    <TextField key="description" source="description" />,
-    <NumberField key="amount" source="amount" />,
+    <TextField key='id' source='id' />,
+    <TextField key='name' source='name' />,
+    <TextField key='description' source='description' />,
+    <NumberField key='amount' source='amount' />,
     <SelectField
         choices={amountTypeChoices}
-        key="amountType"
-        source="amountType"
+        key='amountType'
+        source='amountType'
     />,
-    <BooleanField key="active" source="active" />,
+    <BooleanField key='active' source='active' />,
 ];
 
 const discountEditFields = [
-    <BooleanInput key="active" source="active" />,
-    <TextInput key="name" source="name" />,
-    <TextInput key="description" source="description" />,
-    <NumberInput key="amount" source="amount" />,
+    <BooleanInput key='active' source='active' />,
+    <TextInput key='name' source='name' />,
+    <TextInput key='description' source='description' />,
+    <NumberInput key='amount' source='amount' />,
     <SelectInput
         choices={amountTypeChoices}
-        key="amountType"
-        source="amountType"
+        key='amountType'
+        source='amountType'
     />,
 ];
 
 const discountDisplays = (fields) => [
     (props) => (
         <List {...props}>
-            <Datagrid rowClick="edit">
+            <Datagrid rowClick='edit'>
                 {discountShowFields}
                 {fields}
             </Datagrid>
@@ -190,15 +190,15 @@ const courseTypes = [
 
 export const TuitionList = (props) => (
     <List bulkActionButtons={false} {...props}>
-        <Datagrid rowClick="edit">
-            <TextField source="id" />
+        <Datagrid rowClick='edit'>
+            <TextField source='id' />
 
             <SelectField
-                source="academicLevel"
+                source='academicLevel'
                 choices={academicLevelChoices}
             />
-            <SelectField source="courseType" choices={courseTypes} />
-            <TextField source="category.name" label="Course category" />
+            <SelectField source='courseType' choices={courseTypes} />
+            <TextField source='category.name' label='Course category' />
         </Datagrid>
     </List>
 );
@@ -206,10 +206,10 @@ export const TuitionList = (props) => (
 export const TuitionShow = (props) => (
     <Show {...props}>
         <SimpleShowLayout>
-            <TextField source="id" />
-            <TextField source="academicLevel" />
-            <SelectField source="courseType" choices={courseTypes} />
-            <TextField source="category.name" label="Course category" />
+            <TextField source='id' />
+            <TextField source='academicLevel' />
+            <SelectField source='courseType' choices={courseTypes} />
+            <TextField source='category.name' label='Course category' />
         </SimpleShowLayout>
     </Show>
 );
@@ -218,19 +218,19 @@ export const TuitionEdit = (props) => (
     <Edit {...props}>
         <SimpleForm>
             <SelectInput
-                source="academicLevel"
+                source='academicLevel'
                 choices={academicLevelChoices}
             />
             <ReferenceInput
-                label="Course category"
+                label='Course category'
                 // source="category.id" => prepopulates field but error on submit
-                source="category"
-                reference="courseCategories"
+                source='category'
+                reference='courseCategories'
             >
                 <SelectInput optionText={(record) => record.name} />
             </ReferenceInput>
-            <TextInput source="hourlyTuition" />
-            <SelectInput source="courseType" choices={courseTypes} />
+            <TextInput source='hourlyTuition' />
+            <SelectInput source='courseType' choices={courseTypes} />
         </SimpleForm>
     </Edit>
 );
@@ -239,49 +239,49 @@ export const TuitionCreate = (props) => (
     <Create {...props}>
         <SimpleForm>
             <SelectInput
-                source="academicLevel"
+                source='academicLevel'
                 choices={academicLevelChoices}
             />
             <ReferenceInput
-                label="Course category"
-                source="category"
-                reference="courseCategories"
+                label='Course category'
+                source='category'
+                reference='courseCategories'
             >
                 <SelectInput optionText={(record) => record.name} />
             </ReferenceInput>
-            <TextInput source="hourlyTuition" />
-            <SelectInput source="courseType" choices={courseTypes} />
+            <TextInput source='hourlyTuition' />
+            <SelectInput source='courseType' choices={courseTypes} />
         </SimpleForm>
     </Create>
 );
 
 export const [BulkDiscountList, BulkDiscountShow] = discountDisplays(
-    <NumberField source="numSessions" />
+    <NumberField source='numSessions' />
 );
 
 export const [BulkDiscountCreate, BulkDiscountEdit] = discountModifiers(
-    <NumberInput source="numSessions" />
+    <NumberInput source='numSessions' />
 );
 
 export const [DateRangeDiscountList, DateRangeDiscountShow] = discountDisplays([
-    <DateField key="startDate" source="startDate" />,
-    <DateField key="endDate" source="endDate" />,
+    <DateField key='startDate' source='startDate' />,
+    <DateField key='endDate' source='endDate' />,
 ]);
 
 export const [
     DateRangeDiscountCreate,
     DateRangeDiscountEdit,
 ] = discountModifiers([
-    <DateInput key="startDate" source="startDate" />,
-    <DateInput key="endDate" source="endDate" />,
+    <DateInput key='startDate' source='startDate' />,
+    <DateInput key='endDate' source='endDate' />,
 ]);
 
 export const [
     PaymentMethodDiscountList,
     PaymentMethodDiscountShow,
-] = discountDisplays(<TextField source="paymentMethod" />);
+] = discountDisplays(<TextField source='paymentMethod' />);
 
 export const [
     PaymentMethodDiscountCreate,
     PaymentMethodDiscountEdit,
-] = discountModifiers(<TextInput source="paymentMethod" />);
+] = discountModifiers(<TextInput source='paymentMethod' />);

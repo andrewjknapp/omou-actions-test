@@ -454,9 +454,9 @@ export default function PaymentBoard() {
 
     return (
         <>
-            <Grid item container justify="space-between">
+            <Grid item container justify='space-between'>
                 <Grid item>
-                    <Typography align="left" style={{ fontWeight: '600' }}>
+                    <Typography align='left' style={{ fontWeight: '600' }}>
                         Payment Method
                     </Typography>
                     {paymentMethodState.map((method, index) => (
@@ -468,7 +468,7 @@ export default function PaymentBoard() {
                                         handlePaymentMethodStateChange(index)
                                     }
                                     name={method.label}
-                                    color="primary"
+                                    color='primary'
                                     data-cy={`${method.label}-checkbox`}
                                 />
                             }
@@ -497,7 +497,7 @@ export default function PaymentBoard() {
                                 <TextField
                                     value={priceAdjustmentValue}
                                     onChange={handlePriceAdjustmentValueChange}
-                                    variant="outlined"
+                                    variant='outlined'
                                     style={{ width: '30%' }}
                                     inputProps={{
                                         style: {
@@ -505,7 +505,7 @@ export default function PaymentBoard() {
                                             textAlign: 'center',
                                         },
                                     }}
-                                    type="number"
+                                    type='number'
                                 />
                             </TableCell>
                         </TableRow>
@@ -516,14 +516,14 @@ export default function PaymentBoard() {
                     </Table>
                 </Grid>
             </Grid>
-            <Grid item container justify="flex-end">
+            <Grid item container justify='flex-end'>
                 <Grid item>
                     <ResponsiveButton
-                        variant="contained"
-                        color="primary"
+                        variant='contained'
+                        color='primary'
                         disabled={priceQuote.total === '-' || priceQuote < 0}
                         onClick={handlePayment}
-                        data-cy="pay-action"
+                        data-cy='pay-action'
                     >
                         Pay
                     </ResponsiveButton>

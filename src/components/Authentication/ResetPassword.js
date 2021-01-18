@@ -100,7 +100,7 @@ const ResetPassword = ({ isSet }) => {
         if (history.length > 2) {
             history.goBack();
         } else {
-            return <Redirect to="/" />;
+            return <Redirect to='/' />;
         }
     }
 
@@ -113,17 +113,17 @@ const ResetPassword = ({ isSet }) => {
 
     return (
         <div>
-            <Ellipse1 className="ellipse1" />
-            <Ellipse2 className="ellipse2" />
-            <Picture1 className="picture1" />
-            <div className="logo">
-                <Typography className="title">omou</Typography>
+            <Ellipse1 className='ellipse1' />
+            <Ellipse2 className='ellipse2' />
+            <Picture1 className='picture1' />
+            <div className='logo'>
+                <Typography className='title'>omou</Typography>
             </div>
-            <div className="Login">
-                <Grid className="resetPassword" container>
+            <div className='Login'>
+                <Grid className='resetPassword' container>
                     <Grid item md={6} />
                     <Grid item md={6}>
-                        <Typography className="welcomeText">
+                        <Typography className='welcomeText'>
                             {success
                                 ? `${label} successful!`
                                 : `${label} password`}
@@ -149,42 +149,42 @@ const ResetPassword = ({ isSet }) => {
                                 {success ? (
                                     <Button
                                         className={classes.primaryButton}
-                                        color="primary"
+                                        color='primary'
                                         component={Link}
-                                        data-cy="return"
+                                        data-cy='return'
                                         to={{
                                             pathname: '/login',
                                             state: { email },
                                         }}
-                                        variant="contained"
+                                        variant='contained'
                                     >
                                         Back to login
                                     </Button>
                                 ) : (
                                     <form onSubmit={handleSubmit}>
                                         <PasswordInput
-                                            autoComplete="current-password"
-                                            className="TextField"
+                                            autoComplete='current-password'
+                                            className='TextField'
                                             error={error}
                                             inputProps={{
                                                 'data-cy': 'passwordField',
                                             }}
                                             isField={false}
-                                            label="Password"
+                                            label='Password'
                                             onChange={handlePasswordInput}
                                             value={password}
                                         />
                                         <Grid
-                                            className="buttonContainer"
+                                            className='buttonContainer'
                                             container
                                             item
                                         >
                                             <Grid item md={2} />
                                             <Grid item md={4}>
                                                 <Button
-                                                    className="createAccountButton"
-                                                    data-cy="reset"
-                                                    type="submit"
+                                                    className='createAccountButton'
+                                                    data-cy='reset'
+                                                    type='submit'
                                                 >
                                                     {label.toUpperCase()}{' '}
                                                     PASSWORD
@@ -192,7 +192,7 @@ const ResetPassword = ({ isSet }) => {
                                             </Grid>
                                             <Grid item md={4}>
                                                 <Button
-                                                    className="signInButton"
+                                                    className='signInButton'
                                                     component={Link}
                                                     to={{
                                                         pathname: '/login',

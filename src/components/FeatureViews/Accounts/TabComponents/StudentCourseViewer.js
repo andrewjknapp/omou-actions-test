@@ -82,29 +82,29 @@ const StudentCourseViewer = ({ studentID, current }) => {
 
     return (
         <>
-            <Grid className="accounts-table-heading" container>
+            <Grid className='accounts-table-heading' container>
                 <Grid item xs={4}>
-                    <Typography align="left" className="table-header">
+                    <Typography align='left' className='table-header'>
                         Course
                     </Typography>
                 </Grid>
                 <Grid item xs={3}>
-                    <Typography align="left" className="table-header">
+                    <Typography align='left' className='table-header'>
                         Dates
                     </Typography>
                 </Grid>
                 <Grid item xs={2}>
-                    <Typography align="left" className="table-header">
+                    <Typography align='left' className='table-header'>
                         Class Day(s)
                     </Typography>
                 </Grid>
                 <Grid item xs={2}>
-                    <Typography align="left" className="table-header">
+                    <Typography align='left' className='table-header'>
                         Time
                     </Typography>
                 </Grid>
                 <Grid item xs={1}>
-                    <Typography align="left" className="table-header">
+                    <Typography align='left' className='table-header'>
                         Status
                     </Typography>
                 </Grid>
@@ -114,7 +114,7 @@ const StudentCourseViewer = ({ studentID, current }) => {
                     displayedEnrollments.map((enrollment) => {
                         return (
                             <Grid
-                                className="accounts-table-row"
+                                className='accounts-table-row'
                                 component={Link}
                                 item
                                 key={enrollment.id}
@@ -125,19 +125,19 @@ const StudentCourseViewer = ({ studentID, current }) => {
                                     <Grid container>
                                         <Grid item xs={4}>
                                             <Typography
-                                                align="left"
-                                                className="accounts-table-text"
+                                                align='left'
+                                                className='accounts-table-text'
                                             >
                                                 {enrollment.course.title}
                                             </Typography>
                                         </Grid>
                                         <Grid item xs={3}>
                                             <Typography
-                                                align="left"
-                                                className="accounts-table-text"
+                                                align='left'
+                                                className='accounts-table-text'
                                             >
                                                 <Moment
-                                                    format="MMM D YYYY"
+                                                    format='MMM D YYYY'
                                                     date={
                                                         enrollment.course
                                                             .startDate
@@ -145,7 +145,7 @@ const StudentCourseViewer = ({ studentID, current }) => {
                                                 />
                                                 {` - `}
                                                 <Moment
-                                                    format="MMM D YYYY"
+                                                    format='MMM D YYYY'
                                                     date={
                                                         enrollment.course
                                                             .endDate
@@ -155,8 +155,8 @@ const StudentCourseViewer = ({ studentID, current }) => {
                                         </Grid>
                                         <Grid item xs={2}>
                                             <Typography
-                                                align="left"
-                                                className="accounts-table-text"
+                                                align='left'
+                                                className='accounts-table-text'
                                             >
                                                 {enrollment.course.availabilityList.map(
                                                     ({ dayOfWeek }, index) => {
@@ -180,8 +180,8 @@ const StudentCourseViewer = ({ studentID, current }) => {
                                         </Grid>
                                         <Grid item xs={2}>
                                             <Typography
-                                                align="left"
-                                                className="accounts-table-text"
+                                                align='left'
+                                                className='accounts-table-text'
                                             >
                                                 {sessionsAtSameTimeInMultiDayCourse(
                                                     enrollment.course
@@ -214,7 +214,7 @@ const StudentCourseViewer = ({ studentID, current }) => {
                         );
                     })
                 ) : (
-                    <NoListAlert list="Course" />
+                    <NoListAlert list='Course' />
                 )}
             </Grid>
         </>

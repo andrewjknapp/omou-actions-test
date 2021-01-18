@@ -108,7 +108,7 @@ const ImportFlow = () => {
                     const labelProps = {};
                     if (isStepOptional(index)) {
                         labelProps.optional = (
-                            <Typography variant="caption">Optional</Typography>
+                            <Typography variant='caption'>Optional</Typography>
                         );
                     }
                     if (isStepSkipped(index)) {
@@ -151,8 +151,8 @@ const ImportFlow = () => {
                             )}
                             {isStepOptional(activeStep) && (
                                 <ResponsiveButton
-                                    variant="contained"
-                                    color="primary"
+                                    variant='contained'
+                                    color='primary'
                                     onClick={handleSkip}
                                     className={classes.button}
                                 >
@@ -161,8 +161,8 @@ const ImportFlow = () => {
                             )}
 
                             <ResponsiveButton
-                                variant="contained"
-                                color="primary"
+                                variant='contained'
+                                color='primary'
                                 onClick={handleNext}
                                 className={classes.button}
                             >

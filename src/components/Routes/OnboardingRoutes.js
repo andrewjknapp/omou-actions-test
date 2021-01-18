@@ -10,13 +10,13 @@ export default function OnboardingRoutes() {
         <Switch>
             {/* Onboarding Routes */}
             <AuthenticatedRoute
-                path="/onboarding/welcome"
+                path='/onboarding/welcome'
                 users={[USER_TYPES.admin]}
             >
                 <Welcome />
             </AuthenticatedRoute>
             <AuthenticatedRoute
-                path="/onboarding/import"
+                path='/onboarding/import'
                 users={[USER_TYPES.admin]}
             >
                 <ImportFlow />

@@ -50,7 +50,7 @@ const Today = (filter) => {
     });
 
     if (loading) {
-        return <Loading loadingText="SESSIONS ARE LOADING" small />;
+        return <Loading loadingText='SESSIONS ARE LOADING' small />;
     }
 
     if (error) {
@@ -62,7 +62,7 @@ const Today = (filter) => {
 
     if (!sessionArray || sessionArray.length === 0) {
         return (
-            <Card className="today-card">
+            <Card className='today-card'>
                 <CardContent>
                     <Typography>No sessions today!</Typography>
                 </CardContent>

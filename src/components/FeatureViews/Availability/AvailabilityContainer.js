@@ -12,7 +12,7 @@ import { makeStyles } from '@material-ui/core/styles';
 function TabPanel({ children, value, index, ...other }) {
     return (
         <div
-            role="tabpanel"
+            role='tabpanel'
             hidden={value !== index}
             id={`simple-tabpanel-${index}`}
             aria-labelledby={`simple-tab-${index}`}
@@ -44,18 +44,18 @@ export default function AvailabilityContainer() {
 
     return (
         <BackgroundPaper>
-            <Grid container direction="row" spacing={4}>
+            <Grid container direction='row' spacing={4}>
                 <Grid item>
-                    <Typography variant="h5" align="left">
+                    <Typography variant='h5' align='left'>
                         Summit Tutoring Business Hours
                     </Typography>
-                    <Typography align="left">
+                    <Typography align='left'>
                         Monday - Friday: 2:00 PM - 9:00 PM
                     </Typography>
-                    <Typography align="left">
+                    <Typography align='left'>
                         Saturday: 9:00 AM - 4:00 PM
                     </Typography>
-                    <Typography align="left">Sunday: CLOSED</Typography>
+                    <Typography align='left'>Sunday: CLOSED</Typography>
                 </Grid>
                 <Grid item container xs={12}>
                     <Grid item xs={12}>
@@ -63,13 +63,13 @@ export default function AvailabilityContainer() {
                             classes={{ indicator: classes.MuiIndicator }}
                             value={tab}
                             onChange={handleChangeTab}
-                            aria-label="Instructor availability tabs"
+                            aria-label='Instructor availability tabs'
                         >
-                            <Tab label="Time Availability" />
-                            <Tab label="Course Availability" disabled />
+                            <Tab label='Time Availability' />
+                            <Tab label='Course Availability' disabled />
                             <Tab
-                                label="Request Out of Office"
-                                data-cy="request-OOO-tab"
+                                label='Request Out of Office'
+                                data-cy='request-OOO-tab'
                             />
                         </Tabs>
                     </Grid>

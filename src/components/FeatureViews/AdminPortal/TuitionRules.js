@@ -92,21 +92,21 @@ const TuitionRules = () => {
     }) => {
         const reduxCategory = categories.find((cat) => cat.id === category);
         return (
-            <Paper className="category-row" square>
-                <Grid alignItems="center" container>
+            <Paper className='category-row' square>
+                <Grid alignItems='center' container>
                     <Grid item xs={3}>
-                        <Typography align="left">
+                        <Typography align='left'>
                             {reduxCategory && reduxCategory.name}
                         </Typography>
                     </Grid>
                     <Grid item xs={3}>
-                        <Typography align="left">{academic_level}</Typography>
+                        <Typography align='left'>{academic_level}</Typography>
                     </Grid>
                     <Grid item xs={3}>
-                        <Typography align="left">{course_type}</Typography>
+                        <Typography align='left'>{course_type}</Typography>
                     </Grid>
                     <Grid item xs={2}>
-                        <Typography align="left">${hourly_tuition}</Typography>
+                        <Typography align='left'>${hourly_tuition}</Typography>
                     </Grid>
                     <Grid item xs={1}>
                         <IconButton
@@ -141,11 +141,11 @@ const TuitionRules = () => {
         academic_level,
         course_type,
     }) => (
-        <Paper className="category-row" square>
-            <Grid alignItems="center" container>
+        <Paper className='category-row' square>
+            <Grid alignItems='center' container>
                 <Grid item xs={3}>
                     <Select
-                        className="tuition-field"
+                        className='tuition-field'
                         onChange={handleRuleChange(id, 'category')}
                         value={category}
                     >
@@ -158,7 +158,7 @@ const TuitionRules = () => {
                 </Grid>
                 <Grid item xs={3}>
                     <Select
-                        className="tuition-field"
+                        className='tuition-field'
                         onChange={handleRuleChange(id, 'academic_level')}
                         value={academic_level}
                     >
@@ -171,7 +171,7 @@ const TuitionRules = () => {
                 </Grid>
                 <Grid item xs={3}>
                     <Select
-                        className="tuition-field"
+                        className='tuition-field'
                         onChange={handleRuleChange(id, 'course_type')}
                         value={course_type}
                     >
@@ -184,11 +184,11 @@ const TuitionRules = () => {
                 </Grid>
                 <Grid item xs={2}>
                     <TextField
-                        className="tuition-field"
+                        className='tuition-field'
                         onChange={handleRuleChange(id, 'hourly_tuition')}
-                        type="number"
+                        type='number'
                         value={hourly_tuition}
-                        variant="outlined"
+                        variant='outlined'
                     />
                 </Grid>
                 <Grid item xs={1}>
@@ -201,39 +201,39 @@ const TuitionRules = () => {
     );
 
     return (
-        <div className="manage-tutition-wrapper">
-            <Typography align="left" gutterBottom variant="h5">
+        <div className='manage-tutition-wrapper'>
+            <Typography align='left' gutterBottom variant='h5'>
                 Manage Tuition
             </Typography>
             <Grid container>
                 <Grid
-                    className="accounts-table-heading table-header"
+                    className='accounts-table-heading table-header'
                     container
                     item
                     xs={12}
                 >
                     <Grid item xs={3}>
-                        <Typography align="left" className="table-header">
+                        <Typography align='left' className='table-header'>
                             Category
                         </Typography>
                     </Grid>
                     <Grid item xs={3}>
-                        <Typography align="left" className="table-header">
+                        <Typography align='left' className='table-header'>
                             Grade
                         </Typography>
                     </Grid>
                     <Grid item xs={3}>
-                        <Typography align="left" className="table-header">
+                        <Typography align='left' className='table-header'>
                             Course Size
                         </Typography>
                     </Grid>
                     <Grid item xs={2}>
-                        <Typography align="left" className="table-header">
+                        <Typography align='left' className='table-header'>
                             Hourly Tuition
                         </Typography>
                     </Grid>
                 </Grid>
-                <Grid alignItems="center" container item spacing={1} xs={12}>
+                <Grid alignItems='center' container item spacing={1} xs={12}>
                     {tuitionRules.length > 0 ? (
                         tuitionRules.map(
                             (tuition) =>
@@ -248,7 +248,7 @@ const TuitionRules = () => {
                     ) : hooks.isLoading(priceRuleStatus) ? (
                         <Loading />
                     ) : (
-                        <NoListAlert list="Tuition Rules" />
+                        <NoListAlert list='Tuition Rules' />
                     )}
                 </Grid>
             </Grid>

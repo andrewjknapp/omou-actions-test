@@ -149,7 +149,7 @@ const InstructorAvailability = ({ instructorID, button = true }) => {
             {button ? (
                 <ResponsiveButton
                     onClick={toggleDialog}
-                    variant="outlined"
+                    variant='outlined'
                     startIcon={<CalendarIcon />}
                 >
                     SET AVAILABILITY
@@ -160,32 +160,32 @@ const InstructorAvailability = ({ instructorID, button = true }) => {
                 </MenuItem>
             )}
             <Dialog
-                aria-labelledby="simple-dialog-title"
-                className="oooDialog"
+                aria-labelledby='simple-dialog-title'
+                className='oooDialog'
                 fullWidth
-                maxWidth="md"
+                maxWidth='md'
                 onClose={toggleDialog}
                 open={openDialog}
             >
                 <DialogContent>
-                    <div className="title">
+                    <div className='title'>
                         Schedule Instructor Availability
                     </div>
-                    <div className="instructor">
+                    <div className='instructor'>
                         Instructor: {instructor.name}
                     </div>
                     <Grid
-                        alignItems="center"
+                        alignItems='center'
                         container
-                        direction="column"
+                        direction='column'
                         spacing={2}
                     >
-                        <Grid container direction="row" item spacing={4}>
+                        <Grid container direction='row' item spacing={4}>
                             {Object.values(availability)
                                 .filter(({ day }) => day != 0)
                                 .map(({ start, end, day }) => (
                                     <Grid item key={day} md={2}>
-                                        <div className="select">Start Time</div>
+                                        <div className='select'>Start Time</div>
                                         <TimePicker
                                             autoOk
                                             error={start > end}
@@ -198,12 +198,12 @@ const InstructorAvailability = ({ instructorID, button = true }) => {
                                     </Grid>
                                 ))}
                         </Grid>
-                        <Grid container direction="row" item spacing={4}>
+                        <Grid container direction='row' item spacing={4}>
                             {Object.values(availability)
                                 .filter(({ day }) => day != 0)
                                 .map(({ start, end, day }) => (
                                     <Grid item key={day} md={2}>
-                                        <div className="select">End Time</div>
+                                        <div className='select'>End Time</div>
                                         <TimePicker
                                             autoOk
                                             error={start > end}
@@ -219,15 +219,15 @@ const InstructorAvailability = ({ instructorID, button = true }) => {
                     </Grid>
                 </DialogContent>
                 <DialogActions>
-                    <ResponsiveButton onClick={toggleDialog} variant="outlined">
+                    <ResponsiveButton onClick={toggleDialog} variant='outlined'>
                         Cancel
                     </ResponsiveButton>
                     <ResponsiveButton
-                        className="save-availability"
-                        color="primary"
+                        className='save-availability'
+                        color='primary'
                         disabled={!allValid}
                         onClick={handleSave}
-                        variant="contained"
+                        variant='contained'
                     >
                         Save Form
                     </ResponsiveButton>

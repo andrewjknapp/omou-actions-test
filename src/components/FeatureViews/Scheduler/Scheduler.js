@@ -430,27 +430,27 @@ const Scheduler = (props) => {
 
     return (
         <Grid item xs={12} container>
-            <Box paddingBottom="16px">
+            <Box paddingBottom='16px'>
                 <Typography
-                    align="left"
-                    className="scheduler-title"
-                    variant="h1"
+                    align='left'
+                    className='scheduler-title'
+                    variant='h1'
                 >
                     Scheduler
                 </Typography>
             </Box>
             <br />
             <Grid
-                className="scheduler-header scheduler-wrapper"
+                className='scheduler-header scheduler-wrapper'
                 container
                 item
                 xs={12}
             >
                 <Grid item xs={4}>
                     <Grid
-                        className="scheduler-header-firstSet"
+                        className='scheduler-header-firstSet'
                         container
-                        direction="row"
+                        direction='row'
                     >
                         <Grid item>
                             <IconButton
@@ -489,12 +489,12 @@ const Scheduler = (props) => {
                             />
                         </Grid>
                         <Grid item xs={6}>
-                            <FormControl className="filter-select">
+                            <FormControl className='filter-select'>
                                 <Select
                                     input={
                                         <BootstrapInput
-                                            id="filter-calendar-type"
-                                            name="courseFilter"
+                                            id='filter-calendar-type'
+                                            name='courseFilter'
                                         />
                                     }
                                     MenuProps={{
@@ -505,9 +505,9 @@ const Scheduler = (props) => {
                                     onChange={handleCourseTypeChange}
                                     value={courseType}
                                 >
-                                    <MenuItem value="all">All</MenuItem>
-                                    <MenuItem value="class">Class</MenuItem>
-                                    <MenuItem value="tutoring">
+                                    <MenuItem value='all'>All</MenuItem>
+                                    <MenuItem value='class'>Class</MenuItem>
+                                    <MenuItem value='tutoring'>
                                         Tutoring
                                     </MenuItem>
                                 </Select>
@@ -519,26 +519,26 @@ const Scheduler = (props) => {
                     item
                     xs={4}
                     container
-                    direction="row"
-                    justify="center"
-                    alignItems="center"
+                    direction='row'
+                    justify='center'
+                    alignItems='center'
                 >
                     <Grid item>
                         <IconButton
-                            aria-label="prev-month"
-                            className="prev-month"
+                            aria-label='prev-month'
+                            className='prev-month'
                             onClick={goToPrev}
                         >
                             <ChevronLeftOutlined />
                         </IconButton>
                     </Grid>
                     <Grid item>
-                        <Typography variant="h6">{currentDate}</Typography>
+                        <Typography variant='h6'>{currentDate}</Typography>
                     </Grid>
                     <Grid item>
                         <IconButton
-                            aria-label="next-month"
-                            className="next-month"
+                            aria-label='next-month'
+                            className='next-month'
                             onClick={goToNext}
                         >
                             <ChevronRightOutlined />
@@ -548,16 +548,16 @@ const Scheduler = (props) => {
                 <Grid item xs={2} />
                 <Grid item xs={2}>
                     <Grid
-                        className="scheduler-header-last"
+                        className='scheduler-header-last'
                         container
-                        direction="row"
-                        justify="flex-end"
+                        direction='row'
+                        justify='flex-end'
                     >
                         <Grid item xs={3}>
-                            <Tooltip title="Go to Today">
+                            <Tooltip title='Go to Today'>
                                 <IconButton
-                                    aria-label="current-date-button"
-                                    className="current-date-button"
+                                    aria-label='current-date-button'
+                                    className='current-date-button'
                                     onClick={goToToday}
                                 >
                                     <TodayIcon />
@@ -565,12 +565,12 @@ const Scheduler = (props) => {
                             </Tooltip>
                         </Grid>
                         <Grid item xs={9}>
-                            <FormControl className="filter-select">
+                            <FormControl className='filter-select'>
                                 <Select
                                     input={
                                         <BootstrapInput
-                                            id="filter-calendar-type"
-                                            name="courseFilter"
+                                            id='filter-calendar-type'
+                                            name='courseFilter'
                                         />
                                     }
                                     MenuProps={{
@@ -581,28 +581,28 @@ const Scheduler = (props) => {
                                     onChange={handleViewChange}
                                     value={viewType()}
                                 >
-                                    <MenuItem value="day">Day</MenuItem>
-                                    <MenuItem value="week">Week</MenuItem>
-                                    <MenuItem value="month">Month</MenuItem>
+                                    <MenuItem value='day'>Day</MenuItem>
+                                    <MenuItem value='week'>Week</MenuItem>
+                                    <MenuItem value='month'>Month</MenuItem>
                                 </Select>
                             </FormControl>
                         </Grid>
                     </Grid>
                 </Grid>
             </Grid>
-            <Grid className="omou-calendar" item xs={12}>
+            <Grid className='omou-calendar' item xs={12}>
                 <FullCalendar
-                    contentHeight="400"
-                    defaultView="timeGridDay"
+                    contentHeight='400'
+                    defaultView='timeGridDay'
                     displayEventTime
                     eventClick={goToSessionView}
-                    eventColor="none"
+                    eventColor='none'
                     eventLimit={4}
                     eventMouseEnter={handleToolTip}
                     events={[...calendarEvents, ...OOOEvents]}
                     header={false}
-                    minTime="07:00:00"
-                    aspectRatio="2"
+                    minTime='07:00:00'
+                    aspectRatio='2'
                     nowIndicator
                     plugins={[
                         dayGridPlugin,
@@ -612,11 +612,11 @@ const Scheduler = (props) => {
                         resourceTimelinePlugin,
                     ]}
                     ref={calendarRef}
-                    resourceAreaWidth="20%"
-                    resourceOrder="title"
-                    schedulerLicenseKey="GPL-My-Project-Is-Open-Source"
-                    themeSystem="standard"
-                    timeZone="local"
+                    resourceAreaWidth='20%'
+                    resourceOrder='title'
+                    schedulerLicenseKey='GPL-My-Project-Is-Open-Source'
+                    themeSystem='standard'
+                    timeZone='local'
                     titleFormat={{
                         day: 'numeric',
                         month: 'long',

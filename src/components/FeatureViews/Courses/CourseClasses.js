@@ -296,7 +296,7 @@ const CourseClasses = () => {
 
     return (
         <Grid item xs={12}>
-            <Grid container justify="space-between" alignContent="center">
+            <Grid container justify='space-between' alignContent='center'>
                 <Grid item>
                     <BackButton />
                 </Grid>
@@ -313,9 +313,9 @@ const CourseClasses = () => {
             <Grid container>
                 <Grid item xs={6}>
                     <Typography
-                        align="left"
-                        className="heading"
-                        variant="h1"
+                        align='left'
+                        className='heading'
+                        variant='h1'
                         style={{ marginTop: '.65em' }}
                     >
                         {title}
@@ -331,7 +331,7 @@ const CourseClasses = () => {
                     >
                         <IconButton
                             className={classes.editcoursebutton}
-                            size="small"
+                            size='small'
                             component={Link}
                             to={`/registration/form/course_details/${id}`}
                         >
@@ -340,18 +340,18 @@ const CourseClasses = () => {
                     </AccessControlComponent>
                 </Grid>
             </Grid>
-            <Grid container justify="flex-start" style={{ marginTop: '2.5em' }}>
+            <Grid container justify='flex-start' style={{ marginTop: '2.5em' }}>
                 <Grid item xs={2} md={4} lg={3} xl={2}>
                     <Typography
-                        variant="body2"
-                        align="left"
+                        variant='body2'
+                        align='left'
                         className={classes.alignTitleLeft}
                     >
                         Date
                     </Typography>
                     <Typography
-                        variant="body1"
-                        align="left"
+                        variant='body1'
+                        align='left'
                         className={classes.dataFontDate}
                     >
                         {`${startingDate} - ${endingDate}`}
@@ -359,33 +359,33 @@ const CourseClasses = () => {
                 </Grid>
                 <Grid item xs={2} md={4} lg={3} xl={2}>
                     <Typography
-                        variant="body2"
-                        align="left"
+                        variant='body2'
+                        align='left'
                         className={classes.alignTitleLeft}
                     >
                         Time
                     </Typography>
                     <Typography
-                        variant="body1"
-                        align="left"
+                        variant='body1'
+                        align='left'
                         className={classes.dataFontDate}
                     >
                         {`${abbreviatedDay} ${startingTime} - ${endingTime}`}
                     </Typography>
                 </Grid>
             </Grid>
-            <Grid container justify="flex-start" style={{ marginTop: '2em' }}>
+            <Grid container justify='flex-start' style={{ marginTop: '2em' }}>
                 <Grid item xs={2} md={4} lg={2} xl={2}>
                     <Typography
-                        variant="body2"
-                        align="left"
+                        variant='body2'
+                        align='left'
                         className={classes.alignTitleLeft}
                     >
                         Instructor
                     </Typography>
                     <Typography
-                        variant="body1"
-                        align="left"
+                        variant='body1'
+                        align='left'
                         className={classes.dataFontDate}
                     >
                         {fullName(data.course.instructor.user)}
@@ -393,15 +393,15 @@ const CourseClasses = () => {
                 </Grid>
                 <Grid item xs={2} md={4} lg={2} xl={2}>
                     <Typography
-                        variant="body2"
-                        align="left"
+                        variant='body2'
+                        align='left'
                         className={classes.alignTitleLeft}
                     >
                         Grade
                     </Typography>
                     <Typography
-                        variant="body1"
-                        align="left"
+                        variant='body1'
+                        align='left'
                         className={classes.dataFontDate}
                     >
                         {gradeLvl(academicLevel)}
@@ -409,15 +409,15 @@ const CourseClasses = () => {
                 </Grid>
                 <Grid item xs={2} md={4} lg={2} xl={2}>
                     <Typography
-                        variant="body2"
-                        align="left"
+                        variant='body2'
+                        align='left'
                         className={classes.alignTitleLeft}
                     >
                         Subject
                     </Typography>
                     <Typography
-                        variant="body1"
-                        align="left"
+                        variant='body1'
+                        align='left'
                         className={classes.dataFontDate}
                     >
                         {courseCategory}
@@ -456,7 +456,7 @@ const CourseClasses = () => {
                             <TabPanel
                                 index={0}
                                 value={index}
-                                backgroundColor="#FFFFFF"
+                                backgroundColor='#FFFFFF'
                                 style={{ width: '100%' }}
                             >
                                 <ClassInfo

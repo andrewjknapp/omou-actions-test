@@ -10,5 +10,5 @@ export default function UserAccessControl({ children, userID }) {
     if (userID === AuthUser.user.id) {
         return <div>{children}</div>;
     }
-    return <Redirect to="/PageNotFound" />;
+    return <Redirect to='/PageNotFound' />;
 }

@@ -78,7 +78,7 @@ const TableToolbar = (
         <TableRow>
             {['Student', 'Parent', 'Phone', 'Upcoming Status', ''].map(
                 (heading) => (
-                    <TableCell align="left" key={heading} padding="default">
+                    <TableCell align='left' key={heading} padding='default'>
                         {heading}
                     </TableCell>
                 )
@@ -158,17 +158,17 @@ const RegistrationCourseEnrollments = ({
 
     return (
         <>
-            <div className="course-status">
-                <div className="status">
-                    <div className="text">
+            <div className='course-status'>
+                <div className='status'>
+                    <div className='text'>
                         {enrollments.length} / {maxCapacity} Spaces Taken
                     </div>
                 </div>
                 <LinearProgress
-                    color="primary"
+                    color='primary'
                     value={(enrollments.length / maxCapacity) * 100}
                     valueBuffer={100}
-                    variant="buffer"
+                    variant='buffer'
                 />
             </div>
             <Table>
@@ -179,9 +179,9 @@ const RegistrationCourseEnrollments = ({
                         return (
                             <Fragment key={student.user.id}>
                                 <TableRow>
-                                    <TableCell className="bold">
+                                    <TableCell className='bold'>
                                         <Link
-                                            className="no-underline"
+                                            className='no-underline'
                                             to={`/accounts/student/${student.user.id}`}
                                         >
                                             {fullName(student.user)}
@@ -189,7 +189,7 @@ const RegistrationCourseEnrollments = ({
                                     </TableCell>
                                     <TableCell>
                                         <Link
-                                            className="no-underline"
+                                            className='no-underline'
                                             to={`/accounts/parent/${primaryParent.user.id}`}
                                         >
                                             {fullName(primaryParent.user)}
@@ -207,7 +207,7 @@ const RegistrationCourseEnrollments = ({
                                     </TableCell>
                                     <TableCell>
                                         <div
-                                            className="actions"
+                                            className='actions'
                                             key={student.user.id}
                                         >
                                             <IconButton
@@ -217,15 +217,15 @@ const RegistrationCourseEnrollments = ({
                                                 <EmailIcon />
                                             </IconButton>
                                             <IconButton
-                                                aria-controls="simple-menu"
-                                                aria-haspopup="true"
+                                                aria-controls='simple-menu'
+                                                aria-haspopup='true'
                                                 onClick={handleClick}
                                             >
                                                 <MobileMenu />
                                             </IconButton>
                                             <Menu
                                                 anchorEl={studentMenuAnchorEl}
-                                                id="simple-menu"
+                                                id='simple-menu'
                                                 keepMounted
                                                 onClose={handleClose}
                                                 open={

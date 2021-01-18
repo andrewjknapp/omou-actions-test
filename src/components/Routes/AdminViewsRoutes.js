@@ -15,43 +15,43 @@ import AdminPanel from 'components/FeatureViews/AdminPortal/AdminPanel';
 const AdminViewsRoutes = () => (
     <Switch>
         <AuthenticatedRoute
-            path="/adminportal/management"
+            path='/adminportal/management'
             users={[USER_TYPES.admin]}
         >
             <AdminPanel />
         </AuthenticatedRoute>
         <AuthenticatedRoute
-            path="/adminportal/tuition-rules"
+            path='/adminportal/tuition-rules'
             users={[USER_TYPES.admin]}
         >
             <TuitionRules />
         </AuthenticatedRoute>
         <AuthenticatedRoute
-            path="/adminportal/manage-course-categories"
+            path='/adminportal/manage-course-categories'
             users={[USER_TYPES.admin]}
         >
             <ManageCategories />
         </AuthenticatedRoute>
         <AuthenticatedRoute
-            path="/adminportal/manage-discounts"
+            path='/adminportal/manage-discounts'
             users={[USER_TYPES.admin]}
         >
             <ManageDiscounts />
         </AuthenticatedRoute>
         <AuthenticatedRoute
             exact
-            path="/adminportal/form/:type?"
+            path='/adminportal/form/:type?'
             users={[USER_TYPES.admin]}
         >
-            <FormPage title="Set Price Rule" />
+            <FormPage title='Set Price Rule' />
         </AuthenticatedRoute>
         <AuthenticatedRoute
-            path="/adminportal/actionlog"
+            path='/adminportal/actionlog'
             users={[USER_TYPES.admin]}
         >
             <ActionLog />
         </AuthenticatedRoute>
-        <AuthenticatedRoute path="/adminportal/" users={[USER_TYPES.admin]}>
+        <AuthenticatedRoute path='/adminportal/' users={[USER_TYPES.admin]}>
             <AdminPortalHome />
         </AuthenticatedRoute>
     </Switch>

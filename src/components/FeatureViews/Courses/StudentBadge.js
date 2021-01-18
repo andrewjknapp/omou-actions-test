@@ -31,7 +31,7 @@ export const StudentCourseLabel = ({ label }) => {
     return (
         <Box className={classes.courseLabel}>
             <UserAvatarCircle label={label} />
-            <Typography className={classes.labelText} variant="body">
+            <Typography className={classes.labelText} variant='body'>
                 {label}
             </Typography>
         </Box>

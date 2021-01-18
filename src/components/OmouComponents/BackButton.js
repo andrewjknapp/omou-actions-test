@@ -76,8 +76,8 @@ const BackButton = (props) => {
         <Hidden mdDown>
             <ResponsiveButton
                 style={{ display: 'flex' }}
-                variant="outlined"
-                className="control course button"
+                variant='outlined'
+                className='control course button'
                 onClick={() => {
                     handleClick();
                 }}
@@ -86,15 +86,15 @@ const BackButton = (props) => {
                 {label()}
             </ResponsiveButton>
             <Modal
-                aria-labelledby="simple-modal-title"
-                aria-describedby="simple-modal-description"
+                aria-labelledby='simple-modal-title'
+                aria-describedby='simple-modal-description'
                 open={alert}
                 onClick={() => {
                     hideWarning();
                 }}
             >
-                <div className="exit-popup">
-                    <Typography variant="h6" id="modal-title">
+                <div className='exit-popup'>
+                    <Typography variant='h6' id='modal-title'>
                         {props.alertMessage ||
                             'Are you sure you want to leave unsaved changes?'}
                     </Typography>
@@ -103,8 +103,8 @@ const BackButton = (props) => {
                             e.preventDefault();
                             denyAction();
                         }}
-                        color="secondary"
-                        className="button secondary"
+                        color='secondary'
+                        className='button secondary'
                     >
                         {props.alertDenyText || 'No, leave me here'}
                     </ResponsiveButton>
@@ -113,8 +113,8 @@ const BackButton = (props) => {
                             e.preventDefault();
                             confirmAction();
                         }}
-                        color="primary"
-                        className="button primary"
+                        color='primary'
+                        className='button primary'
                     >
                         {props.alertConfirmText || 'Yes, take me back'}
                     </ResponsiveButton>

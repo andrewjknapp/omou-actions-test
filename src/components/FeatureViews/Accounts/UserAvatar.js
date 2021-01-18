@@ -26,7 +26,7 @@ const UserAvatar = ({
     );
 
     return (
-        <Avatar className="avatar" style={avatarStyles}>
+        <Avatar className='avatar' style={avatarStyles}>
             {name.match(/\b\w/gu).join('')}
         </Avatar>
     );

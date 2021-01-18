@@ -231,19 +231,19 @@ export default function RegistrationCartContainer() {
                     <RegistrationActions />
                 </Grid>
                 <hr />
-                <Typography variant="h2" align="left">
+                <Typography variant='h2' align='left'>
                     Registration Cart
                 </Typography>
                 <Typography
                     style={{ fontSize: '2em' }}
-                    align="left"
+                    align='left'
                     gutterBottom
-                    data-cy="payment-title"
+                    data-cy='payment-title'
                 >
                     Pay for Course(s)
                 </Typography>
                 <Grid container item>
-                    <Grid container direction="row" spacing={5}>
+                    <Grid container direction='row' spacing={5}>
                         {Object.entries(registrationCart).map(
                             ([studentId, registration]) => (
                                 <StudentRegistrationEntry
@@ -283,15 +283,15 @@ export default function RegistrationCartContainer() {
                                                     checked={
                                                         reviewConfirmationCheck
                                                     }
-                                                    color="primary"
+                                                    color='primary'
                                                     onChange={
                                                         handleAcknowledgement
                                                     }
-                                                    name="checkedA"
+                                                    name='checkedA'
                                                 />
                                             }
-                                            label="By checking this box, you confirmed that you have reviewed
-											the registrations above."
+                                            label='By checking this box, you confirmed that you have reviewed
+											the registrations above.'
                                             style={{
                                                 color: omouBlue,
                                                 textAlign: 'left',
@@ -304,8 +304,8 @@ export default function RegistrationCartContainer() {
                                 <Grid item>
                                     <ResponsiveButton
                                         onClick={handleParentRegistrationSubmit}
-                                        variant="contained"
-                                        color="primary"
+                                        variant='contained'
+                                        color='primary'
                                     >
                                         save registration cart
                                     </ResponsiveButton>
@@ -323,20 +323,20 @@ export default function RegistrationCartContainer() {
                     <DialogTitle disableTypography>
                         <Grid
                             container
-                            direction="row"
-                            justify="center"
-                            alignItems="center"
+                            direction='row'
+                            justify='center'
+                            alignItems='center'
                         >
                             <Grid item>
                                 <CheckCircleIcon
-                                    color="primary"
+                                    color='primary'
                                     style={{ fontSize: '3em' }}
                                 />
                             </Grid>
                             <Grid item>
                                 <Typography
-                                    color="primary"
-                                    align="center"
+                                    color='primary'
+                                    align='center'
                                     style={{
                                         fontSize: '1.2em',
                                         fontWeight: 500,
@@ -349,10 +349,10 @@ export default function RegistrationCartContainer() {
                         </Grid>
                     </DialogTitle>
                     <DialogContent>
-                        <Typography align="center">
+                        <Typography align='center'>
                             Your request has been submitted!
                         </Typography>
-                        <Typography align="center">
+                        <Typography align='center'>
                             Here’s the next step to complete the enrollment
                             process:
                         </Typography>
@@ -365,30 +365,30 @@ export default function RegistrationCartContainer() {
                             }}
                         >
                             <Typography
-                                align="center"
+                                align='center'
                                 style={{ fontWeight: 550 }}
                             >
                                 Pay in-person at Summit Tutoring or pay over
                                 phone (408)839-3239
                             </Typography>
                         </Box>
-                        <Typography align="center">
+                        <Typography align='center'>
                             Review all invoices on your Payment page.
                         </Typography>
                     </DialogContent>
                     <DialogActions>
                         <ResponsiveButton
-                            variant="outlined"
+                            variant='outlined'
                             component={Link}
-                            to="/registration"
+                            to='/registration'
                         >
                             done
                         </ResponsiveButton>
                         <ResponsiveButton
-                            variant="contained"
-                            color="primary"
+                            variant='contained'
+                            color='primary'
                             component={Link}
-                            to="/my-payments"
+                            to='/my-payments'
                         >
                             view invoice
                         </ResponsiveButton>

@@ -26,7 +26,7 @@ const DashboardNotes = (owner) => {
     const adminStatus = hooks.useAdmin();
 
     if (hooks.isLoading(adminStatus)) {
-        return <Loading loadingText="NOTES ARE LOADING" small />;
+        return <Loading loadingText='NOTES ARE LOADING' small />;
     }
     return (
         <Paper className={`db-notes-paper ${classes.root}`}>

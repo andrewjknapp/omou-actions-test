@@ -14,8 +14,8 @@ const ParentCourseInterestBtn = ({
     return isCourseOnParentInterestList(courseID) ? (
         <ResponsiveButton
             disabled={true}
-            variant="outlined"
-            data-cy="add-interest-button"
+            variant='outlined'
+            data-cy='add-interest-button'
             style={{ color: buttonBlue, border: 'none', background: white }}
             startIcon={<CheckIcon />}
         >
@@ -23,9 +23,9 @@ const ParentCourseInterestBtn = ({
         </ResponsiveButton>
     ) : (
         <ResponsiveButton
-            variant="outlined"
+            variant='outlined'
             onClick={handleInterestRegister(courseID)}
-            data-cy="add-interest-button"
+            data-cy='add-interest-button'
             style={{ color: gloom }}
             startIcon={<AddIcon />}
         >

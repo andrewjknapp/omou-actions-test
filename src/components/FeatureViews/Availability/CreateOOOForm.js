@@ -143,7 +143,7 @@ export default function CreateOOOForm() {
 
     return (
         <OOOContext.Provider value={{ OOOFormState, updateOOOFormState }}>
-            <Grid container direction="row">
+            <Grid container direction='row'>
                 {/* 
                 
                 We need to comment this out because the final design is a step feature. I believe we are waiting
@@ -175,8 +175,8 @@ export default function CreateOOOForm() {
                 <Grid item xs={12}>
                     <Typography
                         style={{ paddingBottom: '3%' }}
-                        data-cy="submit-OOO-text"
-                        variant="h4"
+                        data-cy='submit-OOO-text'
+                        variant='h4'
                     >
                         Submit Out of Office Notice{' '}
                     </Typography>
@@ -189,9 +189,9 @@ export default function CreateOOOForm() {
 
                 <Grid
                     container
-                    direction="row"
-                    justify="center"
-                    alignItems="center"
+                    direction='row'
+                    justify='center'
+                    alignItems='center'
                 >
                     <Grid item style={{ padding: '5%' }}>
                         {!submitted && (
@@ -199,8 +199,8 @@ export default function CreateOOOForm() {
                                 onClick={() =>
                                     SubmitNoticeChild.current.handleClearForm()
                                 }
-                                variant="outlined"
-                                data-cy="clear-OOO-button"
+                                variant='outlined'
+                                data-cy='clear-OOO-button'
                             >
                                 clear
                             </ResponsiveButton>
@@ -210,8 +210,8 @@ export default function CreateOOOForm() {
                         {!submitted && (
                             <ResponsiveButton
                                 onClick={handleSubmit}
-                                variant="outlined"
-                                data-cy="submit-OOO-button"
+                                variant='outlined'
+                                data-cy='submit-OOO-button'
                             >
                                 submit
                             </ResponsiveButton>

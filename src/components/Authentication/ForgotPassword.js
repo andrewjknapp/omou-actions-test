@@ -69,19 +69,19 @@ const ForgotPassword = () => {
         if (history.length > 2) {
             history.goBack();
         } else {
-            return <Redirect to="/" />;
+            return <Redirect to='/' />;
         }
     }
 
     const SubmittedContent = (
         <ResponsiveButton
             component={Link}
-            data-cy="return"
+            data-cy='return'
             to={{
                 pathname: '/login',
                 state: { email },
             }}
-            variant="contained"
+            variant='contained'
         >
             Back to login
         </ResponsiveButton>
@@ -92,28 +92,28 @@ const ForgotPassword = () => {
             <TextField
                 InputProps={{
                     startAdornment: (
-                        <InputAdornment position="start">
+                        <InputAdornment position='start'>
                             <EmailOutlinedIcon style={{ color: 'grey' }} />
                         </InputAdornment>
                     ),
                 }}
-                className="TextField"
+                className='TextField'
                 error={email === ''}
                 fullWidth
                 inputProps={{ 'data-cy': 'emailField' }}
-                label="E-Mail"
-                margin="normal"
+                label='E-Mail'
+                margin='normal'
                 onChange={handleEmailInput}
                 value={email}
-                variant="outlined"
+                variant='outlined'
             />
-            <Grid className="buttonContainer" container item>
+            <Grid className='buttonContainer' container item>
                 <Grid item md={2} />
                 <Grid item md={4}>
                     <ResponsiveButton
-                        data-cy="reset"
-                        type="submit"
-                        variant="contained"
+                        data-cy='reset'
+                        type='submit'
+                        variant='contained'
                     >
                         SEND RESET EMAIL
                     </ResponsiveButton>
@@ -125,7 +125,7 @@ const ForgotPassword = () => {
                             pathname: '/login',
                             state: { email },
                         }}
-                        variant="outlined"
+                        variant='outlined'
                     >
                         BACK TO LOGIN
                     </ResponsiveButton>
@@ -137,22 +137,22 @@ const ForgotPassword = () => {
 
     return (
         <div>
-            <Ellipse1 className="ellipse1" />
-            <Ellipse2 className="ellipse2" />
-            <Picture1 className="picture1" />
-            <div className="logo">
-                <Typography className="title">omou</Typography>
+            <Ellipse1 className='ellipse1' />
+            <Ellipse2 className='ellipse2' />
+            <Picture1 className='picture1' />
+            <div className='logo'>
+                <Typography className='title'>omou</Typography>
             </div>
-            <form className="Login">
-                <Grid className="resetPassword" container>
+            <form className='Login'>
+                <Grid className='resetPassword' container>
                     <Grid item md={6} />
                     <Grid item md={6}>
-                        <Typography className="welcomeText">
+                        <Typography className='welcomeText'>
                             {requested
                                 ? 'Reset email sent!'
                                 : 'Forgot your password?'}
                         </Typography>
-                        <Typography align="left" className={classes.info}>
+                        <Typography align='left' className={classes.info}>
                             {requested
                                 ? 'Follow the instructions on the email to reset your password.'
                                 : 'Enter the email for your account and we will send you an email link to reset your password:'}

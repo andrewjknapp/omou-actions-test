@@ -188,7 +188,7 @@ class TimeSelector extends Component {
         }
         return (
             <div>
-                <InputLabel htmlFor="num-sessions">
+                <InputLabel htmlFor='num-sessions'>
                     Number of Sessions
                 </InputLabel>
                 <Select
@@ -204,11 +204,11 @@ class TimeSelector extends Component {
                         );
                     })}
                 </Select>
-                <InputLabel htmlFor="days-of-week">Days of the Week</InputLabel>
+                <InputLabel htmlFor='days-of-week'>Days of the Week</InputLabel>
                 {this.state.daysOfWeek.map((day) => {
                     return (
                         <ResponsiveButton
-                            variant="outlined"
+                            variant='outlined'
                             onClick={(e) => {
                                 e.preventDefault();
                                 this.selectDayOfWeek.bind(this)(day);
@@ -227,7 +227,7 @@ class TimeSelector extends Component {
         let courseDurationOptions = [1, 1.5, 2.0];
         return (
             <div>
-                <InputLabel htmlFor="session-duration">
+                <InputLabel htmlFor='session-duration'>
                     Session Duration
                 </InputLabel>
                 <Select>
@@ -247,7 +247,7 @@ class TimeSelector extends Component {
 
     render() {
         return (
-            <Grid container className="TimeSelector">
+            <Grid container className='TimeSelector'>
                 <form>
                     {this.props.recurring
                         ? this.renderSelectTimeFrame.bind(this)()

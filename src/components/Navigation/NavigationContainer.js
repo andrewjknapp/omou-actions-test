@@ -43,8 +43,8 @@ const NavigationContainer = () => {
     }
 
     const UserNavigationOptions = (
-        <div className="DrawerList">
-            <List className="list">
+        <div className='DrawerList'>
+            <List className='list'>
                 {NavigationList &&
                     NavigationList.map((NavItem) => (
                         <ListItem
@@ -59,11 +59,11 @@ const NavigationContainer = () => {
                             key={NavItem.name}
                             to={NavItem.link}
                         >
-                            <ListItemIcon className="icon">
+                            <ListItemIcon className='icon'>
                                 {NavItem.icon}
                             </ListItemIcon>
                             <ListItemText
-                                className="text"
+                                className='text'
                                 primary={NavItem.name}
                             />
                         </ListItem>

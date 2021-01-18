@@ -83,7 +83,7 @@ const OutOfOffice = ({ instructorID, button }) => {
             {button ? (
                 <ResponsiveButton
                     onClick={toggleDialog}
-                    variant="outlined"
+                    variant='outlined'
                     startIcon={<AwayIcon />}
                 >
                     SET OOO
@@ -94,43 +94,43 @@ const OutOfOffice = ({ instructorID, button }) => {
                 </MenuItem>
             )}
             <Dialog
-                aria-labelledby="simple-dialog-title"
-                className="oooDialog"
+                aria-labelledby='simple-dialog-title'
+                className='oooDialog'
                 fullWidth
-                maxWidth="md"
+                maxWidth='md'
                 onClose={toggleDialog}
                 open={openDialog}
             >
                 <DialogContent>
-                    <div className="title">Schedule Out of Office</div>
-                    <div className="instructor">Instructor: {name}</div>
+                    <div className='title'>Schedule Out of Office</div>
+                    <div className='instructor'>Instructor: {name}</div>
                     <TextField
-                        label="Description"
+                        label='Description'
                         onChange={updateDescription}
                         value={description}
                     />
                     <Grid container item md={12}>
                         <Grid item md={3}>
-                            <div className="select">Select OOO Start Date</div>
+                            <div className='select'>Select OOO Start Date</div>
                             <DatePicker
                                 animateYearScrolling
-                                format="MM/dd/yyyy"
-                                label="Start Date"
+                                format='MM/dd/yyyy'
+                                label='Start Date'
                                 onChange={setStart}
-                                openTo="day"
+                                openTo='day'
                                 required
                                 value={start}
                                 views={['year', 'month', 'date']}
                             />
                         </Grid>
                         <Grid item md={3}>
-                            <div className="select">Select OOO End Date</div>
+                            <div className='select'>Select OOO End Date</div>
                             <DatePicker
                                 animateYearScrolling
-                                format="MM/dd/yyyy"
-                                label="End Date"
+                                format='MM/dd/yyyy'
+                                label='End Date'
                                 onChange={setEnd}
-                                openTo="day"
+                                openTo='day'
                                 required
                                 value={end}
                                 views={['year', 'month', 'date']}
@@ -138,19 +138,19 @@ const OutOfOffice = ({ instructorID, button }) => {
                         </Grid>
                         <Grid item md={6} />
                         <Grid item md={3}>
-                            <div className="select">Select OOO Start Time</div>
+                            <div className='select'>Select OOO Start Time</div>
                             <TimePicker
                                 disabled={allDay}
-                                label="Start Time"
+                                label='Start Time'
                                 onChange={setStart}
                                 value={start}
                             />
                         </Grid>
                         <Grid item md={3}>
-                            <div className="select">Select OOO End Time</div>
+                            <div className='select'>Select OOO End Time</div>
                             <TimePicker
                                 disabled={allDay}
-                                label="End Time"
+                                label='End Time'
                                 onChange={setEnd}
                                 value={end}
                             />
@@ -159,23 +159,23 @@ const OutOfOffice = ({ instructorID, button }) => {
                             <Grid container>
                                 <Checkbox
                                     checked={allDay}
-                                    className="checkbox"
+                                    className='checkbox'
                                     inputProps={{
                                         'aria-label': 'primary checkbox',
                                     }}
                                     onChange={toggleAllDay}
-                                    value="primary"
+                                    value='primary'
                                 />
-                                <div className="checkboxText">All Day</div>
+                                <div className='checkboxText'>All Day</div>
                             </Grid>
                         </Grid>
                     </Grid>
                 </DialogContent>
                 <DialogActions>
                     <ResponsiveButton
-                        className="button"
+                        className='button'
                         onClick={toggleDialog}
-                        variant="outlined"
+                        variant='outlined'
                     >
                         Cancel
                     </ResponsiveButton>
@@ -187,9 +187,9 @@ const OutOfOffice = ({ instructorID, button }) => {
                         start={start}
                     >
                         <ResponsiveButton
-                            className="button"
+                            className='button'
                             disabled={!canSubmit}
-                            variant="outlined"
+                            variant='outlined'
                         >
                             Save OOO
                         </ResponsiveButton>

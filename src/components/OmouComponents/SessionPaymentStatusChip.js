@@ -4,7 +4,7 @@ import { LabelBadge } from '../../theme/ThemedComponents/Badge/LabelBadge';
 
 const SessionPaymentStatusChip = ({ session, enrollment, setPos, style }) => {
     if (!session || !enrollment) {
-        return <LabelBadge variant="outline-gray">Loading...</LabelBadge>;
+        return <LabelBadge variant='outline-gray'>Loading...</LabelBadge>;
     }
     const status = sessionPaymentStatus(session, enrollment);
 

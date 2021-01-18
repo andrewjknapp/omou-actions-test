@@ -17,16 +17,16 @@ function ResourceForm({ onClose, selectedValue, open }) {
     return (
         <Dialog
             onClose={handleClose}
-            aria-labelledby="simple-dialog-title"
+            aria-labelledby='simple-dialog-title'
             open={open}
             maxWidth={'md'}
         >
             <FullCalendar
-                timeZone="UTC"
+                timeZone='UTC'
                 height={148}
-                resourceLabelText="Instructor"
+                resourceLabelText='Instructor'
                 plugins={[resourceTimelinePlugin]}
-                defaultView="resourceTimeline"
+                defaultView='resourceTimeline'
                 schedulerLicenseKey={'GPL-My-Project-Is-Open-Source'}
                 resources={[
                     {
@@ -62,11 +62,11 @@ function ScheduleForm() {
 
     return (
         <div>
-            <Typography variant="body1"> {selectedValue}</Typography>
+            <Typography variant='body1'> {selectedValue}</Typography>
             <br />
             <ResponsiveButton
-                variant="outlined"
-                color="primary"
+                variant='outlined'
+                color='primary'
                 onClick={handleClickOpen}
             >
                 add more times

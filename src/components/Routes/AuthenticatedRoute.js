@@ -19,10 +19,10 @@ const AuthenticatedRoute = ({
     );
 
     if (!token) {
-        return <Redirect push to="/login" />;
+        return <Redirect push to='/login' />;
     }
     if (!users.includes(accountType)) {
-        return <Redirect to="/PageNotFound" />;
+        return <Redirect to='/PageNotFound' />;
     }
 
     return <Route {...rest} render={renderFunc} />;

@@ -73,7 +73,7 @@ const AvailabilityRow = ({
             <KeyboardTimePicker
                 value={validTime(startTime) || null}
                 onChange={handleOnStartChange}
-                inputVariant="outlined"
+                inputVariant='outlined'
                 keyboardIcon={<TimeIcon />}
                 disabled={toDisable}
                 error={
@@ -93,7 +93,7 @@ const AvailabilityRow = ({
             <KeyboardTimePicker
                 value={validTime(endTime) || null}
                 onChange={handleOnEndChange}
-                inputVariant="outlined"
+                inputVariant='outlined'
                 keyboardIcon={<TimeIcon />}
                 disabled={toDisable}
                 error={
@@ -221,8 +221,8 @@ export default function DayAvailabilityEntry({
                         ).length > 0 && (
                             <div className={classes.availabilityRow}>
                                 <ResponsiveButton
-                                    variant="outlined"
-                                    color="primary"
+                                    variant='outlined'
+                                    color='primary'
                                     onClick={(e) => {
                                         e.preventDefault();
                                         setDisplayNewAvailability(true);
@@ -244,10 +244,10 @@ export default function DayAvailabilityEntry({
                             <Checkbox
                                 checked={notAvailable}
                                 onChange={handleNotAvailable}
-                                color="primary"
+                                color='primary'
                             />
                         }
-                        label="Select to clear availabilities"
+                        label='Select to clear availabilities'
                     />
                 </TableCell>
             </TableRow>

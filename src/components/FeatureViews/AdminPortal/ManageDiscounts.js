@@ -21,7 +21,7 @@ const ManageDiscounts = () => {
 
     return (
         <div>
-            <Typography align="left" variant="h4">
+            <Typography align='left' variant='h4'>
                 Manage Discounts
             </Typography>
             {Object.entries(discountList).map(([type, list]) => (

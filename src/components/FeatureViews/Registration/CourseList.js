@@ -314,7 +314,7 @@ const CourseList = ({ filteredCourses, updatedParent }) => {
 
     return (
         <>
-            <Box width="100%">
+            <Box width='100%'>
                 {filteredCourses
                     .filter(
                         ({ courseType, endDate, id }) =>
@@ -388,11 +388,11 @@ const CourseList = ({ filteredCourses, updatedParent }) => {
                                                         studentIdList,
                                                     }
                                                 )}
-                                                variant="contained"
+                                                variant='contained'
                                                 onClick={handleStartQuickRegister(
                                                     course.id
                                                 )}
-                                                data-cy="quick-register-class"
+                                                data-cy='quick-register-class'
                                                 startIcon={<AddIcon />}
                                             >
                                                 register
@@ -422,24 +422,24 @@ const CourseList = ({ filteredCourses, updatedParent }) => {
                     Which student do you want to enroll?
                 </DialogTitle>
                 <DialogContent>
-                    <FormControl fullWidth variant="outlined">
-                        <InputLabel id="select-student-quick-registration">
+                    <FormControl fullWidth variant='outlined'>
+                        <InputLabel id='select-student-quick-registration'>
                             Select Student
                         </InputLabel>
                         <Select
-                            data-cy="select-student-to-register"
-                            labelId="select-student-quick-registration"
+                            data-cy='select-student-to-register'
+                            labelId='select-student-quick-registration'
                             value={quickStudent}
                             onChange={(event) =>
                                 setQuickStudent(event.target.value)
                             }
                         >
-                            <MenuItem value="">
+                            <MenuItem value=''>
                                 <em>Select Student</em>
                             </MenuItem>
                             {studentOptions.map(({ value, label }) => (
                                 <MenuItem
-                                    data-cy="student-value"
+                                    data-cy='student-value'
                                     value={value}
                                     key={value}
                                 >
@@ -450,7 +450,7 @@ const CourseList = ({ filteredCourses, updatedParent }) => {
                     </FormControl>
                     <DialogActions>
                         <ResponsiveButton
-                            data-cy="add-registration-to-cart"
+                            data-cy='add-registration-to-cart'
                             onClick={handleAddRegistration}
                             disabled={!quickStudent}
                         >
@@ -470,36 +470,36 @@ const CourseList = ({ filteredCourses, updatedParent }) => {
                     disableTypography
                     className={classes.interestDialogHeading}
                 >
-                    <Typography variant="h3">Interested?</Typography>
+                    <Typography variant='h3'>Interested?</Typography>
                 </DialogTitle>
                 <DialogContentText classname={classes.interestDialogText}>
-                    <Typography variant="body1">
+                    <Typography variant='body1'>
                         This will add you to the Interest List. You will be
                         notified once a spot opens up. Enrollment is on a first
                         come, first to enroll basis.
                     </Typography>
                 </DialogContentText>
                 <DialogContentText item classname={classes.interestDialogText}>
-                    <Typography variant="body1">
+                    <Typography variant='body1'>
                         Being on an interest List does not guarantee an actual
                         seat to anyone.
                     </Typography>
                 </DialogContentText>
                 <DialogActions>
                     <ResponsiveButton
-                        data-cy="cancel-add-interest"
+                        data-cy='cancel-add-interest'
                         onClick={() => setOpenInterestDialog(false)}
-                        variant="outlined"
-                        color="primary"
+                        variant='outlined'
+                        color='primary'
                         style={{ border: 'none' }}
                     >
                         Cancel
                     </ResponsiveButton>
                     <ResponsiveButton
-                        data-cy="confirm-add-interest"
+                        data-cy='confirm-add-interest'
                         onClick={handleAddInterest}
-                        variant="outlined"
-                        color="primary"
+                        variant='outlined'
+                        color='primary'
                         style={{ border: 'none' }}
                     >
                         Notify Me

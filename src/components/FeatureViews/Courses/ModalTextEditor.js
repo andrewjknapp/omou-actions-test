@@ -221,12 +221,12 @@ const ModalTextEditor = ({
             }}
             open={open}
             onClose={handleClose}
-            aria-labelledby="form-dialog-title"
-            maxWidth="md"
+            aria-labelledby='form-dialog-title'
+            maxWidth='md'
         >
             <DialogContent classes={{ root: classes.textArea }}>
                 <Input
-                    placeholder="Subject"
+                    placeholder='Subject'
                     className={classes.subjectUnderline}
                     disableUnderline
                     onChange={handleSubjectChange}
@@ -239,11 +239,11 @@ const ModalTextEditor = ({
                     }}
                     autoFocus
                     className={classes.textFieldStyle}
-                    margin="dense"
-                    id="name"
+                    margin='dense'
+                    id='name'
                     onChange={handleBodyChange}
-                    placeholder="Body"
-                    type="email"
+                    placeholder='Body'
+                    type='email'
                     fullWidth
                     defaultValue={buttonState === 'edit' ? noteBody : ''}
                     multiline
@@ -251,10 +251,10 @@ const ModalTextEditor = ({
                 />
             </DialogContent>
             <DialogActions style={{ marginBottom: '2em' }}>
-                <ResponsiveButton onClick={handleClose} variant="outlined">
+                <ResponsiveButton onClick={handleClose} variant='outlined'>
                     Cancel
                 </ResponsiveButton>
-                <ResponsiveButton variant="contained" onClick={handleSubmit}>
+                <ResponsiveButton variant='contained' onClick={handleSubmit}>
                     {origin === 'STUDENT_ENROLLMENT'
                         ? 'Send Email'
                         : buttonState === 'edit'

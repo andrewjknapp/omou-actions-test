@@ -32,9 +32,9 @@ const CourseUpload = () => {
     return (
         <Container>
             <Box className={classes.Text}>
-                <Typography variant="h3">Courses</Typography>
-                <Box fontSize="h5.fontSize" className={classes.Subtitle}>
-                    <Typography variant="p">
+                <Typography variant='h3'>Courses</Typography>
+                <Box fontSize='h5.fontSize' className={classes.Subtitle}>
+                    <Typography variant='p'>
                         Upload your filled-in Courses template:
                     </Typography>
                 </Box>
@@ -46,8 +46,8 @@ const CourseUpload = () => {
             </Box>
             <input
                 className={classes.manualUploadBtn}
-                type="file"
-                accept=".csv"
+                type='file'
+                accept='.csv'
             ></input>
         </Container>
     );

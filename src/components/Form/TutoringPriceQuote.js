@@ -97,9 +97,9 @@ const TutoringPriceQuote = ({ courseType, mutators }) => {
     return (
         <Grid
             container
-            direction="column"
-            justify="flex-start"
-            alignItems="flex-end"
+            direction='column'
+            justify='flex-start'
+            alignItems='flex-end'
             spacing={4}
         >
             <Grid
@@ -107,17 +107,17 @@ const TutoringPriceQuote = ({ courseType, mutators }) => {
                 item
                 md={8}
                 spacing={5}
-                direction="row"
-                alignItems="center"
+                direction='row'
+                alignItems='center'
             >
                 <Grid item md={4}>
                     <Fields.Select
                         data={categoryOptions}
-                        name="categories"
-                        label="Category"
-                        input={<BootstrapInput id="category-options" />}
+                        name='categories'
+                        label='Category'
+                        input={<BootstrapInput id='category-options' />}
                     />
-                    <OnChange name="categories">
+                    <OnChange name='categories'>
                         {(value) => {
                             setCategoryValue(value);
                             setDisabledAcademicLevel(false);
@@ -126,10 +126,10 @@ const TutoringPriceQuote = ({ courseType, mutators }) => {
                 </Grid>
                 <Grid item md={4}>
                     <Fields.Select
-                        name="academicLevels"
-                        label="Academic Levels"
+                        name='academicLevels'
+                        label='Academic Levels'
                         disabled={disabledAcademicLevel}
-                        input={<BootstrapInput id="category-options" />}
+                        input={<BootstrapInput id='category-options' />}
                     >
                         {academicLevelOptions.map((academicLevel, i) => (
                             <MenuItem
@@ -140,7 +140,7 @@ const TutoringPriceQuote = ({ courseType, mutators }) => {
                             </MenuItem>
                         ))}
                     </Fields.Select>
-                    <OnChange name="academicLevels">
+                    <OnChange name='academicLevels'>
                         {(value) => {
                             const hourlyTuition =
                                 priceRules[value].hourlyTuition;
@@ -153,29 +153,29 @@ const TutoringPriceQuote = ({ courseType, mutators }) => {
                     <InputLabel>Hourly Tuition</InputLabel>
                     <TextField
                         classes={classes.root}
-                        variant="outlined"
+                        variant='outlined'
                         value={hourlyTuitionValue}
                     />
                 </Grid>
             </Grid>
             <Grid item md={4}>
                 <Fields.Select
-                    name="duration"
-                    label="Duration"
-                    variant="outlined"
+                    name='duration'
+                    label='Duration'
+                    variant='outlined'
                 >
-                    <MenuItem value=".5">0.5 Hours</MenuItem>
-                    <MenuItem value="1">1 Hours</MenuItem>
-                    <MenuItem value="1.5">1.5 Hours</MenuItem>
-                    <MenuItem value="2">2 Hours</MenuItem>
+                    <MenuItem value='.5'>0.5 Hours</MenuItem>
+                    <MenuItem value='1'>1 Hours</MenuItem>
+                    <MenuItem value='1.5'>1.5 Hours</MenuItem>
+                    <MenuItem value='2'>2 Hours</MenuItem>
                 </Fields.Select>
-                <OnChange name="duration">
+                <OnChange name='duration'>
                     {(value) => setDurationValue(value)}
                 </OnChange>
             </Grid>
             <Grid item md={4}>
-                <Fields.TextField name="sessions" label="Number of Sessions" />
-                <OnChange name="sessions">
+                <Fields.TextField name='sessions' label='Number of Sessions' />
+                <OnChange name='sessions'>
                     {(value) => setSessionsValue(value)}
                 </OnChange>
             </Grid>

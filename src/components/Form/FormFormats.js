@@ -76,7 +76,7 @@ const instructorSelect = (name) => (
         name={name}
         optionsMap={userMap}
         request={SEARCH_INSTRUCTORS}
-        noOptionsText="No instructors available"
+        noOptionsText='No instructors available'
     />
 );
 
@@ -194,7 +194,7 @@ export const ACADEMIC_LVL_FIELD = {
     BIRTH_DATE_FIELD = {
         name: 'birthDate',
         label: 'Birth Date',
-        component: <Fields.DatePicker format="MM/DD/YYYY" openTo="year" />,
+        component: <Fields.DatePicker format='MM/DD/YYYY' openTo='year' />,
         validator: Yup.date().max(moment()),
     },
     CITY_FIELD = {
@@ -270,26 +270,26 @@ export const ACADEMIC_LVL_FIELD = {
         name: 'startDate',
         label: 'Start Date',
         required: 'true',
-        component: <Fields.DatePicker format="MM/DD/YYYY" />,
+        component: <Fields.DatePicker format='MM/DD/YYYY' />,
         validator: Yup.date(),
     },
     END_DATE_FIELD = {
         name: 'endDate',
         label: 'End Date',
         required: 'true',
-        component: <Fields.DatePicker format="MM/DD/YYYY" />,
+        component: <Fields.DatePicker format='MM/DD/YYYY' />,
         validator: Yup.date(),
     },
     START_TIME_FIELD = {
         name: 'startTime',
         label: 'Start Time',
-        component: <Fields.TimePicker format="hh:mm a" />,
+        component: <Fields.TimePicker format='hh:mm a' />,
         validator: Yup.date(),
     },
     END_TIME_FIELD = {
         name: 'endTime',
         label: 'End Time',
-        component: <Fields.TimePicker format="hh:mm a" />,
+        component: <Fields.TimePicker format='hh:mm a' />,
         validator: Yup.date(),
     },
     STATE_FIELD = {
@@ -458,7 +458,7 @@ const TUTORING_COURSE_SECTIONS = [
                 // TODO: price quote tool
                 name: 'price',
                 label: 'Price',
-                component: <TutoringPriceQuote courseType="TUTORING" />,
+                component: <TutoringPriceQuote courseType='TUTORING' />,
                 validator: Yup.mixed(),
             },
         ],
@@ -514,7 +514,7 @@ const parentSelect = (name) => (
         name={name}
         optionsMap={userMap}
         request={SEARCH_PARENTS}
-        noOptionsText="No parents available"
+        noOptionsText='No parents available'
     />
 );
 
@@ -545,7 +545,7 @@ const categorySelect = (name) => (
         name={name}
         optionsMap={categoryMap}
         request={GET_CATEGORIES}
-        noOptionsText="No categories available"
+        noOptionsText='No categories available'
     />
 );
 
@@ -569,7 +569,7 @@ const schoolSelect = (name) => (
         name={name}
         optionsMap={schoolMap}
         request={GET_SCHOOLS}
-        noOptionsText="No schools available"
+        noOptionsText='No schools available'
     />
 );
 
@@ -896,7 +896,7 @@ export default {
                     {
                         name: 'password',
                         label: 'Password',
-                        component: <Fields.TextField type="password" />,
+                        component: <Fields.TextField type='password' />,
                         validator: Yup.mixed(),
                         required: true,
                     },
@@ -1195,7 +1195,7 @@ export default {
                         name: 'startTime1',
                         label: 'Start Time',
                         required: 'true',
-                        component: <Fields.TimePicker format="hh:mm a" />,
+                        component: <Fields.TimePicker format='hh:mm a' />,
                         validator: Yup.date(),
                     },
                     {
@@ -1203,7 +1203,7 @@ export default {
                         label: 'End Time',
                         required: 'true',
                         component: (
-                            <Fields.TimePicker width={50} format="hh:mm a" />
+                            <Fields.TimePicker width={50} format='hh:mm a' />
                         ),
                         validator: Yup.date(),
                     },
@@ -1215,13 +1215,13 @@ export default {
                     {
                         name: 'startTime2',
                         label: 'Start Time',
-                        component: <Fields.TimePicker format="hh:mm a" />,
+                        component: <Fields.TimePicker format='hh:mm a' />,
                         validator: Yup.date(),
                     },
                     {
                         name: 'endTime2',
                         label: 'End Time',
-                        component: <Fields.TimePicker format="hh:mm a" />,
+                        component: <Fields.TimePicker format='hh:mm a' />,
                         validator: Yup.date(),
                     },
                     {
@@ -1232,13 +1232,13 @@ export default {
                     {
                         name: 'startTime3',
                         label: 'Start Time',
-                        component: <Fields.TimePicker format="hh:mm a" />,
+                        component: <Fields.TimePicker format='hh:mm a' />,
                         validator: Yup.date(),
                     },
                     {
                         name: 'endTime3',
                         label: 'End Time',
-                        component: <Fields.TimePicker format="hh:mm a" />,
+                        component: <Fields.TimePicker format='hh:mm a' />,
                         validator: Yup.date(),
                     },
                 ],
@@ -1743,10 +1743,10 @@ export default {
                         label: 'Class',
                         component: (
                             <Fields.DataSelect
-                                name="Classes"
+                                name='Classes'
                                 optionsMap={openCourseMap}
                                 request={GET_COURSES}
-                                noOptionsText="No classes available"
+                                noOptionsText='No classes available'
                             />
                         ),
                         validator: Yup.mixed(),

@@ -11,21 +11,21 @@ export default function MyPaymentsRoutes() {
         <Switch>
             <AuthenticatedRoute
                 exact
-                path="/my-payments"
+                path='/my-payments'
                 users={[USER_TYPES.parent]}
             >
                 <ActiveInvoices />
             </AuthenticatedRoute>
             <AuthenticatedRoute
                 exact
-                path="/my-payments/history"
+                path='/my-payments/history'
                 users={[USER_TYPES.parent]}
             >
                 <MyPaymentHistory />
             </AuthenticatedRoute>
             <AuthenticatedRoute
                 exact
-                path="/my-payments/payment/:paymentID?"
+                path='/my-payments/payment/:paymentID?'
                 users={[USER_TYPES.parent]}
             >
                 <PaymentReceipt />

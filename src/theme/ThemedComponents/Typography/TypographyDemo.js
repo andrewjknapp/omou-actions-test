@@ -26,32 +26,32 @@ const TypographyDemo = () => {
 
     return (
         <Paper className={classes.style}>
-            <Typography className={classes.headingOneStyle} variant="h1">
+            <Typography className={classes.headingOneStyle} variant='h1'>
                 Heading 1
             </Typography>
             <p>
-                <Typography variant="h2">Heading 2</Typography>
+                <Typography variant='h2'>Heading 2</Typography>
             </p>
             <p>
-                <Typography variant="h3">Heading 3</Typography>
+                <Typography variant='h3'>Heading 3</Typography>
             </p>
             <p>
-                <Typography variant="h4">Heading 4</Typography>
+                <Typography variant='h4'>Heading 4</Typography>
             </p>
             <p>
-                <Typography variant="h5">heading 5</Typography>
+                <Typography variant='h5'>heading 5</Typography>
             </p>
             <p>
-                <Typography variant="body1">Body(Default)</Typography>
+                <Typography variant='body1'>Body(Default)</Typography>
             </p>
             <p>
-                <Typography variant="body2">Body (Bolded)</Typography>
+                <Typography variant='body2'>Body (Bolded)</Typography>
             </p>
             <p>
-                <a href="#">Body (Links) w/ an a tag</a>
+                <a href='#'>Body (Links) w/ an a tag</a>
             </p>
             <p>
-                <Link href="#">Body (Links) w/ the link component</Link>
+                <Link href='#'>Body (Links) w/ the link component</Link>
             </p>
         </Paper>
     );

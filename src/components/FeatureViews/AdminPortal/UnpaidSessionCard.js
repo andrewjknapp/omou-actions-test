@@ -115,7 +115,7 @@ const UnpaidSessionCard = ({ unpaidStudent }) => {
                         >
                             Payment Status:{' '}
                             <span
-                                className="unpaid-status"
+                                className='unpaid-status'
                                 style={{
                                     backgroundColor:
                                         adminUtils.statusColor[sessionsLeft],
@@ -128,7 +128,7 @@ const UnpaidSessionCard = ({ unpaidStudent }) => {
                             <br />
                             <Tooltip title={courseTitle}>
                                 <Typography
-                                    className="unpaid-status-info"
+                                    className='unpaid-status-info'
                                     noWrap={true}
                                 >
                                     {courseTitle}

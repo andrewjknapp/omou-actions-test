@@ -32,33 +32,33 @@ const ParentLogin = (props) => {
 
     return (
         <div>
-            <Ellipse3 className="ellipse var3" />
-            <Ellipse4 className="ellipse var4" />
-            <Picture2 className="picture1" />
-            <div className="logo">
-                <Typography className="title var2">omou</Typography>
+            <Ellipse3 className='ellipse var3' />
+            <Ellipse4 className='ellipse var4' />
+            <Picture2 className='picture1' />
+            <div className='logo'>
+                <Typography className='title var2'>omou</Typography>
             </div>
-            <form className="Login" onSubmit={props.handleLogin}>
+            <form className='Login' onSubmit={props.handleLogin}>
                 <Grid container>
                     <Grid item md={6} />
                     <Grid item md={6}>
-                        <Typography className="welcomeText">
+                        <Typography className='welcomeText'>
                             Hello Summit Parent
                         </Typography>
                         <TextField
                             error={props.hasError || props.email === ''}
                             fullWidth
                             inputProps={{ 'data-cy': 'emailField' }}
-                            margin="normal"
+                            margin='normal'
                             onChange={handleTextInput(props.setEmail)}
                             value={props.email}
-                            placeholder="E-Mail"
-                            variant="outlined"
-                            className="TextField"
-                            fullWidth="true"
+                            placeholder='E-Mail'
+                            variant='outlined'
+                            className='TextField'
+                            fullWidth='true'
                             InputProps={{
                                 startAdornment: (
-                                    <InputAdornment position="start">
+                                    <InputAdornment position='start'>
                                         <EmailOutlinedIcon
                                             style={{ color: 'grey' }}
                                         />
@@ -67,15 +67,15 @@ const ParentLogin = (props) => {
                             }}
                         />
                         <PasswordInput
-                            autoComplete="current-password"
+                            autoComplete='current-password'
                             error={props.hasError || props.password === ''}
-                            className="TextField"
+                            className='TextField'
                             inputProps={{ 'data-cy': 'passwordField' }}
-                            label="Password"
+                            label='Password'
                             onChange={handleTextInput()}
                             value={props.password}
                         />
-                        <Grid container item className="optionsContainer">
+                        <Grid container item className='optionsContainer'>
                             <Grid item md={2} />
                             <Grid item md={4}>
                                 <FormControlLabel
@@ -88,13 +88,13 @@ const ParentLogin = (props) => {
                                             onChange={toggleSavePassword}
                                         />
                                     }
-                                    label="Remember Me"
+                                    label='Remember Me'
                                 />
                             </Grid>
                             <Grid item md={4} style={{ paddingTop: 10 }}>
                                 <Link
-                                    className="forgotPassword"
-                                    data-cy="forgotPassword"
+                                    className='forgotPassword'
+                                    data-cy='forgotPassword'
                                     to={{
                                         pathname: '/forgotpassword',
                                         state: props.email,
@@ -105,12 +105,12 @@ const ParentLogin = (props) => {
                             </Grid>
                             <Grid item md={2} />
                             <Grid item md={4} />
-                            <Grid item md={4} className="buttonSpacing">
+                            <Grid item md={4} className='buttonSpacing'>
                                 <Button
-                                    className="signInButton"
-                                    data-cy="signInButton"
-                                    type="submit"
-                                    variant="contained"
+                                    className='signInButton'
+                                    data-cy='signInButton'
+                                    type='submit'
+                                    variant='contained'
                                 >
                                     SIGN IN
                                 </Button>

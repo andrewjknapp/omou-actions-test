@@ -21,23 +21,23 @@ const NotEnrolledStudentsDialog = (props) => {
             <Dialog
                 open={open}
                 onClose={handleClose}
-                aria-labelledby="alert-dialog-title"
-                aria-describedby="alert-dialog-description"
-                className="notEnrolledStudentDialog"
+                aria-labelledby='alert-dialog-title'
+                aria-describedby='alert-dialog-description'
+                className='notEnrolledStudentDialog'
             >
-                <ErrorOutlineIcon className="warningIcon" />
-                <DialogTitle disableTypography id="alert-dialog-title">
+                <ErrorOutlineIcon className='warningIcon' />
+                <DialogTitle disableTypography id='alert-dialog-title'>
                     {'OOPS!'}
                 </DialogTitle>
                 <DialogContent>
-                    <DialogContentText id="alert-dialog-description">
+                    <DialogContentText id='alert-dialog-description'>
                         It looks like there are no students Enrolled in that
                         class. Please go back and choose another. (Clicking
                         outside of the box will take you back)
                     </DialogContentText>
                 </DialogContent>
                 <DialogActions>
-                    <ResponsiveButton onClick={handleClose} variant="outlined">
+                    <ResponsiveButton onClick={handleClose} variant='outlined'>
                         back
                     </ResponsiveButton>
                 </DialogActions>

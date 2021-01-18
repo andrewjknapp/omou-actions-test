@@ -130,14 +130,14 @@ const SelectParentDialog = ({ onClose, open }) => {
     const SelectParentInput = (params) => (
         <TextField
             {...params}
-            label="Search Parent"
-            variant="outlined"
+            label='Search Parent'
+            variant='outlined'
             InputProps={{
                 ...params.InputProps,
                 endAdornment: (
                     <React.Fragment>
                         {loading ? (
-                            <CircularProgress color="inherit" size={20} />
+                            <CircularProgress color='inherit' size={20} />
                         ) : null}
                         {params.InputProps.endAdornment}
                     </React.Fragment>
@@ -157,21 +157,21 @@ const SelectParentDialog = ({ onClose, open }) => {
 
     return (
         <Dialog
-            aria-labelledby="simple-dialog-title"
-            className="select-parent-dialog"
+            aria-labelledby='simple-dialog-title'
+            className='select-parent-dialog'
             onClose={handleClose}
             open={open}
         >
-            <DialogTitle disableTypography id="simple-dialog-title">
+            <DialogTitle disableTypography id='simple-dialog-title'>
                 Currently helping
             </DialogTitle>
             <DialogContent>
                 {currentParent ? (
-                    <div className="active-parent-dialog-content">
-                        <Grid container direction="row" justify="center">
+                    <div className='active-parent-dialog-content'>
+                        <Grid container direction='row' justify='center'>
                             <Grid item>
                                 <AccountCard
-                                    accountType="PARENT"
+                                    accountType='PARENT'
                                     userID={currentParent.user.id}
                                 />
                             </Grid>
@@ -184,7 +184,7 @@ const SelectParentDialog = ({ onClose, open }) => {
                         }`}
                     >
                         <Autocomplete
-                            data-cy="select-parent-input"
+                            data-cy='select-parent-input'
                             loading={loading}
                             options={options}
                             selectOnFocus
@@ -208,16 +208,16 @@ const SelectParentDialog = ({ onClose, open }) => {
             <DialogActions>
                 {currentParent ? (
                     <ResponsiveButton
-                        variant="outlined"
+                        variant='outlined'
                         onClick={handleExitParent}
-                        data-cy="exit-parent-action"
+                        data-cy='exit-parent-action'
                     >
                         exit parent
                     </ResponsiveButton>
                 ) : (
                     <ResponsiveButton
-                        variant="outlined"
-                        data-cy="set-parent-action"
+                        variant='outlined'
+                        data-cy='set-parent-action'
                         onClick={handleClose}
                     >
                         set parent

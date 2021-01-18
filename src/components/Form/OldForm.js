@@ -930,7 +930,7 @@ class Form extends Component {
                     fieldTitle !== 'Relationship to Student' &&
                     fieldTitle !== 'Gender';
                 return (
-                    <FormControl className="form-control">
+                    <FormControl className='form-control'>
                         <InputLabel shrink={Boolean(value)}>
                             {fieldTitle}
                         </InputLabel>
@@ -961,15 +961,15 @@ class Form extends Component {
 
             case 'password': {
                 return (
-                    <FormControl className="form-control">
-                        <InputLabel htmlFor="adornment-password">
+                    <FormControl className='form-control'>
+                        <InputLabel htmlFor='adornment-password'>
                             Password *
                         </InputLabel>
                         <Input
                             endAdornment={
-                                <InputAdornment position="end">
+                                <InputAdornment position='end'>
                                     <IconButton
-                                        aria-label="Toggle password visibility"
+                                        aria-label='Toggle password visibility'
                                         onClick={this.handleClickShowPassword}
                                     >
                                         {this.state.showPassword ? (
@@ -980,7 +980,7 @@ class Form extends Component {
                                     </IconButton>
                                 </InputAdornment>
                             }
-                            id="adornment-password"
+                            id='adornment-password'
                             label={field.name}
                             onBlur={(e) => {
                                 e.preventDefault();
@@ -1045,32 +1045,32 @@ class Form extends Component {
                 return (
                     <div style={{ width: 'inherit' }}>
                         <Grid
-                            className="student-align"
+                            className='student-align'
                             container
                             spacing={2000}
                         >
                             <SearchSelect
-                                className="search-options"
+                                className='search-options'
                                 disabled={disabled}
                                 onChange={(value) => {
                                     this.onSelectChange(value, label, field);
                                 }}
                                 options={courseList}
-                                placeholder="Select existing group..."
+                                placeholder='Select existing group...'
                                 value={this.state[label][fieldTitle]}
                             />
                             {fieldCount > 1 && !disabled && (
                                 <RemoveIcon
-                                    aria-label="Add"
-                                    className="button-remove-student"
-                                    color="primary"
+                                    aria-label='Add'
+                                    className='button-remove-student'
+                                    color='primary'
                                     onClick={(event) => {
                                         event.preventDefault();
                                         // deletes answer field from state
                                         this.removeField(fieldIndex);
                                         this.forceUpdate();
                                     }}
-                                    variant="extended"
+                                    variant='extended'
                                 />
                             )}
                         </Grid>
@@ -1117,15 +1117,15 @@ class Form extends Component {
 
                 return (
                     <div style={{ width: 'inherit' }}>
-                        <Grid className="student-align" container>
+                        <Grid className='student-align' container>
                             <SearchSelect
-                                className="search-options"
+                                className='search-options'
                                 disabled={disabled}
                                 onChange={(value) => {
                                     this.onSelectChange(value, label, field);
                                 }}
                                 options={studentList}
-                                placeholder="Select a Student..."
+                                placeholder='Select a Student...'
                                 value={
                                     this.state[label][fieldTitle]
                                         ? this.state[label][fieldTitle]
@@ -1134,16 +1134,16 @@ class Form extends Component {
                             />
                             {studentCount > 1 && !disabled && (
                                 <RemoveIcon
-                                    aria-label="Add"
-                                    className="button-remove-student"
-                                    color="primary"
+                                    aria-label='Add'
+                                    className='button-remove-student'
+                                    color='primary'
                                     onClick={(event) => {
                                         event.preventDefault();
                                         // deletes answer field
                                         this.removeField(fieldIndex);
                                         this.forceUpdate();
                                     }}
-                                    variant="extended"
+                                    variant='extended'
                                 />
                             )}
                         </Grid>
@@ -1162,16 +1162,16 @@ class Form extends Component {
 
                 return (
                     <div style={{ width: 'inherit' }}>
-                        <Grid className="student-align" container>
+                        <Grid className='student-align' container>
                             <AsyncSelect
                                 cacheOptions
-                                className="search-options"
+                                className='search-options'
                                 defaultOptions={instructorList}
                                 loadOptions={this.searchInstructors}
                                 onChange={(value) => {
                                     this.onSelectChange(value, label, field);
                                 }}
-                                placeholder="Select an instructor..."
+                                placeholder='Select an instructor...'
                             />
                         </Grid>
                     </div>
@@ -1205,13 +1205,13 @@ class Form extends Component {
                 }
                 return (
                     <SearchSelect
-                        className="search-options"
+                        className='search-options'
                         isClearable
                         onChange={(value) => {
                             this.onSelectChange(value, label, field);
                         }}
                         options={categoriesList}
-                        placeholder="Choose a Category"
+                        placeholder='Choose a Category'
                         value={this.state[label][fieldTitle]}
                     />
                 );
@@ -1225,8 +1225,8 @@ class Form extends Component {
                 );
                 return (
                     <CreatableSelect
-                        className="search-options"
-                        createOptionPosition="first"
+                        className='search-options'
+                        createOptionPosition='first'
                         isClearable
                         onChange={(value) => {
                             this.onSelectChange(value, label, field);
@@ -1247,9 +1247,9 @@ class Form extends Component {
                             error={
                                 !this.state[`${label}_validated`][field.name]
                             }
-                            format="MM/dd/yyyy"
+                            format='MM/dd/yyyy'
                             label={fieldTitle}
-                            margin="normal"
+                            margin='normal'
                             onChange={(date) => {
                                 this.onDateChange(date, label, fieldTitle);
                             }}
@@ -1308,7 +1308,7 @@ class Form extends Component {
                             shrink: Boolean(textValue),
                         }}
                         label={field.name}
-                        margin="normal"
+                        margin='normal'
                         multiline={field.multiline}
                         onBlur={(e) => {
                             e.preventDefault();
@@ -1564,8 +1564,8 @@ class Form extends Component {
         return (
             <Stepper
                 activeStep={activeStep}
-                className="form-section"
-                orientation="vertical"
+                className='form-section'
+                orientation='vertical'
             >
                 {steps.map((label) => (
                     <Step key={label}>
@@ -1587,12 +1587,12 @@ class Form extends Component {
                                     );
                                 return (
                                     <div
-                                        className="fields-wrapper"
+                                        className='fields-wrapper'
                                         key={j}
                                         style={{}}
                                     >
                                         <Grid
-                                            className="student-align"
+                                            className='student-align'
                                             container
                                         >
                                             {label ===
@@ -1609,9 +1609,9 @@ class Form extends Component {
                                                 field.field_limit &&
                                             field === lastFieldOfType && (
                                                 <Fab
-                                                    aria-label="Add"
-                                                    className="button add-student"
-                                                    color="primary"
+                                                    aria-label='Add'
+                                                    className='button add-student'
+                                                    color='primary'
                                                     onClick={(event) => {
                                                         event.preventDefault();
                                                         this.addField(
@@ -1619,7 +1619,7 @@ class Form extends Component {
                                                             j
                                                         );
                                                     }}
-                                                    variant="extended"
+                                                    variant='extended'
                                                 >
                                                     <AddIcon />
                                                     Add {field.field}
@@ -1630,8 +1630,8 @@ class Form extends Component {
                             })}
                             <Grid
                                 container
-                                direction="row-reverse"
-                                justify="flex-start"
+                                direction='row-reverse'
+                                justify='flex-start'
                             >
                                 <Grid
                                     item
@@ -1648,10 +1648,10 @@ class Form extends Component {
                                         onSubmit={this.handleNext}
                                     >
                                         <Button
-                                            className="button primary"
-                                            color="primary"
+                                            className='button primary'
+                                            color='primary'
                                             disabled={!nextSection}
-                                            variant="contained"
+                                            variant='contained'
                                         >
                                             {activeStep === steps.length - 1
                                                 ? this.props.submitPending
@@ -1671,8 +1671,8 @@ class Form extends Component {
                                 {activeStep !== 0 && (
                                     <Grid item>
                                         <Button
-                                            className="button"
-                                            color="secondary"
+                                            className='button'
+                                            color='secondary'
                                             onClick={this.handleBack}
                                         >
                                             Back
@@ -1701,22 +1701,22 @@ class Form extends Component {
             >
                 {this.state.form !== 'pricing' && (
                     <>
-                        <Typography align="left" style={{ fontSize: '24px' }}>
+                        <Typography align='left' style={{ fontSize: '24px' }}>
                             You have successfully registered!
                         </Typography>
-                        <Typography align="left" style={{ fontSize: '14px' }}>
+                        <Typography align='left' style={{ fontSize: '14px' }}>
                             An email will be sent to you to confirm your
                             registration
                         </Typography>
                         <Button
-                            align="left"
-                            className="button"
+                            align='left'
+                            className='button'
                             component={NavLink}
                             onClick={() => {
                                 this.props.registrationActions.resetSubmitStatus();
                             }}
                             style={{ margin: '20px' }}
-                            to="/registration"
+                            to='/registration'
                         >
                             REGISTER MORE
                         </Button>
@@ -1724,20 +1724,20 @@ class Form extends Component {
                 )}
                 {this.state.form === 'pricing' && (
                     <Button
-                        align="left"
-                        className="button"
+                        align='left'
+                        className='button'
                         component={NavLink}
                         onClick={() => {
                             this.props.registrationActions.resetSubmitStatus();
                         }}
                         style={{ margin: '20px' }}
-                        to="/adminportal/tuition-rules"
+                        to='/adminportal/tuition-rules'
                     >
                         VIEW PRICE RULES
                     </Button>
                 )}
-                <div className="confirmation-copy">
-                    <Typography align="left" className="title">
+                <div className='confirmation-copy'>
+                    <Typography align='left' className='title'>
                         Confirmation
                     </Typography>
                     {steps.map((sectionTitle) => {
@@ -1751,8 +1751,8 @@ class Form extends Component {
                         return (
                             <div key={sectionTitle}>
                                 <Typography
-                                    align="left"
-                                    className="section-title"
+                                    align='left'
+                                    className='section-title'
                                 >
                                     {sectionTitle}
                                 </Typography>
@@ -1778,14 +1778,14 @@ class Form extends Component {
                                     return (
                                         <div key={field}>
                                             <Typography
-                                                align="left"
-                                                className="field-title"
+                                                align='left'
+                                                className='field-title'
                                             >
                                                 {field || ''}
                                             </Typography>
                                             <Typography
-                                                align="left"
-                                                className="field-value"
+                                                align='left'
+                                                className='field-value'
                                             >
                                                 {typeof fieldVal === 'object'
                                                     ? new Date(
@@ -1867,19 +1867,19 @@ class Form extends Component {
             return <Loading />;
         }
         return (
-            <Grid className="" container>
+            <Grid className='' container>
                 {/* Determine if finished component is displayed. If not, then don't prompt */}
                 {this.state.submitPending ? (
                     ''
                 ) : (
-                    <Prompt message="Are you sure you want to leave?" />
+                    <Prompt message='Are you sure you want to leave?' />
                 )}
                 <Grid item xs={12}>
-                    <Paper className="registration-form paper">
+                    <Paper className='registration-form paper'>
                         {!this.props.location.pathname.includes(
                             'adminportal'
                         ) && <BackButton onBack={this.onBack} />}
-                        <Typography align="left" className="heading">
+                        <Typography align='left' className='heading'>
                             {this.renderTitle(
                                 this.props.match.params.id,
                                 this.props.match.params.type
@@ -1901,23 +1901,23 @@ class Form extends Component {
                             this.renderCourseRegistrationSubmission()
                         )}
                         <Modal
-                            aria-describedby="simple-modal-description"
-                            aria-labelledby="simple-modal-title"
+                            aria-describedby='simple-modal-description'
+                            aria-labelledby='simple-modal-title'
                             onClick={(e) => {
                                 e.preventDefault();
                                 this.setState({ existingUser: false });
                             }}
                             open={this.state.existingUser}
                         >
-                            <div className="existing-user-popup">
-                                <Typography id="modal-title" variant="h6">
+                            <div className='existing-user-popup'>
+                                <Typography id='modal-title' variant='h6'>
                                     {
                                         'The user you are entering already exists in the database! Please enter a new email, and check for spelling.'
                                     }
                                 </Typography>
                                 <Button
-                                    className="button primary"
-                                    color="primary"
+                                    className='button primary'
+                                    color='primary'
                                     onClick={(e) => {
                                         e.preventDefault();
                                         this.setState({ existingUser: false });
@@ -1929,8 +1929,8 @@ class Form extends Component {
                         </Modal>
                         {/* Error message on failed submit */}
                         <Dialog
-                            aria-describedby="alert-dialog-description"
-                            aria-labelledby="alert-dialog-title"
+                            aria-describedby='alert-dialog-description'
+                            aria-labelledby='alert-dialog-title'
                             onClose={() => {
                                 this.props.registrationActions.resetSubmitStatus();
                                 this.setState(
@@ -1949,12 +1949,12 @@ class Form extends Component {
                         >
                             <DialogTitle
                                 disableTypography
-                                id="alert-dialog-title"
+                                id='alert-dialog-title'
                             >
                                 Failed to Submit
                             </DialogTitle>
                             <DialogContent>
-                                <DialogContentText id="alert-dialog-description">
+                                <DialogContentText id='alert-dialog-description'>
                                     There was an error submitting the form.
                                     Check all fields and try again.
                                 </DialogContentText>
@@ -1962,7 +1962,7 @@ class Form extends Component {
                             <DialogActions>
                                 <Button
                                     autoFocus
-                                    color="primary"
+                                    color='primary'
                                     onClick={() => {
                                         this.props.registrationActions.resetSubmitStatus();
                                         this.setState(

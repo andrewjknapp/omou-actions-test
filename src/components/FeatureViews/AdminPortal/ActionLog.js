@@ -220,14 +220,14 @@ const ActionLog = () => {
                 <DialogActions>
                     <ResponsiveButton
                         onClick={handleSaveDateRange}
-                        color="primary"
+                        color='primary'
                     >
                         Save & Close
                     </ResponsiveButton>
                 </DialogActions>
             </Dialog>
             <div style={{ textAlign: 'right', padding: 0 }}>
-                <ResponsiveButton variant="outlined" onClick={resetFilters}>
+                <ResponsiveButton variant='outlined' onClick={resetFilters}>
                     Reset All Filters
                 </ResponsiveButton>
             </div>
@@ -248,7 +248,7 @@ const ActionLog = () => {
                                 <Grid>
                                     From{' '}
                                     <TextField
-                                        variant="outlined"
+                                        variant='outlined'
                                         value={
                                             startDate
                                                 ? moment(startDate).format(
@@ -283,7 +283,7 @@ const ActionLog = () => {
                                                       state[0].endDate.toISOString()
                                                   ).format('MM/DD/YYYY')
                                         }
-                                        variant="outlined"
+                                        variant='outlined'
                                         onClick={() => setOpenCalendar(true)}
                                         inputProps={{
                                             style: {
@@ -306,17 +306,17 @@ const ActionLog = () => {
                                 </Grid>
                             </Grid>
                             <Grid>
-                                <FormControl variant="outlined">
+                                <FormControl variant='outlined'>
                                     <InputLabel
                                         shrink={false}
                                         style={{ lineHeight: '5px' }}
-                                        margin="dense"
+                                        margin='dense'
                                     >
                                         {!userType && 'User Type'}
                                     </InputLabel>
                                     <Select
-                                        id="select"
-                                        labelId="label"
+                                        id='select'
+                                        labelId='label'
                                         value={userType}
                                         onChange={handleUserSelection}
                                         style={{ width: 130 }}
@@ -350,18 +350,18 @@ const ActionLog = () => {
                                 </Grid>
                             </Grid>
                             <Grid>
-                                <FormControl variant="outlined">
+                                <FormControl variant='outlined'>
                                     <InputLabel
                                         shrink={false}
-                                        id="label"
+                                        id='label'
                                         style={{ lineHeight: '5px' }}
-                                        margin="dense"
+                                        margin='dense'
                                     >
                                         {!adminType && 'Profile Type'}
                                     </InputLabel>
                                     <Select
-                                        id="select"
-                                        labelId="label"
+                                        id='select'
+                                        labelId='label'
                                         value={adminType}
                                         onChange={handleSelection(setAdminType)}
                                         style={{ width: 130 }}
@@ -395,17 +395,17 @@ const ActionLog = () => {
                                 </Grid>
                             </Grid>
                             <Grid>
-                                <FormControl variant="outlined">
+                                <FormControl variant='outlined'>
                                     <InputLabel
                                         shrink={false}
                                         style={{ lineHeight: '5px' }}
-                                        margin="dense"
+                                        margin='dense'
                                     >
                                         {!actionType && 'Action Type'}
                                     </InputLabel>
                                     <Select
-                                        id="select"
-                                        labelId="label"
+                                        id='select'
+                                        labelId='label'
                                         value={actionType}
                                         onChange={handleSelection(
                                             setActionType
@@ -441,17 +441,17 @@ const ActionLog = () => {
                                 </Grid>
                             </Grid>
                             <Grid>
-                                <FormControl variant="outlined">
+                                <FormControl variant='outlined'>
                                     <InputLabel
                                         shrink={false}
                                         style={{ lineHeight: '5px' }}
-                                        margin="dense"
+                                        margin='dense'
                                     >
                                         {!objectType && 'Object Type'}
                                     </InputLabel>
                                     <Select
-                                        id="select"
-                                        labelId="label"
+                                        id='select'
+                                        labelId='label'
                                         value={objectType}
                                         onChange={handleSelection(
                                             setObjectType
@@ -487,7 +487,7 @@ const ActionLog = () => {
                             <TableCell>
                                 <Moment
                                     date={actionItem.date}
-                                    format="dddd, M/D/YYYY h:mm a"
+                                    format='dddd, M/D/YYYY h:mm a'
                                 />
                             </TableCell>
                             <TableCell>

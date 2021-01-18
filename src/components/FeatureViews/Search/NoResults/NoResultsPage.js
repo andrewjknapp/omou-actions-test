@@ -48,7 +48,7 @@ const NoResultsPage = () => {
                         <Typography
                             variant={'h3'}
                             style={{ paddingBottom: '20px' }}
-                            data-cy="no-results-header"
+                            data-cy='no-results-header'
                         >
                             Sorry, no results were found
                         </Typography>
@@ -67,8 +67,8 @@ const NoResultsPage = () => {
                             </Typography>
                             <Typography variant={'h6'}>
                                 <Link
-                                    href="/scheduler"
-                                    data-cy="schedulerLink"
+                                    href='/scheduler'
+                                    data-cy='schedulerLink'
                                     style={{
                                         borderBottom: '2px solid currentColor',
                                     }}

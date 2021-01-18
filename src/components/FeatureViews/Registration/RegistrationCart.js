@@ -192,41 +192,41 @@ const RegistrationCart = () => {
     const studentRegistrations = Object.keys(registered_courses).map(
         (student_id) =>
             studentAccounts[student_id] && (
-                <Grid className="student-cart-wrapper" container>
+                <Grid className='student-cart-wrapper' container>
                     <Grid item xs={12}>
-                        <Typography align="left" gutterBottom variant="h5">
+                        <Typography align='left' gutterBottom variant='h5'>
                             {studentAccounts[student_id].name}
                         </Typography>
                     </Grid>
                     <Grid
-                        className="accounts-table-heading"
+                        className='accounts-table-heading'
                         container
                         item
                         xs={12}
                     >
                         <Grid item xs={1} />
                         <Grid item xs={3}>
-                            <Typography align="left" className="cart-header">
+                            <Typography align='left' className='cart-header'>
                                 Course
                             </Typography>
                         </Grid>
                         <Grid item xs={3}>
-                            <Typography align="left" className="cart-header">
+                            <Typography align='left' className='cart-header'>
                                 Dates
                             </Typography>
                         </Grid>
                         <Grid item xs={1}>
-                            <Typography align="center" className="cart-header">
+                            <Typography align='center' className='cart-header'>
                                 Sessions
                             </Typography>
                         </Grid>
                         <Grid item xs={2}>
-                            <Typography align="center" className="cart-header">
+                            <Typography align='center' className='cart-header'>
                                 Tuition
                             </Typography>
                         </Grid>
                         <Grid item xs={2}>
-                            <Typography align="center" className="cart-header">
+                            <Typography align='center' className='cart-header'>
                                 Material Fee
                             </Typography>
                         </Grid>
@@ -249,7 +249,7 @@ const RegistrationCart = () => {
                                 return (
                                     <Grid item key={course.course_id} xs={12}>
                                         <Grid
-                                            alignItems="center"
+                                            alignItems='center'
                                             component={Paper}
                                             container
                                             square
@@ -264,18 +264,18 @@ const RegistrationCart = () => {
                                                 />
                                             </Grid>
                                             <Grid item xs={3}>
-                                                <Typography align="left">
+                                                <Typography align='left'>
                                                     {course.title}
                                                 </Typography>
                                             </Grid>
                                             <Grid item xs={3}>
-                                                <Typography align="left">
+                                                <Typography align='left'>
                                                     <Moment
                                                         date={
                                                             course.schedule
                                                                 .start_date
                                                         }
-                                                        format="MMM d, YYYY"
+                                                        format='MMM d, YYYY'
                                                     />
                                                     {' - '}
                                                     <Moment
@@ -283,36 +283,36 @@ const RegistrationCart = () => {
                                                             course.schedule
                                                                 .end_date
                                                         }
-                                                        format="MMM d, YYYY"
+                                                        format='MMM d, YYYY'
                                                     />
                                                 </Typography>
                                             </Grid>
                                             <Grid item xs={1}>
                                                 {!checked ? (
-                                                    <Typography align="center">
+                                                    <Typography align='center'>
                                                         {sessions}
                                                     </Typography>
                                                 ) : (
                                                     <TextField
                                                         error={!validated}
-                                                        id="outlined-number"
+                                                        id='outlined-number'
                                                         InputLabelProps={{
                                                             shrink: true,
                                                         }}
-                                                        label="Quantity"
-                                                        margin="normal"
+                                                        label='Quantity'
+                                                        margin='normal'
                                                         onChange={handleCourseSessionsChange(
                                                             student_id,
                                                             course_id
                                                         )}
-                                                        type="number"
+                                                        type='number'
                                                         value={sessions}
-                                                        variant="outlined"
+                                                        variant='outlined'
                                                     />
                                                 )}
                                             </Grid>
                                             <Grid item xs={2}>
-                                                <Typography align="center">
+                                                <Typography align='center'>
                                                     {course.tuition}
                                                 </Typography>
                                             </Grid>
@@ -356,16 +356,16 @@ const RegistrationCart = () => {
 
     return (
         <form>
-            <Paper className="registration-cart paper">
-                <Grid container layout="row" spacing={1}>
+            <Paper className='registration-cart paper'>
+                <Grid container layout='row' spacing={1}>
                     <Grid item xs={12}>
                         <Grid container>
                             <Grid item={3}>
                                 <ResponsiveButton
-                                    variant="outlined"
+                                    variant='outlined'
                                     component={Link}
-                                    to="/registration"
-                                    label="register"
+                                    to='/registration'
+                                    label='register'
                                 >
                                     register
                                 </ResponsiveButton>
@@ -374,7 +374,7 @@ const RegistrationCart = () => {
                         <hr />
                     </Grid>
                     <Grid item xs={12}>
-                        <Typography align="left" variant="h3">
+                        <Typography align='left' variant='h3'>
                             Select Course(s)
                         </Typography>
                     </Grid>

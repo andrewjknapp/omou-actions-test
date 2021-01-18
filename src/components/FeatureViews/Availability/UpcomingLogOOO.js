@@ -47,9 +47,9 @@ const NoOOOInformation = () => {
         <Grid container className={classes.noOOOInformation}>
             <Grid
                 container
-                direction="row"
-                justify="center"
-                alignItems="center"
+                direction='row'
+                justify='center'
+                alignItems='center'
             >
                 <Grid item xs={8}>
                     <Typography
@@ -87,7 +87,7 @@ export const UpcomingOOO = () => {
     return (
         <Grid container>
             <Grid item xs={12}>
-                <Typography variant="h4" align="left">
+                <Typography variant='h4' align='left'>
                     Upcoming
                 </Typography>
             </Grid>
@@ -134,7 +134,7 @@ export const LogOOO = () => {
     return (
         <Grid container>
             <Grid item xs={12}>
-                <Typography variant="h4" align="left">
+                <Typography variant='h4' align='left'>
                     Log
                 </Typography>
             </Grid>

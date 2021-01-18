@@ -23,7 +23,7 @@ function UpcomingSessionCard(props) {
                         </Typography>
                     </Grid>
                     <Grid item sm={5}>
-                        <LabelBadge variant="outline-gray">
+                        <LabelBadge variant='outline-gray'>
                             Type of course
                         </LabelBadge>
                     </Grid>
@@ -32,15 +32,15 @@ function UpcomingSessionCard(props) {
                             container
                             direction={'row'}
                             alignItems={'center'}
-                            className="sessionRow"
+                            className='sessionRow'
                         >
                             <Grid item>
-                                <Typography className="sessionText">
+                                <Typography className='sessionText'>
                                     {' '}
                                     Course Name:{' '}
                                 </Typography>
                             </Grid>
-                            <Grid item sm={3} className="sessionText">
+                            <Grid item sm={3} className='sessionText'>
                                 Calc 101
                             </Grid>
                         </Grid>
@@ -48,15 +48,15 @@ function UpcomingSessionCard(props) {
                             container
                             direction={'row'}
                             alignItems={'center'}
-                            className="sessionRow"
+                            className='sessionRow'
                         >
                             <Grid item>
-                                <Typography className="sessionText">
+                                <Typography className='sessionText'>
                                     {' '}
                                     Subject:{' '}
                                 </Typography>
                             </Grid>
-                            <Grid item sm={5} className="sessionText">
+                            <Grid item sm={5} className='sessionText'>
                                 AP Calculus
                             </Grid>
                         </Grid>
@@ -64,15 +64,15 @@ function UpcomingSessionCard(props) {
                             container
                             direction={'row'}
                             alignItems={'center'}
-                            className="sessionRow"
+                            className='sessionRow'
                         >
                             <Grid item>
-                                <Typography className="sessionText">
+                                <Typography className='sessionText'>
                                     {' '}
                                     Teacher:{' '}
                                 </Typography>
                             </Grid>
-                            <Grid item sm={5} className="sessionText">
+                            <Grid item sm={5} className='sessionText'>
                                 Daniel Huang
                             </Grid>
                         </Grid>

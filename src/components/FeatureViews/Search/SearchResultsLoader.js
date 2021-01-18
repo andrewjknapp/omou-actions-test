@@ -19,99 +19,99 @@ const SearchResultsLoader = ({
     accountPage,
     coursePage,
 }) => (
-    <Grid className="search-results" container>
+    <Grid className='search-results' container>
         <Grid item xs={12}>
-            <Paper className="main-search-view">
-                <Grid className="searchResults" item xs={12}>
+            <Paper className='main-search-view'>
+                <Grid className='searchResults' item xs={12}>
                     <Typography
-                        align="left"
-                        className="search-title"
-                        variant="h3"
+                        align='left'
+                        className='search-title'
+                        variant='h3'
                     >
                         {numResults} Search Results for "{query}"
                     </Typography>
                 </Grid>
-                <div className="account-results-wrapper">
+                <div className='account-results-wrapper'>
                     <Grid item xs={12}>
                         <hr />
                         <Grid
-                            alignItems="center"
+                            alignItems='center'
                             container
-                            direction="row"
-                            justify="space-between"
+                            direction='row'
+                            justify='space-between'
                         >
-                            <Grid className="searchResults" item>
+                            <Grid className='searchResults' item>
                                 <Typography
-                                    align="left"
-                                    className="resultsColor"
+                                    align='left'
+                                    className='resultsColor'
                                     gutterBottom
                                 >
                                     Accounts
                                 </Typography>
                             </Grid>
                             <Grid item>
-                                <LabelBadge variant="outline-gray">
+                                <LabelBadge variant='outline-gray'>
                                     See All Accounts
                                 </LabelBadge>
                             </Grid>
                         </Grid>
-                        <Grid container direction="row" spacing={2}>
+                        <Grid container direction='row' spacing={2}>
                             {[1, 2, 3, 4].map((account) => (
                                 <Grid item key={account} sm={3}>
                                     <AccountCard isLoading />
                                 </Grid>
                             ))}
                         </Grid>
-                        <div className="results-nav">
+                        <div className='results-nav'>
                             {
-                                <IconButton className="less" disabled>
+                                <IconButton className='less' disabled>
                                     <LessResultsIcon />
                                 </IconButton>
                             }
                             {accountPage}
                             {
-                                <IconButton className="more" disabled>
+                                <IconButton className='more' disabled>
                                     <MoreResultsIcon />
                                 </IconButton>
                             }
                         </div>
                     </Grid>
                 </div>
-                <div className="course-results-wrapper">
+                <div className='course-results-wrapper'>
                     <hr />
                     <Grid item xs={12}>
                         <Grid
-                            alignItems="center"
+                            alignItems='center'
                             container
-                            direction="row"
-                            justify="space-between"
+                            direction='row'
+                            justify='space-between'
                         >
-                            <Grid className="searchResults" item>
+                            <Grid className='searchResults' item>
                                 <Typography
-                                    align="left"
-                                    className="resultsColor"
+                                    align='left'
+                                    className='resultsColor'
                                 >
                                     Courses
                                 </Typography>
                             </Grid>
                             <Grid item style={{ paddingRight: '1vh' }}>
-                                <LabelBadge variant="outline-gray">
+                                <LabelBadge variant='outline-gray'>
                                     See All Courses
                                 </LabelBadge>
                             </Grid>
                         </Grid>
-                        <Grid container direction="row" spacing={1}>
+                        <Grid container direction='row' spacing={1}>
                             {[1, 2, 3, 4].map((course) => (
                                 <CourseCard isLoading key={course} />
                             ))}
                         </Grid>
                     </Grid>
-                    <div className="results-nav">
-                        <IconButton className="less" disabled>
+                    <div className='results-nav'>
+                        <IconButton className='less' disabled>
                             <LessResultsIcon />
                         </IconButton>
                         {coursePage}
-                        <IconButton className="more" disabled>
+                        <IconButton className='more' disabled>
                             <MoreResultsIcon />
                         </IconButton>
                     </div>

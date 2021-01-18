@@ -57,7 +57,7 @@ const ListComponentDemo = () => {
             <ListContent>
                 <ListHeading>
                     <ListBadge>
-                        <LabelBadge variant="status-active">ACTIVE</LabelBadge>
+                        <LabelBadge variant='status-active'>ACTIVE</LabelBadge>
                     </ListBadge>
                     <ListTitle>Biology</ListTitle>
                 </ListHeading>

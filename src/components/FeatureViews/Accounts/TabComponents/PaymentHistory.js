@@ -38,7 +38,7 @@ const PaymentHistory = ({ user_id }) => {
 
     const { invoices } = data;
 
-    return <PaymentTable paymentList={invoices} type="parent" />;
+    return <PaymentTable paymentList={invoices} type='parent' />;
 };
 
 PaymentHistory.propTypes = {

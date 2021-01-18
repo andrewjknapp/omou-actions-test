@@ -8,8 +8,8 @@ const ColorBox = ({ bgcolor }) => {
     return (
         <Box
             bgcolor={bgcolor}
-            width="98px"
-            height="48px"
+            width='98px'
+            height='48px'
             label={bgcolor}
             boxShadow={2}
             borderRadius={5}
@@ -24,12 +24,12 @@ const ColorBox = ({ bgcolor }) => {
 const ColorsDemo = () => {
     return (
         <BackgroundPaper>
-            <Grid container justify="space-around">
+            <Grid container justify='space-around'>
                 <Grid item>
                     <Grid container>
-                        <Typography variant="h3">PRIMARY</Typography>
+                        <Typography variant='h3'>PRIMARY</Typography>
                         <Grid item>
-                            <Grid container direction="column">
+                            <Grid container direction='column'>
                                 <Grid item>
                                     <ColorBox bgcolor={theme.colors.darkBlue} />
                                     <Typography>Dark Blue</Typography>
@@ -62,7 +62,7 @@ const ColorsDemo = () => {
                         </Grid>
 
                         <Grid item>
-                            <Grid container direction="column">
+                            <Grid container direction='column'>
                                 <Grid item>
                                     <ColorBox bgcolor={theme.colors.goth} />
                                     <Typography>Goth</Typography>
@@ -114,9 +114,9 @@ const ColorsDemo = () => {
 
                 <Grid item>
                     <Grid container>
-                        <Typography variant="h3">SPECIFIC</Typography>
+                        <Typography variant='h3'>SPECIFIC</Typography>
                         <Grid item>
-                            <Grid container direction="column">
+                            <Grid container direction='column'>
                                 <Grid item>
                                     <ColorBox
                                         bgcolor={theme.colors.buttonBlue}
@@ -139,7 +139,7 @@ const ColorsDemo = () => {
                         </Grid>
 
                         <Grid item>
-                            <Grid container direction="column">
+                            <Grid container direction='column'>
                                 <Grid item>
                                     <ColorBox
                                         bgcolor={theme.palette.success.main}

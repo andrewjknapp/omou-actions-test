@@ -118,10 +118,10 @@ function RegistrationEntry({
                             Start Date:{' '}
                             <Moment
                                 date={course.startDate}
-                                format="M/DD/YYYY"
+                                format='M/DD/YYYY'
                             />
                             {' - '}
-                            <Moment date={course.endDate} format="M/DD/YYYY" />
+                            <Moment date={course.endDate} format='M/DD/YYYY' />
                         </Typography>
                     </Grid>
                     <br />
@@ -136,7 +136,7 @@ function RegistrationEntry({
                             data-cy={`${index}-session-input`}
                             value={numSessions}
                             onChange={handleSessionChange}
-                            variant="outlined"
+                            variant='outlined'
                             style={{ width: '80%' }}
                             error={numSessions > totalCourseSessions}
                             inputProps={{
@@ -195,7 +195,7 @@ export default function StudentRegistrationEntry({
                                 />
                             ))
                     ) : (
-                        <NoListAlert list="registrations" />
+                        <NoListAlert list='registrations' />
                     )}
                 </TableBody>
             </Table>

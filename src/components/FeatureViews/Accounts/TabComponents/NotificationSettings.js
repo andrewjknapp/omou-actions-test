@@ -308,19 +308,19 @@ export default function NotificationSettings({ user }) {
                 </Typography>
             </Grid>
             <TableContainer>
-                <Table className={classes.table} aria-label="simple table">
+                <Table className={classes.table} aria-label='simple table'>
                     <TableBody>
                         <StyledTableRow>
                             <TableCell />
-                            <TableCell align="center">Text Message</TableCell>
-                            <TableCell align="center">Email</TableCell>
+                            <TableCell align='center'>Text Message</TableCell>
+                            <TableCell align='center'>Email</TableCell>
                             <TableCell />
                         </StyledTableRow>
                         {notificationRows.map((row, index) => (
                             <StyledTableRow key={row.name}>
                                 <TableCell
-                                    component="th"
-                                    scope="row"
+                                    component='th'
+                                    scope='row'
                                     className={classes.settingCol}
                                 >
                                     <Typography
@@ -328,16 +328,16 @@ export default function NotificationSettings({ user }) {
                                             fontSize: '14px',
                                             fontWeight: 'bold',
                                         }}
-                                        display="block"
+                                        display='block'
                                     >
                                         {row.name}
                                     </Typography>
                                     <span>{row.description}</span>
                                 </TableCell>
-                                <TableCell align="center">
+                                <TableCell align='center'>
                                     <Checkbox
                                         checked={row.sms.checked}
-                                        color="primary"
+                                        color='primary'
                                         inputProps={{
                                             'aria-label': 'primary checkbox',
                                         }}
@@ -348,10 +348,10 @@ export default function NotificationSettings({ user }) {
                                         )}
                                     />
                                 </TableCell>
-                                <TableCell align="center">
+                                <TableCell align='center'>
                                     <Checkbox
                                         checked={row.email.checked}
-                                        color="primary"
+                                        color='primary'
                                         inputProps={{
                                             'aria-label': 'primary checkbox',
                                         }}
@@ -381,13 +381,13 @@ export default function NotificationSettings({ user }) {
                 </Typography>
             </Grid>
             <TableContainer>
-                <Table className={classes.table} aria-label="simple table">
+                <Table className={classes.table} aria-label='simple table'>
                     <TableBody>
                         {optInNotifRows.map((row, index) => (
                             <StyledTableRow key={row.name}>
                                 <TableCell
-                                    component="th"
-                                    scope="row"
+                                    component='th'
+                                    scope='row'
                                     className={classes.settingCol}
                                 >
                                     <Typography
@@ -395,19 +395,19 @@ export default function NotificationSettings({ user }) {
                                             fontSize: '14px',
                                             fontWeight: 'bold',
                                         }}
-                                        display="block"
+                                        display='block'
                                     >
                                         {row.name}
                                     </Typography>
                                     <span>{row.description}</span>
                                 </TableCell>
                                 <TableCell
-                                    align="center"
+                                    align='center'
                                     style={{ width: '28%' }}
                                 >
                                     <Switch
                                         checked={row.optIn.checked}
-                                        color="primary"
+                                        color='primary'
                                         inputProps={{
                                             'aria-label': 'primary checkbox',
                                         }}

@@ -161,12 +161,12 @@ const ProfileHeading = ({ ownerID }) => {
     const renderEditandAwayButton = () => (
         <Grid container item xs={4}>
             {accountType === 'instructor' && (
-                <Grid align="left" className="schedule-button" item xs={12}>
+                <Grid align='left' className='schedule-button' item xs={12}>
                     <ResponsiveButton
-                        aria-controls="simple-menu"
-                        aria-haspopup="true"
+                        aria-controls='simple-menu'
+                        aria-haspopup='true'
                         onClick={handleOpen}
-                        variant="outlined"
+                        variant='outlined'
                         startIcon={<CalendarIcon />}
                     >
                         Schedule Options
@@ -191,7 +191,7 @@ const ProfileHeading = ({ ownerID }) => {
                         <ResponsiveButton
                             component={Link}
                             to={`/form/${userInfo.accountType}/${userInfo.user.id}`}
-                            variant="outlined"
+                            variant='outlined'
                             startIcon={<EditIcon />}
                         >
                             Edit Profile
@@ -201,7 +201,7 @@ const ProfileHeading = ({ ownerID }) => {
                         <Button
                             component={Link}
                             to={`/form/${userInfo.accountType}/${userInfo.user.id}`}
-                            variant="outlined"
+                            variant='outlined'
                         >
                             <EditIcon />
                         </Button>
@@ -258,7 +258,7 @@ const ProfileHeading = ({ ownerID }) => {
                                 href={`mailto:${userInfo.user.email}`}
                             >
                                 <Typography
-                                    variant="body1"
+                                    variant='body1'
                                     className={classes.text}
                                 >
                                     {userInfo.user.email}
@@ -275,7 +275,7 @@ const ProfileHeading = ({ ownerID }) => {
                         </Grid>
                         <Grid item xs={width - 1}>
                             <Typography
-                                variant="body1"
+                                variant='body1'
                                 className={classes.text}
                             >
                                 {type[variant].text}
@@ -290,38 +290,38 @@ const ProfileHeading = ({ ownerID }) => {
             case 'student':
                 return (
                     <>
-                        <InfoRow variant="ID" />
-                        <InfoRow variant="Grade" />
-                        <InfoRow variant="Phone" />
-                        <InfoRow variant="School" />
-                        <InfoRow variant="Email" />
-                        <InfoRow variant="Birthday" />
+                        <InfoRow variant='ID' />
+                        <InfoRow variant='Grade' />
+                        <InfoRow variant='Phone' />
+                        <InfoRow variant='School' />
+                        <InfoRow variant='Email' />
+                        <InfoRow variant='Birthday' />
                     </>
                 );
             case 'instructor':
                 return (
                     <>
-                        <InfoRow variant="ID" />
-                        <InfoRow variant="Email" />
-                        <InfoRow variant="Phone" />
-                        <InfoRow variant="Birthday" />
+                        <InfoRow variant='ID' />
+                        <InfoRow variant='Email' />
+                        <InfoRow variant='Phone' />
+                        <InfoRow variant='Birthday' />
                     </>
                 );
             case 'parent':
                 return (
                     <>
-                        <InfoRow variant="ID" />
-                        <InfoRow variant="Email" />
-                        <InfoRow variant="Phone" />
-                        <InfoRow variant="Balance" />
+                        <InfoRow variant='ID' />
+                        <InfoRow variant='Email' />
+                        <InfoRow variant='Phone' />
+                        <InfoRow variant='Balance' />
                     </>
                 );
             default:
                 return (
                     <>
-                        <InfoRow variant="ID" />
-                        <InfoRow variant="Email" />
-                        <InfoRow variant="Phone" />
+                        <InfoRow variant='ID' />
+                        <InfoRow variant='Email' />
+                        <InfoRow variant='Phone' />
                     </>
                 );
         }
@@ -329,21 +329,21 @@ const ProfileHeading = ({ ownerID }) => {
 
     return (
         <Grid
-            alignItems="center"
+            alignItems='center'
             container
             item
             xs={12}
             style={{ margin: accountType === 'INSTRUCTOR' ? '-20px 0' : '0' }}
         >
-            <Grid align="left" alignItems="center" container item xs={8}>
-                <Grid className="profile-name" item style={{ marginRight: 20 }}>
-                    <Typography variant="h3">
+            <Grid align='left' alignItems='center' container item xs={8}>
+                <Grid className='profile-name' item style={{ marginRight: 20 }}>
+                    <Typography variant='h3'>
                         {fullName(userInfo.user)}
                     </Typography>
                 </Grid>
                 <Grid item>
                     <Hidden smDown>
-                        <LabelBadge variant="outline-gray">
+                        <LabelBadge variant='outline-gray'>
                             {accountType}
                         </LabelBadge>
                     </Hidden>
@@ -352,8 +352,8 @@ const ProfileHeading = ({ ownerID }) => {
             {renderEditandAwayButton()}
             <Grid
                 container
-                align="left"
-                alignItems="center"
+                align='left'
+                alignItems='center'
                 style={{
                     width: '430px',
                     margin: accountType === 'INSTRUCTOR' ? '-10px 0' : '10px 0',

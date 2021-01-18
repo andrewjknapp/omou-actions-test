@@ -37,50 +37,50 @@ const Bio = ({ ownerID }) => {
     } = data;
 
     return (
-        <Card className="Bio">
+        <Card className='Bio'>
             <Grid container item xs={12}>
-                <Grid className="BioMain" item md={6} xs={12}>
-                    <Typography className="bioHeader">Biography</Typography>
-                    <Typography className="bioBody">{biography}</Typography>
+                <Grid className='BioMain' item md={6} xs={12}>
+                    <Typography className='bioHeader'>Biography</Typography>
+                    <Typography className='bioBody'>{biography}</Typography>
                 </Grid>
-                <Grid className="BioBackground BioDetails" item md={6} xs={12}>
-                    <Grid className="rowPadding" container>
-                        <Grid className="bioDescription">Experience:</Grid>
+                <Grid className='BioBackground BioDetails' item md={6} xs={12}>
+                    <Grid className='rowPadding' container>
+                        <Grid className='bioDescription'>Experience:</Grid>
                         {experience &&
                             experience.split(',').map((exp) => (
-                                <Grid className="chipPadding" key={exp}>
+                                <Grid className='chipPadding' key={exp}>
                                     <Chip
-                                        className="bioChip"
+                                        className='bioChip'
                                         label={exp}
-                                        variant="outlined"
+                                        variant='outlined'
                                     />
                                 </Grid>
                             ))}
                     </Grid>
-                    <Grid className="rowPadding" container>
-                        <Grid className="bioDescription">
+                    <Grid className='rowPadding' container>
+                        <Grid className='bioDescription'>
                             Subjects offered:
                         </Grid>
                         {subjects &&
                             subjects.map((subject) => (
-                                <Grid className="chipPadding" key={subject}>
+                                <Grid className='chipPadding' key={subject}>
                                     <Chip
-                                        className="bioChip"
+                                        className='bioChip'
                                         label={subject.name}
-                                        variant="outlined"
+                                        variant='outlined'
                                     />
                                 </Grid>
                             ))}
                     </Grid>
-                    <Grid className="rowPadding" container>
-                        <Grid className="bioDescription">Language:</Grid>
+                    <Grid className='rowPadding' container>
+                        <Grid className='bioDescription'>Language:</Grid>
                         {language &&
                             language.split(',').map((language) => (
-                                <Grid className="chipPadding" key={language}>
+                                <Grid className='chipPadding' key={language}>
                                     <Chip
-                                        className="bioChip"
+                                        className='bioChip'
                                         label={language}
-                                        variant="outlined"
+                                        variant='outlined'
                                     />
                                 </Grid>
                             ))}

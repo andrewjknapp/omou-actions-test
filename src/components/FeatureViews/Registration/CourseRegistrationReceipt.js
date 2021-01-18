@@ -103,23 +103,23 @@ export default function CourseRegistrationReceipt({ formData, format }) {
         title,
     }) => (
         <>
-            <Typography align="left" variant="h4">
+            <Typography align='left' variant='h4'>
                 {title}
             </Typography>{' '}
             <br />
-            <Typography align="left" variant="subtitle2">
+            <Typography align='left' variant='subtitle2'>
                 Dates
             </Typography>
-            <Typography align="left">
-                <Moment format="MM/D/YYYY" date={startDate} /> -{' '}
-                <Moment format="MM/D/YYYY" date={endDate} /> <br />
+            <Typography align='left'>
+                <Moment format='MM/D/YYYY' date={startDate} /> -{' '}
+                <Moment format='MM/D/YYYY' date={endDate} /> <br />
                 <CourseAvailabilites availabilityList={availabilityList} />
             </Typography>{' '}
             <br />
-            <Typography align="left" variant="subtitle2">
+            <Typography align='left' variant='subtitle2'>
                 Instructor
             </Typography>
-            <Typography align="left">
+            <Typography align='left'>
                 <Avatar styles={{ backgroundColor: stringToColor(instructor) }}>
                     {instructor.match(/\b(\w)/gu).join('')}
                 </Avatar>
@@ -133,39 +133,39 @@ export default function CourseRegistrationReceipt({ formData, format }) {
             <Grid item md={6} xs={12}>
                 {CourseReceipt(course)}
             </Grid>
-            <Divider orientation="vertical" flexItem />
+            <Divider orientation='vertical' flexItem />
             <Grid item md={2} />
             <Grid item md={3} xs={12}>
                 <AccountCard
-                    accountType="STUDENT"
+                    accountType='STUDENT'
                     userID={formData.student.student}
-                    data-cy="student-card"
+                    data-cy='student-card'
                 />
             </Grid>
             <Grid
                 container
                 item
                 xs={12}
-                direction="row"
-                justify="flex-end"
+                direction='row'
+                justify='flex-end'
                 spacing={4}
             >
                 <Grid item>
                     <ResponsiveButton
-                        variant="outlined"
+                        variant='outlined'
                         component={NavLinkNoDup}
-                        to="/registration"
-                        data-cy="back-to-register"
+                        to='/registration'
+                        data-cy='back-to-register'
                     >
                         register more
                     </ResponsiveButton>
                 </Grid>
                 <Grid item>
                     <ResponsiveButton
-                        variant="contained"
+                        variant='contained'
                         component={NavLinkNoDup}
                         to={'/registration/cart/'}
-                        data-cy="back-to-register"
+                        data-cy='back-to-register'
                     >
                         checkout
                     </ResponsiveButton>

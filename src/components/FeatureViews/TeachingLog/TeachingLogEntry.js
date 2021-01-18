@@ -30,12 +30,12 @@ export default function TeachingLogEntry({
             <TableRow className={classes.root}>
                 <TableCell>{id}</TableCell>
                 <TableCell>
-                    <Moment date={startDatetime} format="MM/DD/YYYY" />
+                    <Moment date={startDatetime} format='MM/DD/YYYY' />
                 </TableCell>
                 <TableCell>{title}</TableCell>
                 <TableCell>
-                    <Moment date={startDatetime} format="h:mm a" />-
-                    <Moment date={endDatetime} format="h:mm a" />
+                    <Moment date={startDatetime} format='h:mm a' />-
+                    <Moment date={endDatetime} format='h:mm a' />
                 </TableCell>
                 <TableCell>
                     {moment
@@ -46,8 +46,8 @@ export default function TeachingLogEntry({
                 </TableCell>
                 <TableCell>
                     <IconButton
-                        aria-label="expand teaching log"
-                        size="small"
+                        aria-label='expand teaching log'
+                        size='small'
                         onClick={() => setOpen(!open)}
                     >
                         {open ? (
@@ -63,7 +63,7 @@ export default function TeachingLogEntry({
                     style={{ paddingBottom: 0, paddingTop: 0 }}
                     colSpan={6}
                 >
-                    <Collapse in={open} timeout="auto" unmountOnExit>
+                    <Collapse in={open} timeout='auto' unmountOnExit>
                         <Box margin={1}>
                             <Typography>Students</Typography>
                             <Typography>Course Dates</Typography>

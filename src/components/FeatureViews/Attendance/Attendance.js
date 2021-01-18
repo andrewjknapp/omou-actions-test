@@ -6,7 +6,7 @@ import React, { Component } from 'react';
 class Attendance extends Component {
     render() {
         return (
-            <div className="">
+            <div className=''>
                 <h1>Attendance</h1>
             </div>
         );

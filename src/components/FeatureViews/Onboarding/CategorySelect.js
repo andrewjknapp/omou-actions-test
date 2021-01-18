@@ -30,16 +30,16 @@ const CategorySelect = () => {
     return (
         <>
             <Box className={classes.Text}>
-                <Typography variant="h3">Course Categories</Typography>
-                <Box fontSize="h5.fontSize" className={classes.Subtitle}>
-                    <Typography variant="p">
+                <Typography variant='h3'>Course Categories</Typography>
+                <Box fontSize='h5.fontSize' className={classes.Subtitle}>
+                    <Typography variant='p'>
                         Please list out the course categories your business
                         offers, these should include all the categories you
                         filled in on the templates in Step 2:
                     </Typography>
                 </Box>
             </Box>
-            <Grid container layout="row" alignItems="center" justify="center">
+            <Grid container layout='row' alignItems='center' justify='center'>
                 <Grid item md={6}>
                     <CreatableSelect
                         isMulti

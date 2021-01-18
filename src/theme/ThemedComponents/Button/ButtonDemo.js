@@ -12,111 +12,111 @@ const ButtonDemo = () => {
             <Grid container spacing={6}>
                 <Grid
                     container
-                    direction="row"
-                    justify="center"
-                    alignItems="center"
+                    direction='row'
+                    justify='center'
+                    alignItems='center'
                     spacing={2}
                     item
                     xs={6}
                 >
                     <Grid item xs={6}>
                         <Typography
-                            variant="h4"
-                            align="left"
+                            variant='h4'
+                            align='left'
                             style={{ textTransform: 'uppercase' }}
                         >
                             standard length outlined buttons
                         </Typography>
                     </Grid>
                     <Grid item xs={6}>
-                        <Typography variant="h4" align="right">
+                        <Typography variant='h4' align='right'>
                             {' '}
                             &lt; 6 characters
                         </Typography>
                     </Grid>
 
                     <Grid item xs={3}>
-                        <ResponsiveButton variant="outlined" label="save" />
+                        <ResponsiveButton variant='outlined' label='save' />
                     </Grid>
                     <Grid item xs={3}>
-                        <ResponsiveButton variant="outlined" label="delete" />
+                        <ResponsiveButton variant='outlined' label='delete' />
                     </Grid>
                     <Grid item xs={3}>
-                        <ResponsiveButton variant="outlined" label="pay" />
+                        <ResponsiveButton variant='outlined' label='pay' />
                     </Grid>
                     <Grid item xs={3}>
-                        <ResponsiveButton variant="outlined" label="ok" />
+                        <ResponsiveButton variant='outlined' label='ok' />
                     </Grid>
 
                     <Grid item xs={6}>
                         <Typography
-                            variant="h4"
-                            align="left"
+                            variant='h4'
+                            align='left'
                             style={{ textTransform: 'uppercase' }}
                         >
                             medium length outlined buttons
                         </Typography>
                     </Grid>
                     <Grid item xs={6}>
-                        <Typography variant="h4" align="right">
+                        <Typography variant='h4' align='right'>
                             7-10 characters
                         </Typography>
                     </Grid>
 
                     <Grid item xs={4}>
                         <ResponsiveButton
-                            variant="outlined"
-                            label="reschedule"
+                            variant='outlined'
+                            label='reschedule'
                         />
                     </Grid>
                     <Grid item xs={4}>
                         <ResponsiveButton
-                            variant="outlined"
-                            label="unregister"
+                            variant='outlined'
+                            label='unregister'
                         />
                     </Grid>
                     <Grid item xs={4}>
-                        <ResponsiveButton variant="outlined" label="unenroll" />
+                        <ResponsiveButton variant='outlined' label='unenroll' />
                     </Grid>
 
                     <Grid item xs={6}>
                         <Typography
-                            variant="h4"
-                            align="left"
+                            variant='h4'
+                            align='left'
                             style={{ textTransform: 'uppercase' }}
                         >
                             long length outlined buttons
                         </Typography>
                     </Grid>
                     <Grid item xs={6}>
-                        <Typography variant="h4" align="right">
+                        <Typography variant='h4' align='right'>
                             11-16 characters
                         </Typography>
                     </Grid>
 
                     <Grid item xs={4}>
                         <ResponsiveButton
-                            variant="outlined"
-                            label="set password"
+                            variant='outlined'
+                            label='set password'
                         />
                     </Grid>
                     <Grid item xs={4}>
                         <ResponsiveButton
-                            variant="outlined"
-                            label="reset password"
+                            variant='outlined'
+                            label='reset password'
                         />
                     </Grid>
                     <Grid item xs={4}>
                         <ResponsiveButton
-                            variant="outlined"
-                            label="learn more "
+                            variant='outlined'
+                            label='learn more '
                         />
                     </Grid>
 
                     <Grid item xs={12}>
                         <Typography
-                            variant="h4"
-                            align="left"
+                            variant='h4'
+                            align='left'
                             style={{ textTransform: 'uppercase' }}
                         >
                             buttons with icons
@@ -125,8 +125,8 @@ const ButtonDemo = () => {
 
                     <Grid item xs={4}>
                         <ResponsiveButton
-                            variant="outlined"
-                            label="back"
+                            variant='outlined'
+                            label='back'
                             startIcon={
                                 <BackArrow
                                     style={{ transform: 'scale(0.8)' }}
@@ -136,15 +136,15 @@ const ButtonDemo = () => {
                     </Grid>
                     <Grid item xs={4}>
                         <ResponsiveButton
-                            variant="outlined"
-                            label="register"
+                            variant='outlined'
+                            label='register'
                             startIcon={<AddIcon />}
                         />
                     </Grid>
                     <Grid item xs={4}>
                         <ResponsiveButton
-                            variant="outlined"
-                            label="announcement"
+                            variant='outlined'
+                            label='announcement'
                             startIcon={<AddIcon />}
                         />
                     </Grid>
@@ -152,9 +152,9 @@ const ButtonDemo = () => {
 
                 <Grid
                     container
-                    direction="row"
-                    justify="center"
-                    alignItems="center"
+                    direction='row'
+                    justify='center'
+                    alignItems='center'
                     // spacing={3}
 
                     item
@@ -162,44 +162,44 @@ const ButtonDemo = () => {
                 >
                     <Grid item xs={6}>
                         <Typography
-                            variant="h4"
-                            align="left"
+                            variant='h4'
+                            align='left'
                             style={{ textTransform: 'uppercase' }}
                         >
                             standard length contained buttons
                         </Typography>
                     </Grid>
                     <Grid item xs={6}>
-                        <Typography variant="h4" align="right">
+                        <Typography variant='h4' align='right'>
                             {' '}
                             &lt; 6 characters
                         </Typography>
                     </Grid>
 
                     <Grid item xs={3}>
-                        <ResponsiveButton variant="contained" label="save" />
+                        <ResponsiveButton variant='contained' label='save' />
                     </Grid>
                     <Grid item xs={3}>
-                        <ResponsiveButton variant="contained" label="delete" />
+                        <ResponsiveButton variant='contained' label='delete' />
                     </Grid>
                     <Grid item xs={3}>
-                        <ResponsiveButton variant="contained" label="send" />
+                        <ResponsiveButton variant='contained' label='send' />
                     </Grid>
                     <Grid item xs={3}>
-                        <ResponsiveButton variant="contained" label="cancel" />
+                        <ResponsiveButton variant='contained' label='cancel' />
                     </Grid>
 
                     <Grid item xs={6}>
                         <Typography
-                            variant="h4"
-                            align="left"
+                            variant='h4'
+                            align='left'
                             style={{ textTransform: 'uppercase' }}
                         >
                             medium length contained buttons
                         </Typography>
                     </Grid>
                     <Grid item xs={6}>
-                        <Typography variant="h4" align="right">
+                        <Typography variant='h4' align='right'>
                             {' '}
                             7-10 characters
                         </Typography>
@@ -207,34 +207,34 @@ const ButtonDemo = () => {
 
                     <Grid item xs={4}>
                         <ResponsiveButton
-                            variant="contained"
-                            label="reschedule"
+                            variant='contained'
+                            label='reschedule'
                         />
                     </Grid>
                     <Grid item xs={4}>
                         <ResponsiveButton
-                            variant="contained"
-                            label="unregister"
+                            variant='contained'
+                            label='unregister'
                         />
                     </Grid>
                     <Grid item xs={4}>
                         <ResponsiveButton
-                            variant="contained"
-                            label="unenroll"
+                            variant='contained'
+                            label='unenroll'
                         />
                     </Grid>
 
                     <Grid item xs={6}>
                         <Typography
-                            variant="h4"
-                            align="left"
+                            variant='h4'
+                            align='left'
                             style={{ textTransform: 'uppercase' }}
                         >
                             long length contained buttons
                         </Typography>
                     </Grid>
                     <Grid item xs={6}>
-                        <Typography variant="h4" align="right">
+                        <Typography variant='h4' align='right'>
                             {' '}
                             11-16 characters
                         </Typography>
@@ -242,27 +242,27 @@ const ButtonDemo = () => {
 
                     <Grid item xs={4}>
                         <ResponsiveButton
-                            variant="contained"
-                            label="send reset email"
+                            variant='contained'
+                            label='send reset email'
                         />
                     </Grid>
                     <Grid item xs={4}>
                         <ResponsiveButton
-                            variant="contained"
-                            label="reset password"
+                            variant='contained'
+                            label='reset password'
                         />
                     </Grid>
                     <Grid item xs={4}>
                         <ResponsiveButton
-                            variant="contained"
-                            label="request demo"
+                            variant='contained'
+                            label='request demo'
                         />
                     </Grid>
 
                     <Grid item xs={12}>
                         <Typography
-                            variant="h4"
-                            align="left"
+                            variant='h4'
+                            align='left'
                             style={{ textTransform: 'uppercase' }}
                         >
                             buttons with icons
@@ -271,8 +271,8 @@ const ButtonDemo = () => {
 
                     <Grid item xs={4}>
                         <ResponsiveButton
-                            variant="contained"
-                            label="back"
+                            variant='contained'
+                            label='back'
                             startIcon={
                                 <BackArrow
                                     style={{ transform: 'scale(0.8)' }}
@@ -282,15 +282,15 @@ const ButtonDemo = () => {
                     </Grid>
                     <Grid item xs={4}>
                         <ResponsiveButton
-                            variant="contained"
-                            label="register"
+                            variant='contained'
+                            label='register'
                             startIcon={<AddIcon />}
                         />
                     </Grid>
                     <Grid item xs={4}>
                         <ResponsiveButton
-                            variant="contained"
-                            label="register"
+                            variant='contained'
+                            label='register'
                             startIcon={<AddIcon />}
                             disabled
                         />

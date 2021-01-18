@@ -61,35 +61,35 @@ const InstructorCourses = ({ instructorID }) => {
     return (
         <Grid container>
             <Grid item xs={12}>
-                <Grid className="accounts-table-heading" container>
+                <Grid className='accounts-table-heading' container>
                     <Grid item xs={4}>
-                        <Typography align="left" className="table-header">
+                        <Typography align='left' className='table-header'>
                             Course
                         </Typography>
                     </Grid>
                     <Grid item xs={3}>
-                        <Typography align="left" className="table-header">
+                        <Typography align='left' className='table-header'>
                             Dates
                         </Typography>
                     </Grid>
                     <Grid item xs={2}>
-                        <Typography align="left" className="table-header">
+                        <Typography align='left' className='table-header'>
                             Day
                         </Typography>
                     </Grid>
                     <Grid item xs={2}>
-                        <Typography align="left" className="table-header">
+                        <Typography align='left' className='table-header'>
                             Time
                         </Typography>
                     </Grid>
                     <Grid item xs={1}>
-                        <Typography align="left" className="table-header">
+                        <Typography align='left' className='table-header'>
                             Confirmed
                         </Typography>
                     </Grid>
                 </Grid>
             </Grid>
-            <Grid container direction="row-reverse" spacing={1}>
+            <Grid container direction='row-reverse' spacing={1}>
                 {courses
                     .sort((courseA, courseB) =>
                         moment(courseB.startDate).diff(
@@ -107,7 +107,7 @@ const InstructorCourses = ({ instructorID }) => {
                         }) => {
                             return (
                                 <Grid
-                                    className="accounts-table-row"
+                                    className='accounts-table-row'
                                     component={Link}
                                     item
                                     key={id}
@@ -117,25 +117,25 @@ const InstructorCourses = ({ instructorID }) => {
                                     <Paper elevation={2} square>
                                         <Grid container>
                                             <Grid item xs={4}>
-                                                <Typography align="left">
+                                                <Typography align='left'>
                                                     {title}
                                                 </Typography>
                                             </Grid>
                                             <Grid item xs={3}>
-                                                <Typography align="left">
+                                                <Typography align='left'>
                                                     <Moment
-                                                        format="MMM D YYYY"
+                                                        format='MMM D YYYY'
                                                         date={startDate}
                                                     />
                                                     {` - `}
                                                     <Moment
-                                                        format="MMM D YYYY"
+                                                        format='MMM D YYYY'
                                                         date={endDate}
                                                     />
                                                 </Typography>
                                             </Grid>
                                             <Grid item xs={2}>
-                                                <Typography align="left">
+                                                <Typography align='left'>
                                                     {availabilityList.map(
                                                         (
                                                             { dayOfWeek },
@@ -161,9 +161,9 @@ const InstructorCourses = ({ instructorID }) => {
                                                 {sessionsAtSameTimeInMultiDayCourse(
                                                     availabilityList
                                                 ) ? (
-                                                    <Typography align="left">
+                                                    <Typography align='left'>
                                                         <Moment
-                                                            format="h:mm a"
+                                                            format='h:mm a'
                                                             date={
                                                                 startDate +
                                                                 ' ' +
@@ -173,7 +173,7 @@ const InstructorCourses = ({ instructorID }) => {
                                                         />
                                                         {' - '}
                                                         <Moment
-                                                            format="h:mm a"
+                                                            format='h:mm a'
                                                             date={
                                                                 endDate +
                                                                 ' ' +
@@ -188,9 +188,9 @@ const InstructorCourses = ({ instructorID }) => {
                                             </Grid>
                                             <Grid item md={1}>
                                                 {isConfirmed ? (
-                                                    <ConfirmIcon className="confirmed course-icon" />
+                                                    <ConfirmIcon className='confirmed course-icon' />
                                                 ) : (
-                                                    <UnconfirmIcon className="unconfirmed course-icon" />
+                                                    <UnconfirmIcon className='unconfirmed course-icon' />
                                                 )}
                                             </Grid>
                                         </Grid>

@@ -249,7 +249,7 @@ const PriceQuoteForm = ({ courses, tutoring }) => {
     }, []);
 
     return (
-        <Grid className="price-quote-form" container>
+        <Grid className='price-quote-form' container>
             <Grid item xs={3}>
                 <FormControl required>
                     <FormLabel>Select Payment Method</FormLabel>
@@ -259,20 +259,20 @@ const PriceQuoteForm = ({ courses, tutoring }) => {
                                 <Radio
                                     checked={paymentMethod === CASH}
                                     onChange={handlePayMethodChange(CASH)}
-                                    value="Cash"
+                                    value='Cash'
                                 />
                             }
-                            label="Cash"
+                            label='Cash'
                         />
                         <FormControlLabel
                             control={
                                 <Radio
                                     checked={paymentMethod === CHECK}
                                     onChange={handlePayMethodChange(CHECK)}
-                                    value="Check"
+                                    value='Check'
                                 />
                             }
-                            label="Check"
+                            label='Check'
                         />
                         <FormControlLabel
                             control={
@@ -281,10 +281,10 @@ const PriceQuoteForm = ({ courses, tutoring }) => {
                                     onChange={handlePayMethodChange(
                                         CREDIT_CARD
                                     )}
-                                    value="Credit Card"
+                                    value='Credit Card'
                                 />
                             }
-                            label="Credit Card"
+                            label='Credit Card'
                         />
                         <FormControlLabel
                             control={
@@ -296,10 +296,10 @@ const PriceQuoteForm = ({ courses, tutoring }) => {
                                     onChange={handlePayMethodChange(
                                         INTERNATIONAL_CREDIT_CARD
                                     )}
-                                    value="International Credit Card"
+                                    value='International Credit Card'
                                 />
                             }
-                            label="International Credit Card"
+                            label='International Credit Card'
                         />
                     </RadioGroup>
                 </FormControl>
@@ -307,23 +307,23 @@ const PriceQuoteForm = ({ courses, tutoring }) => {
             <Grid item xs={9}>
                 <Grid container spacing={1}>
                     <Grid item xs={12}>
-                        <Grid container direction="column" spacing={1}>
+                        <Grid container direction='column' spacing={1}>
                             <Grid item>
                                 <Grid
                                     container
-                                    direction="row"
-                                    justify="flex-end"
+                                    direction='row'
+                                    justify='flex-end'
                                 >
                                     <Grid item xs={3}>
                                         <Typography
-                                            align="right"
-                                            className="price-label"
+                                            align='right'
+                                            className='price-label'
                                         >
                                             Subtotal
                                         </Typography>
                                     </Grid>
                                     <Grid item xs={2}>
-                                        <Typography align="right">
+                                        <Typography align='right'>
                                             {priceQuote.sub_total}
                                         </Typography>
                                     </Grid>
@@ -334,12 +334,12 @@ const PriceQuoteForm = ({ courses, tutoring }) => {
                                     <Grid
                                         container
                                         style={{ height: '30px' }}
-                                        direction="row"
-                                        justify="flex-end"
+                                        direction='row'
+                                        justify='flex-end'
                                     >
                                         <Grid item xs={5}>
                                             <Typography
-                                                align="right"
+                                                align='right'
                                                 className={`price-label
                                                             ${
                                                                 discount.enable &&
@@ -348,14 +348,14 @@ const PriceQuoteForm = ({ courses, tutoring }) => {
                                             >
                                                 {discount.enable ? (
                                                     <Remove
-                                                        className="remove icon"
+                                                        className='remove icon'
                                                         onClick={toggleDiscount(
                                                             discount.id
                                                         )}
                                                     />
                                                 ) : (
                                                     <Add
-                                                        className="add icon"
+                                                        className='add icon'
                                                         onClick={toggleDiscount(
                                                             discount.id
                                                         )}
@@ -366,7 +366,7 @@ const PriceQuoteForm = ({ courses, tutoring }) => {
                                         </Grid>
                                         <Grid item xs={2}>
                                             <Typography
-                                                align="right"
+                                                align='right'
                                                 className={`discount-amount
                                                             ${
                                                                 discount.enable &&
@@ -379,17 +379,17 @@ const PriceQuoteForm = ({ courses, tutoring }) => {
                                     </Grid>
                                 </Grid>
                             ))}
-                            <Grid container direction="row" justify="flex-end">
+                            <Grid container direction='row' justify='flex-end'>
                                 <Grid item xs={4}>
                                     <Typography
-                                        align="right"
-                                        className="price-label"
+                                        align='right'
+                                        className='price-label'
                                     >
                                         Applied Parent Account Balance
                                     </Typography>
                                 </Grid>
                                 <Grid item xs={2}>
-                                    <Typography align="right">
+                                    <Typography align='right'>
                                         {priceQuote.account_balance > 0 &&
                                             '- $'}{' '}
                                         {priceQuote.account_balance}
@@ -400,29 +400,29 @@ const PriceQuoteForm = ({ courses, tutoring }) => {
                                 {/* Manual Price Adjustment for Admins */}
                                 {isAdmin && (
                                     <Grid
-                                        className="price-adjustment-wrapper"
+                                        className='price-adjustment-wrapper'
                                         container
-                                        direction="row"
-                                        justify="flex-end"
+                                        direction='row'
+                                        justify='flex-end'
                                     >
                                         <Grid item xs={2}>
                                             <Typography
-                                                align="right"
-                                                className="price-label"
+                                                align='right'
+                                                className='price-label'
                                             >
                                                 Price Adjustment
                                             </Typography>
                                         </Grid>
                                         <Grid item xs={2}>
-                                            <Typography align="right">
+                                            <Typography align='right'>
                                                 <TextField
-                                                    className="price-adjustment"
+                                                    className='price-adjustment'
                                                     onChange={
                                                         handlePriceAdjustment
                                                     }
-                                                    type="number"
+                                                    type='number'
                                                     value={priceAdjustment}
-                                                    variant="outlined"
+                                                    variant='outlined'
                                                 />
                                             </Typography>
                                         </Grid>
@@ -430,21 +430,21 @@ const PriceQuoteForm = ({ courses, tutoring }) => {
                                 )}
                                 <Grid
                                     container
-                                    direction="row"
-                                    justify="flex-end"
+                                    direction='row'
+                                    justify='flex-end'
                                 >
                                     <Grid item xs={2}>
                                         <Typography
-                                            align="right"
-                                            className="price-label"
+                                            align='right'
+                                            className='price-label'
                                         >
                                             Total
                                         </Typography>
                                     </Grid>
                                     <Grid item xs={2}>
                                         <Typography
-                                            align="right"
-                                            className="total-price"
+                                            align='right'
+                                            className='total-price'
                                         >
                                             ${priceQuote.total}
                                         </Typography>
@@ -454,10 +454,10 @@ const PriceQuoteForm = ({ courses, tutoring }) => {
                         </Grid>
                     </Grid>
                     <Grid item xs={12}>
-                        <Grid container justify="flex-end">
+                        <Grid container justify='flex-end'>
                             <ResponsiveButton
-                                className="button"
-                                variant="outlined"
+                                className='button'
+                                variant='outlined'
                                 disabled={paymentMethod === null}
                                 onClick={handlePay()}
                             >
