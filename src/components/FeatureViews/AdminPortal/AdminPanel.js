@@ -22,42 +22,42 @@ const AdminPanel = () => (
                 create={components.CategoryCreate}
                 edit={components.CategoryEdit}
                 list={components.CategoryList}
-                name="courseCategories"
+                name='courseCategories'
                 show={components.CategoryShow}
             />
             <Resource
                 create={components.SchoolCreate}
                 edit={components.SchoolEdit}
                 list={components.SchoolList}
-                name="schools"
+                name='schools'
                 show={components.SchoolShow}
             />
             <Resource
                 create={components.BulkDiscountCreate}
                 edit={components.BulkDiscountEdit}
                 list={components.BulkDiscountList}
-                name="bulkDiscounts"
+                name='bulkDiscounts'
                 show={components.BulkDiscountShow}
             />
             <Resource
                 create={components.DateRangeDiscountCreate}
                 edit={components.DateRangeDiscountEdit}
                 list={components.DateRangeDiscountList}
-                name="dateRangeDiscounts"
+                name='dateRangeDiscounts'
                 show={components.DateRangeDiscountShow}
             />
             <Resource
                 create={components.PaymentMethodDiscountCreate}
                 edit={components.PaymentMethodDiscountEdit}
                 list={components.PaymentMethodDiscountList}
-                name="paymentMethodDiscounts"
+                name='paymentMethodDiscounts'
                 show={components.PaymentMethodDiscountShow}
             />
             <Resource
                 create={components.TuitionCreate}
                 edit={components.TuitionEdit}
                 list={components.TuitionList}
-                name="tuitionRules"
+                name='tuitionRules'
                 show={components.TuitionShow}
             />
         </Admin>

@@ -9,14 +9,14 @@ import './ErrorNotFoundPage.scss';
 const ErrorNotFoundPage = () => {
     const { goBack } = useHistory();
     return (
-        <div className="error-page">
-            <Typography className="center">
+        <div className='error-page'>
+            <Typography className='center'>
                 404.
                 <br />
                 page not found.
-                <div className="space" />
-                <Button className="backButton" onClick={goBack}>
-                    <span className="buttonText">Let's go back.</span>
+                <div className='space' />
+                <Button className='backButton' onClick={goBack}>
+                    <span className='buttonText'>Let's go back.</span>
                 </Button>
             </Typography>
         </div>

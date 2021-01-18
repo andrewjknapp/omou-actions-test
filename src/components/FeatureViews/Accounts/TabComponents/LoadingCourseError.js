@@ -7,7 +7,7 @@ function LoadingCoursesError({ error }) {
     return (
         <>
             <img style={{ width: '10%' }} src={loadingCoursesError} />
-            <Typography variant="h6">
+            <Typography variant='h6'>
                 There was an error loading your {error}.
             </Typography>
         </>

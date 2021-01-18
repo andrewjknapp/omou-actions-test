@@ -91,7 +91,7 @@ const AccountCard = ({ accountType, userID, isLoading }) => {
         return (
             <Card style={{ height: '130px' }}>
                 <CardContent>
-                    <Typography color="textSecondary" gutterBottom variant="h4">
+                    <Typography color='textSecondary' gutterBottom variant='h4'>
                         Loading...
                     </Typography>
                 </CardContent>
@@ -135,7 +135,7 @@ const AccountCard = ({ accountType, userID, isLoading }) => {
                             </Grid>
 
                             <Grid className={classes.accountInfo} item xs={10}>
-                                <Typography variant="body1">
+                                <Typography variant='body1'>
                                     # {userID}
                                 </Typography>
                             </Grid>
@@ -147,7 +147,7 @@ const AccountCard = ({ accountType, userID, isLoading }) => {
                             </Grid>
 
                             <Grid className={classes.accountInfo} item xs={10}>
-                                <Typography variant="body1">
+                                <Typography variant='body1'>
                                     {user.email}
                                 </Typography>
                             </Grid>

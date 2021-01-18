@@ -16,28 +16,28 @@ const BadgeDemo = () => {
     const classes = useStyles();
 
     return (
-        <Container fullWidth="sm">
+        <Container fullWidth='sm'>
             <BackgroundPaper>
-                <Grid container direction="column" spacing={1} item xs={12}>
+                <Grid container direction='column' spacing={1} item xs={12}>
                     <Grid
                         container
                         item
                         xs={12}
                         spacing={3}
-                        justify="center"
+                        justify='center'
                         className={classes.row}
                     >
-                        <Typography variant="h3">Label Badges</Typography>
+                        <Typography variant='h3'>Label Badges</Typography>
                     </Grid>
                     <Grid
                         container
                         item
                         xs={12}
                         spacing={3}
-                        justify="center"
+                        justify='center'
                         className={classes.row}
                     >
-                        <Typography variant="h4">
+                        <Typography variant='h4'>
                             User Type Label Badge
                         </Typography>
                     </Grid>
@@ -46,31 +46,31 @@ const BadgeDemo = () => {
                         container
                         xs={12}
                         spacing={3}
-                        justify="center"
+                        justify='center'
                         className={classes.row}
                     >
                         <Grid item>
-                            <LabelBadge variant="outline-gray">
+                            <LabelBadge variant='outline-gray'>
                                 Instructor
                             </LabelBadge>
                         </Grid>
                         <Grid item>
-                            <LabelBadge variant="outline-gray">
+                            <LabelBadge variant='outline-gray'>
                                 Parent
                             </LabelBadge>
                         </Grid>
                         <Grid item>
-                            <LabelBadge variant="outline-gray">
+                            <LabelBadge variant='outline-gray'>
                                 Receptionist
                             </LabelBadge>
                         </Grid>
                         <Grid item>
-                            <LabelBadge variant="outline-gray">
+                            <LabelBadge variant='outline-gray'>
                                 Admin
                             </LabelBadge>
                         </Grid>
                         <Grid item>
-                            <LabelBadge variant="outline-gray">
+                            <LabelBadge variant='outline-gray'>
                                 Student
                             </LabelBadge>
                         </Grid>
@@ -81,10 +81,10 @@ const BadgeDemo = () => {
                             <Grid
                                 container
                                 item
-                                justify="center"
+                                justify='center'
                                 className={classes.row}
                             >
-                                <Typography variant="h4">
+                                <Typography variant='h4'>
                                     User Information Contained Badge
                                 </Typography>
                             </Grid>
@@ -93,7 +93,7 @@ const BadgeDemo = () => {
                                 container
                                 item
                                 spacing={3}
-                                justify="center"
+                                justify='center'
                                 className={classes.row}
                             >
                                 <Grid item>
@@ -108,10 +108,10 @@ const BadgeDemo = () => {
                             <Grid
                                 container
                                 item
-                                justify="center"
+                                justify='center'
                                 className={classes.row}
                             >
-                                <Typography variant="h4">
+                                <Typography variant='h4'>
                                     User Information Outline Badge
                                 </Typography>
                             </Grid>
@@ -120,16 +120,16 @@ const BadgeDemo = () => {
                                 container
                                 item
                                 spacing={3}
-                                justify="center"
+                                justify='center'
                                 className={classes.row}
                             >
                                 <Grid item>
-                                    <LabelBadge variant="outline">
+                                    <LabelBadge variant='outline'>
                                         English
                                     </LabelBadge>
                                 </Grid>
                                 <Grid item>
-                                    <LabelBadge variant="outline">
+                                    <LabelBadge variant='outline'>
                                         Mandarin
                                     </LabelBadge>
                                 </Grid>
@@ -138,24 +138,24 @@ const BadgeDemo = () => {
                     </Grid>
 
                     <Grid container xs={12}>
-                        <Grid container direction="column" spacing={2} xs={6}>
+                        <Grid container direction='column' spacing={2} xs={6}>
                             <Grid
                                 container
                                 item
-                                justify="center"
+                                justify='center'
                                 className={classes.row}
                             >
-                                <Typography variant="h3">
+                                <Typography variant='h3'>
                                     Status Badges (Tables)
                                 </Typography>
                             </Grid>
                             <Grid
                                 container
                                 item
-                                justify="center"
+                                justify='center'
                                 className={classes.row}
                             >
-                                <Typography variant="h4">
+                                <Typography variant='h4'>
                                     Standard Length Status Badge
                                 </Typography>
                             </Grid>
@@ -164,21 +164,21 @@ const BadgeDemo = () => {
                                 container
                                 item
                                 spacing={3}
-                                justify="center"
+                                justify='center'
                                 className={classes.row}
                             >
                                 <Grid item>
-                                    <LabelBadge variant="status-positive">
+                                    <LabelBadge variant='status-positive'>
                                         Present
                                     </LabelBadge>
                                 </Grid>
                                 <Grid item>
-                                    <LabelBadge variant="status-warning">
+                                    <LabelBadge variant='status-warning'>
                                         Tardy
                                     </LabelBadge>
                                 </Grid>
                                 <Grid item>
-                                    <LabelBadge variant="status-negative">
+                                    <LabelBadge variant='status-negative'>
                                         Absent
                                     </LabelBadge>
                                 </Grid>
@@ -187,10 +187,10 @@ const BadgeDemo = () => {
                             <Grid
                                 container
                                 item
-                                justify="center"
+                                justify='center'
                                 className={classes.row}
                             >
-                                <Typography variant="h4">
+                                <Typography variant='h4'>
                                     Medium Length Status Badge
                                 </Typography>
                             </Grid>
@@ -199,21 +199,21 @@ const BadgeDemo = () => {
                                 container
                                 item
                                 spacing={3}
-                                justify="center"
+                                justify='center'
                                 className={classes.row}
                             >
                                 <Grid item>
-                                    <LabelBadge variant="status-positive">
+                                    <LabelBadge variant='status-positive'>
                                         Medium Length
                                     </LabelBadge>
                                 </Grid>
                                 <Grid item>
-                                    <LabelBadge variant="status-warning">
+                                    <LabelBadge variant='status-warning'>
                                         Medium Length
                                     </LabelBadge>
                                 </Grid>
                                 <Grid item>
-                                    <LabelBadge variant="status-negative">
+                                    <LabelBadge variant='status-negative'>
                                         Medium Length
                                     </LabelBadge>
                                 </Grid>
@@ -222,10 +222,10 @@ const BadgeDemo = () => {
                             <Grid
                                 container
                                 item
-                                justify="center"
+                                justify='center'
                                 className={classes.row}
                             >
-                                <Typography variant="h4">
+                                <Typography variant='h4'>
                                     Round Status Badge (Can Contain Numbers)
                                 </Typography>
                             </Grid>
@@ -234,45 +234,45 @@ const BadgeDemo = () => {
                                 container
                                 item
                                 spacing={3}
-                                justify="center"
+                                justify='center'
                                 className={classes.row}
                             >
                                 <Grid item>
-                                    <LabelBadge variant="round-positive">
+                                    <LabelBadge variant='round-positive'>
                                         1
                                     </LabelBadge>
                                 </Grid>
                                 <Grid item>
-                                    <LabelBadge variant="round-warning">
+                                    <LabelBadge variant='round-warning'>
                                         20
                                     </LabelBadge>
                                 </Grid>
                                 <Grid item>
-                                    <LabelBadge variant="round-negative">
+                                    <LabelBadge variant='round-negative'>
                                         50
                                     </LabelBadge>
                                 </Grid>
                             </Grid>
                         </Grid>
 
-                        <Grid container direction="column" spacing={2} xs={6}>
+                        <Grid container direction='column' spacing={2} xs={6}>
                             <Grid
                                 container
                                 item
-                                justify="center"
+                                justify='center'
                                 className={classes.row}
                             >
-                                <Typography variant="h3">
+                                <Typography variant='h3'>
                                     Status Badges (Lists)
                                 </Typography>
                             </Grid>
                             <Grid
                                 container
                                 item
-                                justify="center"
+                                justify='center'
                                 className={classes.row}
                             >
-                                <Typography variant="h4">
+                                <Typography variant='h4'>
                                     Standard Length Status Badge
                                 </Typography>
                             </Grid>
@@ -281,21 +281,21 @@ const BadgeDemo = () => {
                                 container
                                 item
                                 spacing={1}
-                                justify="center"
+                                justify='center'
                                 className={classes.row}
                             >
                                 <Grid item>
-                                    <LabelBadge variant="status-active">
+                                    <LabelBadge variant='status-active'>
                                         ACTIVE
                                     </LabelBadge>
                                 </Grid>
                                 <Grid item>
-                                    <LabelBadge variant="status-past">
+                                    <LabelBadge variant='status-past'>
                                         PAST
                                     </LabelBadge>
                                 </Grid>
                                 <Grid item>
-                                    <LabelBadge variant="status-new">
+                                    <LabelBadge variant='status-new'>
                                         NEW
                                     </LabelBadge>
                                 </Grid>
@@ -303,10 +303,10 @@ const BadgeDemo = () => {
                             <Grid
                                 container
                                 item
-                                justify="center"
+                                justify='center'
                                 className={classes.row}
                             >
-                                <Typography variant="h4">
+                                <Typography variant='h4'>
                                     List count badge
                                 </Typography>
                             </Grid>
@@ -314,11 +314,11 @@ const BadgeDemo = () => {
                                 container
                                 item
                                 spacing={1}
-                                justify="center"
+                                justify='center'
                                 className={classes.row}
                             >
                                 <Grid item>
-                                    <LabelBadge variant="round-count">
+                                    <LabelBadge variant='round-count'>
                                         1
                                     </LabelBadge>
                                 </Grid>

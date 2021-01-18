@@ -203,29 +203,29 @@ const SearchResults = () => {
     }
 
     return (
-        <Grid className="search-results" container>
+        <Grid className='search-results' container>
             <Grid item xs={12}>
-                <Paper align="left" className="main-search-view" elevation={2}>
+                <Paper align='left' className='main-search-view' elevation={2}>
                     {filter && (
-                        <Grid className="prevResults" item xs={12}>
+                        <Grid className='prevResults' item xs={12}>
                             <BackButton
-                                btnText="To All Search Results"
+                                btnText='To All Search Results'
                                 style={{ marginBottom: '2vh' }}
                             />
                         </Grid>
                     )}
-                    <Grid className="searchResults" item xs={12}>
+                    <Grid className='searchResults' item xs={12}>
                         <Typography
-                            align="left"
-                            className="search-title"
-                            variant="h3"
+                            align='left'
+                            className='search-title'
+                            variant='h3'
                         >
                             {numResults} Search Result{numResults !== 1 && 's'}{' '}
                             for {filter && capitalizeString(filter)} "{query}"
                         </Typography>
                     </Grid>
                     {filter !== 'course' && (
-                        <div className="account-results-wrapper">
+                        <div className='account-results-wrapper'>
                             {filter === 'account' && (
                                 <Grid item xs={12}>
                                     <AccountFilters />
@@ -234,15 +234,15 @@ const SearchResults = () => {
                             {numAccResults !== 0 && <hr />}
                             <Grid item xs={12}>
                                 <Grid
-                                    alignItems="center"
+                                    alignItems='center'
                                     container
-                                    direction="row"
-                                    justify="space-between"
+                                    direction='row'
+                                    justify='space-between'
                                 >
-                                    <Grid className="searchResults" item>
+                                    <Grid className='searchResults' item>
                                         <Typography
-                                            align="left"
-                                            className="resultsColor"
+                                            align='left'
+                                            className='resultsColor'
                                             gutterBottom
                                         >
                                             {numAccResults > 0 && 'Accounts'}
@@ -256,20 +256,20 @@ const SearchResults = () => {
                                                     search: `?query=${query}&filter=account`,
                                                 }}
                                             >
-                                                <LabelBadge variant="outline-gray">
+                                                <LabelBadge variant='outline-gray'>
                                                     See All Accounts
                                                 </LabelBadge>
                                             </Link>
                                         </Grid>
                                     )}
                                 </Grid>
-                                <Grid container direction="row" spacing={2}>
+                                <Grid container direction='row' spacing={2}>
                                     {renderAccounts}
                                 </Grid>
                                 {numAccResults > getPageSize(filter) && (
-                                    <div className="results-nav">
+                                    <div className='results-nav'>
                                         <IconButton
-                                            className="less"
+                                            className='less'
                                             disabled={accountsPage === 1}
                                             onClick={changePage(
                                                 setAccountsPage,
@@ -280,7 +280,7 @@ const SearchResults = () => {
                                         </IconButton>
                                         {accountsPage}
                                         <IconButton
-                                            className="more"
+                                            className='more'
                                             disabled={
                                                 accountsPage *
                                                     getPageSize(filter) >=
@@ -299,7 +299,7 @@ const SearchResults = () => {
                         </div>
                     )}
                     {filter !== 'account' && (
-                        <div className="course-results-wrapper">
+                        <div className='course-results-wrapper'>
                             {filter === 'course' && (
                                 <Grid item xs={12}>
                                     <CourseFilters />
@@ -308,15 +308,15 @@ const SearchResults = () => {
                             {numCourseResults !== 0 && <hr />}
                             <Grid item xs={12}>
                                 <Grid
-                                    alignItems="center"
+                                    alignItems='center'
                                     container
-                                    direction="row"
-                                    justify="space-between"
+                                    direction='row'
+                                    justify='space-between'
                                 >
-                                    <Grid className="searchResults" item>
+                                    <Grid className='searchResults' item>
                                         <Typography
-                                            align="left"
-                                            className="resultsColor"
+                                            align='left'
+                                            className='resultsColor'
                                         >
                                             {numCourseResults > 0 &&
                                                 filter !== 'course' &&
@@ -332,21 +332,21 @@ const SearchResults = () => {
                                                         search: `?query=${query}&filter=course`,
                                                     }}
                                                 >
-                                                    <LabelBadge variant="outline-gray">
+                                                    <LabelBadge variant='outline-gray'>
                                                         See All Courses
                                                     </LabelBadge>
                                                 </Link>
                                             </Grid>
                                         )}
                                 </Grid>
-                                <Grid container direction="row" spacing={1}>
+                                <Grid container direction='row' spacing={1}>
                                     {renderCourses}
                                 </Grid>
                             </Grid>
                             {numCourseResults > getPageSize(filter) && (
-                                <div className="results-nav">
+                                <div className='results-nav'>
                                     <IconButton
-                                        className="less"
+                                        className='less'
                                         disabled={coursePage === 1}
                                         onClick={changePage(setCoursePage, -1)}
                                     >
@@ -354,7 +354,7 @@ const SearchResults = () => {
                                     </IconButton>
                                     {coursePage}
                                     <IconButton
-                                        className="more"
+                                        className='more'
                                         disabled={
                                             coursePage * getPageSize(filter) >=
                                             numCourseResults

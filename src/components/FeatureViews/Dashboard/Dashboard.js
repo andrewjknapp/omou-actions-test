@@ -125,25 +125,25 @@ const Dashboard = () => {
 
     return (
         <Grid container>
-            <Paper className="dashboard-paper" elevation={3}>
-                <Grid container justify="space-around">
+            <Paper className='dashboard-paper' elevation={3}>
+                <Grid container justify='space-around'>
                     <Grid item xs={9}>
-                        <Typography variant="h1" align="left">
+                        <Typography variant='h1' align='left'>
                             Hello {firstName}!
                         </Typography>
                         <br />
-                        <Paper className="today-paper" container>
-                            <Grid container className="today-header-container">
+                        <Paper className='today-paper' container>
+                            <Grid container className='today-header-container'>
                                 <Grid item xs={7}>
                                     <Moment
                                         className={`dashboard-date ${classes.date}`}
-                                        format="dddd, MMMM DD"
+                                        format='dddd, MMMM DD'
                                     >
                                         {currentDate}
                                     </Moment>
                                 </Grid>
                                 <ResponsiveButton
-                                    variant="outlined"
+                                    variant='outlined'
                                     style={{ margin: '5px', float: 'right' }}
                                     component={Link}
                                     to={{
@@ -156,7 +156,7 @@ const Dashboard = () => {
                             </Grid>
                             <Grid item sm={6} md={6} lg={4}>
                                 <Select
-                                    className="category-options"
+                                    className='category-options'
                                     closeMenuOnSelect={true}
                                     isClearable={true}
                                     isDisabled={isDisabled}
@@ -168,21 +168,21 @@ const Dashboard = () => {
                             </Grid>
                             <Grid
                                 container
-                                className="today-container"
-                                wrap="nowrap"
-                                direction="row"
+                                className='today-container'
+                                wrap='nowrap'
+                                direction='row'
                             >
                                 <Today filter={currentFilter.filter} />
                             </Grid>
                         </Paper>
-                        <Paper className="OP-paper">
-                            <Typography variant="h3" className="OP-label">
+                        <Paper className='OP-paper'>
+                            <Typography variant='h3' className='OP-label'>
                                 Outstanding Payments
                             </Typography>
                             <Grid
                                 container
-                                className="unpaid-container"
-                                wrap="nowrap"
+                                className='unpaid-container'
+                                wrap='nowrap'
                             >
                                 <UnpaidSessions />
                             </Grid>

@@ -28,41 +28,41 @@ class SessionView extends Component {
                 <Paper elevation={2} className={'paper'}>
                     <Grid
                         container
-                        direction="row"
-                        justify="flex-start"
-                        className="registration-action-control"
+                        direction='row'
+                        justify='flex-start'
+                        className='registration-action-control'
                     >
                         <Grid item>
                             <ResponsiveButton
                                 component={NavLink}
-                                to="/scheduler/add-course"
-                                variant="outlined"
-                                color="secondary"
-                                className="button"
+                                to='/scheduler/add-course'
+                                variant='outlined'
+                                color='secondary'
+                                className='button'
                             >
                                 Add New Course
                             </ResponsiveButton>
                         </Grid>
                         <Grid item>
                             <ResponsiveButton
-                                to="/"
-                                variant="outlined"
-                                color="secondary"
-                                className="button"
+                                to='/'
+                                variant='outlined'
+                                color='secondary'
+                                className='button'
                             >
                                 Update Teacher Avalibility
                             </ResponsiveButton>
                         </Grid>
                         <Grid item>
                             <Button
-                                variant="outlined"
-                                color="secondary"
-                                className="button"
-                                aria-controls="simple-menu"
-                                aria-haspopup="true"
+                                variant='outlined'
+                                color='secondary'
+                                className='button'
+                                aria-controls='simple-menu'
+                                aria-haspopup='true'
                                 onClick={''}
                             >
-                                <AssignmentIcon className="icon" />
+                                <AssignmentIcon className='icon' />
                                 Add New Classroom
                             </Button>
                         </Grid>

@@ -37,7 +37,7 @@ const { DropdownIndicator } = components;
 
 const searchIcon = (props) => (
     <DropdownIndicator {...props}>
-        <SearchIcon className="search-icon-main" />
+        <SearchIcon className='search-icon-main' />
     </DropdownIndicator>
 );
 
@@ -253,16 +253,16 @@ const Search = ({ onMobileType = () => {} }) => {
     );
 
     return (
-        <Grid className="search" container>
+        <Grid className='search' container>
             {!mobileSearching && <Grid item xs={2} />}
             <Grid item xs={mobileSearching ? 12 : 10}>
                 <form onSubmit={handleSubmit}>
                     <Grid container>
                         <Grid item>
                             <FormControl
-                                className="search-selector"
+                                className='search-selector'
                                 required
-                                variant="outlined"
+                                variant='outlined'
                             >
                                 <Select
                                     MenuProps={{
@@ -271,7 +271,7 @@ const Search = ({ onMobileType = () => {} }) => {
                                         },
                                     }}
                                     className={`select-primary-filter ${classes.navSelect}`}
-                                    disableunderline="true"
+                                    disableunderline='true'
                                     inputProps={{
                                         id: 'primary-filter',
                                         name: 'primary-filter',
@@ -279,9 +279,9 @@ const Search = ({ onMobileType = () => {} }) => {
                                     onChange={changeFilter}
                                     value={filter}
                                 >
-                                    <MenuItem value="all">All</MenuItem>
-                                    <MenuItem value="account">Account</MenuItem>
-                                    <MenuItem value="course">Course</MenuItem>
+                                    <MenuItem value='all'>All</MenuItem>
+                                    <MenuItem value='account'>Account</MenuItem>
+                                    <MenuItem value='course'>Course</MenuItem>
                                 </Select>
                             </FormControl>
                         </Grid>
@@ -289,10 +289,10 @@ const Search = ({ onMobileType = () => {} }) => {
                             <AsyncCreatableSelect
                                 allowCreateWhileLoading
                                 cacheOptions
-                                className="search-input"
-                                classNamePrefix="main-search"
+                                className='search-input'
+                                classNamePrefix='main-search'
                                 components={{ DropdownIndicator: searchIcon }}
-                                createOptionPosition="first"
+                                createOptionPosition='first'
                                 formatCreateLabel={formatCreateLabel}
                                 loadOptions={loadOptions}
                                 noOptionsMessage={noOptionsMessage}

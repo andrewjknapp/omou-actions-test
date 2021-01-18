@@ -26,16 +26,16 @@ export default function InstructorDashboard({ user }) {
                 <Grid
                     item
                     container
-                    justify="space-between"
-                    alignItems="flex-end"
+                    justify='space-between'
+                    alignItems='flex-end'
                 >
                     <Grid item>
-                        <Typography variant="h4">
+                        <Typography variant='h4'>
                             Hello {user.user.firstName}!
                         </Typography>
                     </Grid>
                     <Grid item>
-                        <Typography variant="subtitle1">
+                        <Typography variant='subtitle1'>
                             <Moment format={'LL'} />
                         </Typography>
                     </Grid>
@@ -47,17 +47,17 @@ export default function InstructorDashboard({ user }) {
                                 <Typography>Your Upcoming Session</Typography>
                             </Grid>
                             <Grid item xs={2}>
-                                <Typography variant="subtitle1">
+                                <Typography variant='subtitle1'>
                                     Total Completed Courses
                                 </Typography>
                             </Grid>
                             <Grid item xs={2}>
-                                <Typography variant="subtitle1">
+                                <Typography variant='subtitle1'>
                                     Total Students Taught
                                 </Typography>
                             </Grid>
                             <Grid item xs={2}>
-                                <Typography variant="subtitle1">
+                                <Typography variant='subtitle1'>
                                     Total Hours Taught
                                 </Typography>
                             </Grid>
@@ -66,7 +66,7 @@ export default function InstructorDashboard({ user }) {
                 </Grid>
                 <Grid item xs={8}>
                     <Paper>
-                        <Grid container direction="column">
+                        <Grid container direction='column'>
                             <Grid item xs={8}>
                                 a
                             </Grid>
@@ -75,7 +75,7 @@ export default function InstructorDashboard({ user }) {
                 </Grid>
                 <Grid item xs={4}>
                     <Paper>
-                        <Grid container direction="column">
+                        <Grid container direction='column'>
                             <Grid item xs={4}>
                                 a
                             </Grid>

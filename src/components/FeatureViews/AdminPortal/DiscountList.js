@@ -15,32 +15,32 @@ const discountTypeParser = {
 };
 
 const DiscountList = ({ discountType, discountList }) => (
-    <div className="discount-type-wrapper">
+    <div className='discount-type-wrapper'>
         <Grid container key={discountType}>
             <Grid item xs={12}>
-                <Typography align="left" gutterBottom variant="h6">
+                <Typography align='left' gutterBottom variant='h6'>
                     {discountTypeParser[discountType]}
                 </Typography>
-                <Grid className="accounts-table-heading" container>
+                <Grid className='accounts-table-heading' container>
                     <Grid item xs={3}>
-                        <Typography align="left" className="table-header">
+                        <Typography align='left' className='table-header'>
                             Discount Name
                         </Typography>
                     </Grid>
                     <Grid item xs={5}>
-                        <Typography align="left" className="table-header">
+                        <Typography align='left' className='table-header'>
                             Description
                         </Typography>
                     </Grid>
                     <Grid item xs={2}>
-                        <Typography align="center" className="table-header">
+                        <Typography align='center' className='table-header'>
                             Active
                         </Typography>
                     </Grid>
                 </Grid>
             </Grid>
             <Grid item xs={12}>
-                <Grid alignItems="center" container spacing={1}>
+                <Grid alignItems='center' container spacing={1}>
                     {discountList.length > 0 ? (
                         discountList.map((discount) => (
                             <DiscountRow
@@ -50,7 +50,7 @@ const DiscountList = ({ discountType, discountList }) => (
                             />
                         ))
                     ) : (
-                        <NoListAlert list="Discounts" />
+                        <NoListAlert list='Discounts' />
                     )}
                 </Grid>
             </Grid>

@@ -134,15 +134,15 @@ const InstructorSchedule = ({ instructorID }) => {
                 allDaySlot={allDayOOO}
                 businessHours={instructorBusinessHours}
                 columnHeaderFormat={{ weekday: 'short' }}
-                defaultView="timeGridWeek"
+                defaultView='timeGridWeek'
                 eventColor={stringToColor(fullName(user) || '')}
                 eventMouseEnter={handleToolTip}
                 events={[...teachingSessions, ...OOOEvents]}
                 header={false}
                 height={337}
-                minTime="09:00:00"
+                minTime='09:00:00'
                 plugins={[timeGridPlugin]}
-                slotDuration="01:00"
+                slotDuration='01:00'
             />
         </>
     );

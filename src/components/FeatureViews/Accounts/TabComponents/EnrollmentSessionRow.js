@@ -17,10 +17,10 @@ function EnrollmentSessionRow({ session, enrollmentData, highlightSession }) {
 
     return (
         <Grid
-            className="accounts-table-row"
+            className='accounts-table-row'
             component={Link}
             item
-            data-cy="view-session-link"
+            data-cy='view-session-link'
             key={id}
             to={`/scheduler/view-session/${course.id}/${session.id}/${course.instructor.user.id}`}
             xs={12}
@@ -36,33 +36,33 @@ function EnrollmentSessionRow({ session, enrollmentData, highlightSession }) {
             >
                 <Grid item xs={1} />
                 <Grid item xs={2}>
-                    <Typography align="left">
+                    <Typography align='left'>
                         <Moment
                             date={session.startDatetime}
-                            format="M/D/YYYY"
+                            format='M/D/YYYY'
                         />
                     </Typography>
                 </Grid>
                 <Grid item xs={2}>
-                    <Typography align="left">
-                        <Typography align="left">
+                    <Typography align='left'>
+                        <Typography align='left'>
                             <Moment
                                 date={session.startDatetime}
-                                format="dddd"
+                                format='dddd'
                             />
                         </Typography>
                     </Typography>
                 </Grid>
                 <Grid item xs={3}>
-                    <Typography align="left">
-                        <Moment date={session.startDatetime} format="h:mm A" />
+                    <Typography align='left'>
+                        <Moment date={session.startDatetime} format='h:mm A' />
                         {' - '}
-                        <Moment date={session.endDatetime} format="h:mm A" />
+                        <Moment date={session.endDatetime} format='h:mm A' />
                     </Typography>
                 </Grid>
                 <Grid item xs={1}>
                     {/* hourly rate * endtime-starttime */}
-                    <Typography align="left">${tuition}</Typography>
+                    <Typography align='left'>${tuition}</Typography>
                 </Grid>
                 <Grid item xs={2}>
                     <SessionPaymentStatusChip

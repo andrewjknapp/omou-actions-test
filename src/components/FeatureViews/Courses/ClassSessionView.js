@@ -134,8 +134,8 @@ const ClassSessionView = ({ sessionId, loggedInUser }) => {
                     >
                         <AccordionSummary
                             expandIcon={<ExpandMore />}
-                            aria-controls="panel1a-content"
-                            id="panel1a-header"
+                            aria-controls='panel1a-content'
+                            id='panel1a-header'
                             onClick={() => setExpand(!expand)}
                             className={expand && classes.accordionDivider}
                         >
@@ -144,7 +144,7 @@ const ClassSessionView = ({ sessionId, loggedInUser }) => {
                             </Typography>
                         </AccordionSummary>
                         <AccordionDetails>
-                            <Grid container justify="flex-start">
+                            <Grid container justify='flex-start'>
                                 <AccessControlComponent
                                     permittedAccountTypes={[
                                         USER_TYPES.admin,
@@ -158,7 +158,7 @@ const ClassSessionView = ({ sessionId, loggedInUser }) => {
                                         style={{ textAlign: 'left' }}
                                     >
                                         <ResponsiveButton
-                                            variant="outlined"
+                                            variant='outlined'
                                             className={classes.newNoteButton}
                                             onClick={handleOpenForm}
                                             startIcon={<AddIcon />}
@@ -193,8 +193,8 @@ const ClassSessionView = ({ sessionId, loggedInUser }) => {
                                                 style={{ marginTop: '1em' }}
                                             >
                                                 <Typography
-                                                    variant="h6"
-                                                    align="left"
+                                                    variant='h6'
+                                                    align='left'
                                                     value={subject}
                                                     key={id}
                                                 >
@@ -232,8 +232,8 @@ const ClassSessionView = ({ sessionId, loggedInUser }) => {
                                             </AccessControlComponent>
                                             <Grid item xs={12}>
                                                 <Typography
-                                                    variant="body1"
-                                                    align="left"
+                                                    variant='body1'
+                                                    align='left'
                                                     style={{
                                                         wordBreak: 'break-word',
                                                     }}
@@ -275,8 +275,8 @@ const ClassSessionView = ({ sessionId, loggedInUser }) => {
                                                 style={{ marginTop: '1.5em' }}
                                             >
                                                 <Typography
-                                                    variant="subtitle2"
-                                                    align="left"
+                                                    variant='subtitle2'
+                                                    align='left'
                                                 >
                                                     Posted by:
                                                     <span
@@ -331,7 +331,7 @@ const ClassSessionView = ({ sessionId, loggedInUser }) => {
                         handleCloseForm={handleCloseForm}
                         posterId={loggedInUser}
                         sessionId={sessionId}
-                        origin="COURSE_SESSIONS"
+                        origin='COURSE_SESSIONS'
                         noteId={noteId}
                         noteSubject={noteSubject}
                         noteBody={noteBody}

@@ -136,9 +136,9 @@ const Form = ({
                     <div className={classes.buttons}>
                         {index > 0 && index < sections.length && (
                             <ResponsiveButton
-                                data-cy="backButton"
+                                data-cy='backButton'
                                 onClick={handleBack}
-                                variant="outlined"
+                                variant='outlined'
                             >
                                 Back
                             </ResponsiveButton>
@@ -148,17 +148,17 @@ const Form = ({
                                 data-cy={`${name}-nextButton`}
                                 disabled={Boolean(errors[name])}
                                 onClick={handleNext}
-                                variant="outlined"
+                                variant='outlined'
                             >
                                 Next
                             </ResponsiveButton>
                         )}
                         {index === sections.length - 1 && (
                             <ResponsiveButton
-                                data-cy="submitButton"
+                                data-cy='submitButton'
                                 disabled={Boolean(errors[name]) || submitting}
-                                type="submit"
-                                variant="outlined"
+                                type='submit'
+                                variant='outlined'
                             >
                                 {submitting ? 'Submitting' : 'Submit'}
                             </ResponsiveButton>
@@ -186,7 +186,7 @@ const Form = ({
 
         return (
             <form noValidate onSubmit={handleSubmit}>
-                <Stepper activeStep={activeStep} orientation="vertical">
+                <Stepper activeStep={activeStep} orientation='vertical'>
                     {sections.map((section, index) =>
                         renderStep(
                             index,
@@ -199,7 +199,7 @@ const Form = ({
                 </Stepper>
                 {submitError && (
                     <Dialog
-                        className="error"
+                        className='error'
                         onClose={() => setOpenError(false)}
                         open={openError}
                     >
@@ -209,7 +209,7 @@ const Form = ({
                         <DialogContent>{submitError.message}</DialogContent>
                         <DialogActions>
                             <ResponsiveButton
-                                variant="outlined"
+                                variant='outlined'
                                 onClick={() => setOpenError(false)}
                             >
                                 Close
@@ -223,10 +223,10 @@ const Form = ({
     return (
         <div className={classes.root}>
             <Typography
-                align="left"
-                className="heading"
-                data-cy="formTitle"
-                variant="h3"
+                align='left'
+                className='heading'
+                data-cy='formTitle'
+                variant='h3'
             >
                 {title}
             </Typography>

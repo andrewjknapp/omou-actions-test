@@ -98,24 +98,24 @@ const RegistrationActions = () => {
     return (
         <>
             <Grid
-                className="registration-action-control"
+                className='registration-action-control'
                 container
-                direction="row"
-                justify="flex-start"
-                alignItems="center"
+                direction='row'
+                justify='flex-start'
+                alignItems='center'
                 spacing={1}
             >
                 <Grid item md={9}>
                     {(currentParent || parentIsLoggedIn) && (
                         <Grid item xs={2}>
                             <ResponsiveButton
-                                aria-controls="simple-menu"
-                                aria-haspopup="true"
-                                color="secondary"
+                                aria-controls='simple-menu'
+                                aria-haspopup='true'
+                                color='secondary'
                                 component={Link}
-                                to="/registration/form/class-registration"
-                                variant="outlined"
-                                data-cy="register-class"
+                                to='/registration/form/class-registration'
+                                variant='outlined'
+                                data-cy='register-class'
                             >
                                 register class
                             </ResponsiveButton>
@@ -125,9 +125,9 @@ const RegistrationActions = () => {
                 <Grid item xs={2}>
                     {registeringParent ? (
                         !data && (
-                            <Tooltip title="Registering Parent">
+                            <Tooltip title='Registering Parent'>
                                 <ResponsiveButton
-                                    variant="contained"
+                                    variant='contained'
                                     onClick={openDialog}
                                 >
                                     {parentName}
@@ -136,9 +136,9 @@ const RegistrationActions = () => {
                         )
                     ) : (
                         <ResponsiveButton
-                            variant="contained"
+                            variant='contained'
                             onClick={openDialog}
-                            data-cy="select-parent"
+                            data-cy='select-parent'
                         >
                             SET PARENT
                         </ResponsiveButton>
@@ -152,12 +152,12 @@ const RegistrationActions = () => {
                     <IconButton
                         onClick={toShoppingCart}
                         disabled={numberOfRegistrationsInCart === 0}
-                        data-cy="registration-cart"
+                        data-cy='registration-cart'
                     >
                         <Badge
-                            data-cy="shopping-cart-num-registrations"
+                            data-cy='shopping-cart-num-registrations'
                             badgeContent={numberOfRegistrationsInCart}
-                            color="primary"
+                            color='primary'
                             showZero
                             anchorOrigin={{
                                 vertical: 'top',

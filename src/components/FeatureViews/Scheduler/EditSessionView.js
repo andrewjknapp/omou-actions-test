@@ -509,14 +509,14 @@ const EditSessionView = () => {
     const session = data.session;
 
     return (
-        <Grid container className="main-session-view">
-            <Grid className="session-button" item>
+        <Grid container className='main-session-view'>
+            <Grid className='session-button' item>
                 <BackButton />
             </Grid>
             <Grid
-                className="session-view"
+                className='session-view'
                 container
-                direction="row"
+                direction='row'
                 spacing={2}
             >
                 <Grid item sm={12}>
@@ -527,27 +527,27 @@ const EditSessionView = () => {
                     />
                 </Grid>
                 <Grid
-                    align="left"
-                    className="session-view-details"
+                    align='left'
+                    className='session-view-details'
                     container
                     spacing={2}
                     xs={6}
                 >
                     {location.state.allOrCurrent === 'all' && (
                         <Grid item xs={6}>
-                            <Typography variant="h5"> Subject </Typography>
+                            <Typography variant='h5'> Subject </Typography>
                             <SearchSelect
-                                className="search-options"
+                                className='search-options'
                                 isClearable
                                 onChange={handleCategoryChange}
                                 options={categoriesList}
-                                placeholder="Choose a Category"
+                                placeholder='Choose a Category'
                                 value={sessionFields.category}
                             />
                         </Grid>
                     )}
                     <Grid item xs={6}>
-                        <Typography variant="h5"> Room</Typography>
+                        <Typography variant='h5'> Room</Typography>
                         <TextField
                             onChange={handleTextChange('room')}
                             value={sessionFields.room}
@@ -555,11 +555,11 @@ const EditSessionView = () => {
                     </Grid>
 
                     <Grid item xs={12}>
-                        <Typography variant="h5"> Instructor </Typography>
+                        <Typography variant='h5'> Instructor </Typography>
                         <SearchSelect
                             onChange={handleInstructorChange}
                             options={instructorList}
-                            placeholder="Choose an Instructor"
+                            placeholder='Choose an Instructor'
                             value={sessionFields.instructor}
                         />
                         <EditCurrentSessionField>
@@ -589,28 +589,28 @@ const EditSessionView = () => {
                     <EditCurrentSessionField>
                         <>
                             <Grid item xs={6}>
-                                <Typography variant="h5"> Date</Typography>
+                                <Typography variant='h5'> Date</Typography>
                                 <DatePicker
-                                    inputVariant="outlined"
+                                    inputVariant='outlined'
                                     onChange={handleDateChange}
                                     value={sessionFields.start_time}
                                 />
                             </Grid>
 
                             <Grid item xs={6}>
-                                <Typography variant="h5">
+                                <Typography variant='h5'>
                                     {' '}
                                     Start Time
                                 </Typography>
                                 <TimePicker
-                                    inputVariant="outlined"
+                                    inputVariant='outlined'
                                     onChange={handleTimeChange}
                                     value={sessionFields.start_time}
                                 />
                             </Grid>
 
                             <Grid item xs={6}>
-                                <Typography variant="h5"> Duration </Typography>
+                                <Typography variant='h5'> Duration </Typography>
                                 <Select
                                     onChange={handleDurationSelect}
                                     value={sessionFields.duration}
@@ -633,10 +633,10 @@ const EditSessionView = () => {
             </Grid>
 
             <Grid
-                className="session-detail-action-control"
+                className='session-detail-action-control'
                 container
-                direction="row"
-                justify="flex-end"
+                direction='row'
+                justify='flex-end'
             >
                 <Grid item>
                     <Grid container>
@@ -657,9 +657,9 @@ const EditSessionView = () => {
               > */}
                         <Grid item md={6}>
                             <ResponsiveButton
-                                className="button"
-                                color="secondary"
-                                variant="outlined"
+                                className='button'
+                                color='secondary'
+                                variant='outlined'
                                 onClick={handleUpdateSession}
                             >
                                 Save
@@ -669,8 +669,8 @@ const EditSessionView = () => {
                         <Grid item md={6}>
                             <BackButton
                                 warn={true}
-                                icon="cancel"
-                                label="cancel"
+                                icon='cancel'
+                                label='cancel'
                             />
                         </Grid>
                     </Grid>

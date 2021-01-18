@@ -51,7 +51,7 @@ const CourseAvailabilites = ({ availabilityList, variant, style, rest }) => {
 
     return (
         <Typography
-            align="left"
+            align='left'
             {...rest}
             style={{ ...style }}
             variant={variant}

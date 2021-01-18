@@ -32,7 +32,7 @@ export const Select = (props) => {
 };
 
 export const KeyboardDatePicker = (props) => (
-    <Fields.KeyboardDatePicker openTo="year" {...props} />
+    <Fields.KeyboardDatePicker openTo='year' {...props} />
 );
 export const KeyboardTimePicker = (props) => (
     <Fields.KeyboardTimePicker {...props} />
@@ -152,8 +152,8 @@ export const StudentSelect = (props) => {
     return (
         <Select
             data={studentOptions}
-            label="Select Student"
-            name="selectStudent"
+            label='Select Student'
+            name='selectStudent'
             {...props}
         />
     );
@@ -173,16 +173,16 @@ export const PasswordInput = ({
     return React.createElement(isField ? TextField : MuiTextField, {
         InputProps: {
             endAdornment: (
-                <InputAdornment position="end">
+                <InputAdornment position='end'>
                     <IconButton
-                        aria-label="toggle password visibility"
+                        aria-label='toggle password visibility'
                         onClick={toggleVisibility}
                     >
                         {showPassword ? <Visibility /> : <VisibilityOff />}
                     </IconButton>
                     <Tooltip
-                        aria-label="passwordInfo"
-                        title="Must Contain 8 Characters, One Uppercase, One Lowercase, One Number and One Special Case Character"
+                        aria-label='passwordInfo'
+                        title='Must Contain 8 Characters, One Uppercase, One Lowercase, One Number and One Special Case Character'
                     >
                         <InfoOutlinedIcon />
                     </Tooltip>

@@ -9,7 +9,7 @@ export default function TabPanel(props) {
 
     return (
         <div
-            role="tabpanel"
+            role='tabpanel'
             hidden={value !== index}
             id={`nav-tabpanel-${index}`}
             aria-labelledby={`nav-tab-${index}`}

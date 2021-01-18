@@ -123,15 +123,15 @@ const Payment = ({
     return (
         <Grid container spacing={1}>
             <Grid item xs={12}>
-                <Grid container justify="flex-end" spacing={2}>
+                <Grid container justify='flex-end' spacing={2}>
                     <Grid item xs={6} />
                     {isOneCourse && (
                         <>
                             <Grid item>
                                 {isSmallGroup && (
                                     <ResponsiveButton
-                                        className="button"
-                                        variant="contained"
+                                        className='button'
+                                        variant='contained'
                                         component={Link}
                                         to={`/registration/form/course_details/${selectedCourseID}`}
                                     >
@@ -141,8 +141,8 @@ const Payment = ({
                             </Grid>
                             <Grid item>
                                 <ResponsiveButton
-                                    className="button"
-                                    variant="contained"
+                                    className='button'
+                                    variant='contained'
                                     component={Link}
                                     to={`/registration/form/${formType}/${selectedStudentID}+${course_id}`}
                                 >
@@ -152,14 +152,14 @@ const Payment = ({
                         </>
                     )}
                     <Grid item>
-                        <Grid container justify="flex-end">
+                        <Grid container justify='flex-end'>
                             {!selectedCourseSameAsRedux() && (
                                 <ResponsiveButton
-                                    className="button"
-                                    variant="contained"
+                                    className='button'
+                                    variant='contained'
                                     disabled={!allValid}
                                     onClick={updateQuantity}
-                                    label="update sessions"
+                                    label='update sessions'
                                 />
                             )}
                         </Grid>

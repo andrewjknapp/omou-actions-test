@@ -47,13 +47,13 @@ const AuthenticatedNavBar = ({ toggleDrawer }) => {
     const name = fullName(authUser.user);
 
     return (
-        <AppBar className="OmouBar" position="sticky">
+        <AppBar className='OmouBar' position='sticky'>
             <Toolbar>
                 {!isMobileSearching && (
                     <>
                         <Hidden lgUp>
                             <IconButton
-                                aria-label="Open Drawer"
+                                aria-label='Open Drawer'
                                 style={{ color: 'white' }}
                                 onClick={handleDrawerToggle}
                             >
@@ -61,9 +61,9 @@ const AuthenticatedNavBar = ({ toggleDrawer }) => {
                             </IconButton>
                         </Hidden>
                         <Typography
-                            className="title"
+                            className='title'
                             component={NavLinkNoDup}
-                            to="/"
+                            to='/'
                         >
                             omou
                         </Typography>
@@ -73,7 +73,7 @@ const AuthenticatedNavBar = ({ toggleDrawer }) => {
                 <Search onMobileType={handleMobileSearch} />
                 <Tooltip title={`${name}'s Profile`}>
                     <Avatar
-                        className="avatar"
+                        className='avatar'
                         alt={name}
                         style={{
                             backgroundColor: stringToColor(name),
@@ -94,17 +94,17 @@ const AuthenticatedNavBar = ({ toggleDrawer }) => {
                 </Tooltip>
                 {name === 'NeLSoN' && (
                     <Typography
-                        className="catsButton"
+                        className='catsButton'
                         style={{ marginLeft: '-2rem' }}
                         component={NavLinkNoDup}
-                        to="/cats"
+                        to='/cats'
                     >
                         CATS
                     </Typography>
                 )}
                 {!isMobileSearching && (
                     <LogoutIcon
-                        className="logout-icon"
+                        className='logout-icon'
                         onClick={handleLogout}
                     />
                 )}

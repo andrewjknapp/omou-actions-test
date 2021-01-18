@@ -35,7 +35,7 @@ const TutoringList = () => {
         return (
             <Grid item xs={12}>
                 <Grow in>
-                    <Paper className="info">
+                    <Paper className='info'>
                         <Typography style={{ fontWeight: 700 }}>
                             Please set the parent who's registering!
                         </Typography>
@@ -46,17 +46,17 @@ const TutoringList = () => {
     }
 
     return (
-        <Grid alignItems="center" container direction="row" spacing={1}>
+        <Grid alignItems='center' container direction='row' spacing={1}>
             {categories.map(({ id, name }) => (
-                <Grid alignItems="center" item key={id} md={4} sm={6} xs={12}>
+                <Grid alignItems='center' item key={id} md={4} sm={6} xs={12}>
                     <Card
-                        className="tutoring-card"
+                        className='tutoring-card'
                         component={Link}
                         to={`/registration/form/tutoring/${id}`}
                     >
                         <Grid container>
                             <Grid
-                                align="left"
+                                align='left'
                                 component={CardContent}
                                 item
                                 xs={11}
@@ -64,7 +64,7 @@ const TutoringList = () => {
                                 {truncateStrings(name, 20)}
                             </Grid>
                             <Grid
-                                align="center"
+                                align='center'
                                 component={ForwardArrow}
                                 item
                                 style={{

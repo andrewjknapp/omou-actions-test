@@ -32,7 +32,7 @@ const TableDemo = () => {
 
     return (
         <Box>
-            <Typography variant="h3">Primary Table</Typography>
+            <Typography variant='h3'>Primary Table</Typography>
             <Table>
                 <TableHead>
                     <TableRow>
@@ -45,7 +45,7 @@ const TableDemo = () => {
                 </TableHead>
                 {tableBody}
             </Table>
-            <Typography variant="h3" style={{ marginTop: '40px' }}>
+            <Typography variant='h3' style={{ marginTop: '40px' }}>
                 Secondary Table
             </Typography>
             <Table>

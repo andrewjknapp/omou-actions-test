@@ -51,7 +51,7 @@ const CourseFilters = () => {
     );
 
     return (
-        <div className="courseFilters">
+        <div className='courseFilters'>
             <Grid
                 item
                 style={{
@@ -59,34 +59,34 @@ const CourseFilters = () => {
                     paddingTop: '5px',
                 }}
             >
-                <Typography variant="subtitle1">Filter | </Typography>
+                <Typography variant='subtitle1'>Filter | </Typography>
             </Grid>
-            <Grid className="spacing" item>
+            <Grid className='spacing' item>
                 <FormControl>
                     <Select
-                        input={<BootstrapInput name="classFilter" />}
+                        input={<BootstrapInput name='classFilter' />}
                         onChange={handleFilterChange}
                         value={searchParams.get('course') || 'course'}
                     >
-                        <MenuItem value="course">Course Type</MenuItem>
-                        <MenuItem value="class">Class</MenuItem>
-                        <MenuItem value="group">Group</MenuItem>
-                        <MenuItem value="tutoring">Tutoring</MenuItem>
+                        <MenuItem value='course'>Course Type</MenuItem>
+                        <MenuItem value='class'>Class</MenuItem>
+                        <MenuItem value='group'>Group</MenuItem>
+                        <MenuItem value='tutoring'>Tutoring</MenuItem>
                     </Select>
                 </FormControl>
             </Grid>
             <Grid item>
                 <FormControl>
                     <Select
-                        input={<BootstrapInput name="availability" />}
+                        input={<BootstrapInput name='availability' />}
                         onChange={handleFilterChange}
                         value={
                             searchParams.get('availability') || 'availability'
                         }
                     >
-                        <MenuItem value="availability">Availability</MenuItem>
-                        <MenuItem value="filled">Full</MenuItem>
-                        <MenuItem value="open">Open</MenuItem>
+                        <MenuItem value='availability'>Availability</MenuItem>
+                        <MenuItem value='filled'>Full</MenuItem>
+                        <MenuItem value='open'>Open</MenuItem>
                     </Select>
                 </FormControl>
             </Grid>
@@ -97,22 +97,22 @@ const CourseFilters = () => {
                     paddingTop: '5px',
                 }}
             >
-                <Typography variant="subtitle1">Sort | </Typography>
+                <Typography variant='subtitle1'>Sort | </Typography>
             </Grid>
             <Grid item>
                 <FormControl>
                     <Select
-                        input={<BootstrapInput name="sortFilter" />}
+                        input={<BootstrapInput name='sortFilter' />}
                         onChange={handleFilterChange}
                         value={searchParams.get('sort') || 'relevance'}
                     >
-                        <MenuItem value="relevance">Relevance</MenuItem>
-                        <MenuItem value="dateAsc">Recent - Future</MenuItem>
-                        <MenuItem value="dateDesc">Future - Recent</MenuItem>
-                        <MenuItem value="timeDesc">
+                        <MenuItem value='relevance'>Relevance</MenuItem>
+                        <MenuItem value='dateAsc'>Recent - Future</MenuItem>
+                        <MenuItem value='dateDesc'>Future - Recent</MenuItem>
+                        <MenuItem value='timeDesc'>
                             Later Time - Earlier Time
                         </MenuItem>
-                        <MenuItem value="timeAsc">
+                        <MenuItem value='timeAsc'>
                             Earlier Time - Later Time
                         </MenuItem>
                     </Select>

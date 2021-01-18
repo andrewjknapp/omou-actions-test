@@ -14,7 +14,7 @@ function TabPanel(props) {
 
     return (
         <div
-            role="tabpanel"
+            role='tabpanel'
             hidden={value !== index}
             id={`simple-tabpanel-${index}`}
             aria-labelledby={`simple-tab-${index}`}
@@ -52,17 +52,17 @@ export default function ManagePayments() {
 
     return (
         <BackgroundPaper>
-            <Typography variant="h3" align="left">
+            <Typography variant='h3' align='left'>
                 My Payments
             </Typography>
             <Tabs
                 classes={{ indicator: classes.MuiIndicator }}
                 value={value}
                 onChange={handleChange}
-                aria-label="simple tabs example"
+                aria-label='simple tabs example'
             >
-                <Tab label="Outstanding Invoice" />
-                <Tab label="Payment History" />
+                <Tab label='Outstanding Invoice' />
+                <Tab label='Payment History' />
             </Tabs>
             <TabPanel value={value} index={0}>
                 <ActiveInvoices />

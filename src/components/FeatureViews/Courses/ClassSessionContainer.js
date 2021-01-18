@@ -45,12 +45,12 @@ const ClassSessionContainer = ({ sessionList, loggedInUser }) => {
 
     return (
         <>
-            <Grid container justify="flex-start">
+            <Grid container justify='flex-start'>
                 <Grid item xs={12}>
                     <FormControl className={classes.margin}>
                         <Select
-                            labelId="session-sort-tab"
-                            id="session-sort-tab"
+                            labelId='session-sort-tab'
+                            id='session-sort-tab'
                             displayEmpty
                             value={sortBySession}
                             onChange={handleChange}
@@ -74,7 +74,7 @@ const ClassSessionContainer = ({ sessionList, loggedInUser }) => {
                                     ListItemClasses={{
                                         selected: classes.menuSelect,
                                     }}
-                                    value=""
+                                    value=''
                                 >
                                     Select Session...
                                 </MenuItem>

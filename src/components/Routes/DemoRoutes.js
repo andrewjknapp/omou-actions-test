@@ -12,28 +12,28 @@ import UserProfileDemo from '../../theme/ThemedComponents/UserProfileDemo/UserPr
 
 const DemoRoutes = () => (
     <Switch>
-        <Route path="/demo/badge">
+        <Route path='/demo/badge'>
             <BadgeDemo />
         </Route>
-        <Route path="/demo/typography">
+        <Route path='/demo/typography'>
             <TypographyDemo />
         </Route>
-        <Route path="/demo/button">
+        <Route path='/demo/button'>
             <ButtonDemo />
         </Route>
-        <Route path="/demo/color">
+        <Route path='/demo/color'>
             <ColorsDemo />
         </Route>
-        <Route path="/demo/listcomponent">
+        <Route path='/demo/listcomponent'>
             <ListComponentDemo />
         </Route>
-        <Route path="/demo/table">
+        <Route path='/demo/table'>
             <TableDemo />
         </Route>
-        <Route path="/demo/accountscard">
+        <Route path='/demo/accountscard'>
             <AccountCardDemo />
         </Route>
-        <Route path="/demo/user-profile">
+        <Route path='/demo/user-profile'>
             <UserProfileDemo />
         </Route>
     </Switch>

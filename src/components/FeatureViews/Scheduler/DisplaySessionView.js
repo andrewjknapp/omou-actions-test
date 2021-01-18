@@ -117,7 +117,7 @@ const DisplaySessionView = ({ course, session, handleToggleEditing }) => {
             return <Loading />;
         }
         if (hooks.isFail(studentStatus)) {
-            return <LoadingError error="enrollment details" />;
+            return <LoadingError error='enrollment details' />;
         }
     }
 
@@ -168,7 +168,7 @@ const DisplaySessionView = ({ course, session, handleToggleEditing }) => {
         enrollments.constructor === Object &&
         hooks.isSuccessful(enrollmentStatus)
     ) {
-        return <Redirect to="/NotEnrolledStudent" />;
+        return <Redirect to='/NotEnrolledStudent' />;
     }
     if (
         !course ||
@@ -189,23 +189,23 @@ const DisplaySessionView = ({ course, session, handleToggleEditing }) => {
     return (
         <>
             <Grid
-                className="session-view"
+                className='session-view'
                 container
-                direction="row"
+                direction='row'
                 spacing={1}
             >
                 <Grid item sm={12}>
                     <Typography
-                        align="left"
-                        className="session-view-title"
-                        variant="h3"
+                        align='left'
+                        className='session-view-title'
+                        variant='h3'
                     >
                         {session && session.title}
                     </Typography>
                 </Grid>
                 <Grid item sm={12}>
                     <Grid container>
-                        <Grid className="course-session-status" item xs={2}>
+                        <Grid className='course-session-status' item xs={2}>
                             {course.course_type === 'tutoring' && (
                                 <SessionPaymentStatusChip
                                     enrollment={
@@ -221,15 +221,15 @@ const DisplaySessionView = ({ course, session, handleToggleEditing }) => {
                     </Grid>
                 </Grid>
                 <Grid
-                    align="left"
-                    className="session-view-details"
+                    align='left'
+                    className='session-view-details'
                     container
                     item
                     spacing={2}
                     xs={6}
                 >
                     <Grid item xs={6}>
-                        <Typography variant="h5">Subject</Typography>
+                        <Typography variant='h5'>Subject</Typography>
                         <Typography>
                             {
                                 (
@@ -242,18 +242,18 @@ const DisplaySessionView = ({ course, session, handleToggleEditing }) => {
                         </Typography>
                     </Grid>
                     <Grid item xs={6}>
-                        <Typography variant="h5">Room</Typography>
+                        <Typography variant='h5'>Room</Typography>
                         <Typography>
                             {course && (course.room_id || 'TBA')}
                         </Typography>
                     </Grid>
                     <Grid item xs={12}>
-                        <Typography variant="h5">
+                        <Typography variant='h5'>
                             Instructor
                             {session.is_confirmed ? (
-                                <ConfirmIcon className="confirmed course-icon" />
+                                <ConfirmIcon className='confirmed course-icon' />
                             ) : (
-                                <UnconfirmIcon className="unconfirmed course-icon" />
+                                <UnconfirmIcon className='unconfirmed course-icon' />
                             )}
                         </Typography>
                         {course && (
@@ -262,7 +262,7 @@ const DisplaySessionView = ({ course, session, handleToggleEditing }) => {
                                 to={`/accounts/instructor/${instructor.user_id}`}
                             >
                                 <Tooltip
-                                    aria-label="Instructor Name"
+                                    aria-label='Instructor Name'
                                     title={instructor.name}
                                 >
                                     <Avatar style={styles(instructor.name)}>
@@ -275,10 +275,10 @@ const DisplaySessionView = ({ course, session, handleToggleEditing }) => {
                         )}
                     </Grid>
                     <Grid item xs={12}>
-                        <Typography align="left" variant="h5">
+                        <Typography align='left' variant='h5'>
                             Students Enrolled
                         </Typography>
-                        <Grid container direction="row">
+                        <Grid container direction='row'>
                             {studentKeys.map((key) => (
                                 <NavLink
                                     key={key}
@@ -305,7 +305,7 @@ const DisplaySessionView = ({ course, session, handleToggleEditing }) => {
                         </Grid>
                     </Grid>
                     <Grid item xs={6}>
-                        <Typography variant="h5">Day(s)</Typography>
+                        <Typography variant='h5'>Day(s)</Typography>
                         <Typography>
                             {capitalizeString(dayOfWeek[day])}
                         </Typography>
@@ -316,7 +316,7 @@ const DisplaySessionView = ({ course, session, handleToggleEditing }) => {
                         </Typography>
                     </Grid>
                     <Grid item xs={6}>
-                        <Typography variant="h5">Time</Typography>
+                        <Typography variant='h5'>Time</Typography>
                         <Typography>
                             {session.startTime} - {session.endTime}
                         </Typography>
@@ -327,18 +327,18 @@ const DisplaySessionView = ({ course, session, handleToggleEditing }) => {
                 </Grid>
             </Grid>
             <Grid
-                className="session-detail-action-control"
+                className='session-detail-action-control'
                 container
-                direction="row"
-                justify="flex-end"
+                direction='row'
+                justify='flex-end'
             >
                 <Grid item>
                     <ResponsiveButton
-                        className="button"
-                        color="secondary"
+                        className='button'
+                        color='secondary'
                         component={NavLink}
                         to={`/registration/course/${course.course_id}`}
-                        variant="outlined"
+                        variant='outlined'
                     >
                         Course Page
                     </ResponsiveButton>
@@ -347,7 +347,7 @@ const DisplaySessionView = ({ course, session, handleToggleEditing }) => {
                     {reduxCourse.course_type == 'tutoring' && (
                         <>
                             <ResponsiveButton
-                                className="button"
+                                className='button'
                                 onClick={handleTutoringMenuClick}
                             >
                                 Tutoring Options
@@ -360,15 +360,15 @@ const DisplaySessionView = ({ course, session, handleToggleEditing }) => {
                                 open={Boolean(tutoringActionsAnchor)}
                             >
                                 <MenuItem
-                                    color="secondary"
+                                    color='secondary'
                                     component={NavLink}
                                     to={`/accounts/student/${course.roster[0]}/${course.course_id}`}
-                                    variant="outlined"
+                                    variant='outlined'
                                 >
                                     Enrollment View
                                 </MenuItem>
                                 <AddSessions
-                                    componentOption="menuItem"
+                                    componentOption='menuItem'
                                     enrollment={
                                         enrollments[course.roster[0]][
                                             course.course_id
@@ -379,9 +379,9 @@ const DisplaySessionView = ({ course, session, handleToggleEditing }) => {
                                     }
                                 />
                                 <MenuItem
-                                    color="secondary"
+                                    color='secondary'
                                     onClick={handleUnenroll}
-                                    variant="outlined"
+                                    variant='outlined'
                                 >
                                     Unenroll Course
                                 </MenuItem>
@@ -391,59 +391,59 @@ const DisplaySessionView = ({ course, session, handleToggleEditing }) => {
                 </Grid>
                 <Grid item>
                     <ResponsiveButton
-                        className="editButton"
-                        color="primary"
+                        className='editButton'
+                        color='primary'
                         onClick={handleEditToggle(true)}
-                        to="/"
-                        variant="outlined"
+                        to='/'
+                        variant='outlined'
                     >
                         Reschedule
                     </ResponsiveButton>
                 </Grid>
             </Grid>
             <Dialog
-                aria-describedby="form-dialog-description"
-                aria-labelledby="form-dialog-title"
-                className="session-view-modal"
+                aria-describedby='form-dialog-description'
+                aria-labelledby='form-dialog-title'
+                className='session-view-modal'
                 fullWidth
-                maxWidth="xs"
+                maxWidth='xs'
                 onClose={handleEditToggle(true)}
                 open={edit}
             >
-                <DialogTitle disableTypography id="form-dialog-title">
+                <DialogTitle disableTypography id='form-dialog-title'>
                     Edit Session
                 </DialogTitle>
                 <Divider />
                 <DialogContent>
                     <RadioGroup
-                        aria-label="delete"
-                        name="delete"
+                        aria-label='delete'
+                        name='delete'
                         onChange={handleEditSelection}
                         value={editSelection}
                     >
                         <FormControlLabel
-                            control={<Radio color="primary" />}
-                            label="This Session"
-                            labelPlacement="end"
+                            control={<Radio color='primary' />}
+                            label='This Session'
+                            labelPlacement='end'
                             value={EDIT_CURRENT_SESSION}
                         />
                         <FormControlLabel
-                            control={<Radio color="primary" />}
-                            label="All Sessions"
-                            labelPlacement="end"
+                            control={<Radio color='primary' />}
+                            label='All Sessions'
+                            labelPlacement='end'
                             value={EDIT_ALL_SESSIONS}
                         />
                     </RadioGroup>
                 </DialogContent>
                 <DialogActions>
                     <ResponsiveButton
-                        color="primary"
+                        color='primary'
                         onClick={handleEditToggle(true)}
                     >
                         Cancel
                     </ResponsiveButton>
                     <ResponsiveButton
-                        color="primary"
+                        color='primary'
                         component={NavLink}
                         to={{
                             pathname: `/scheduler/edit-session/${course.course_id}/${session.id}/${instructor_id}/edit`,
@@ -456,15 +456,15 @@ const DisplaySessionView = ({ course, session, handleToggleEditing }) => {
             </Dialog>
 
             <Dialog
-                aria-describedby="unenroll-dialog-description"
-                aria-labelledby="unenroll-dialog-title"
-                className="session-view-modal"
+                aria-describedby='unenroll-dialog-description'
+                aria-labelledby='unenroll-dialog-title'
+                className='session-view-modal'
                 fullWidth
-                maxWidth="xs"
+                maxWidth='xs'
                 onClose={closeUnenrollDialog(false)}
                 open={unenroll}
             >
-                <DialogTitle disableTypography id="unenroll-dialog-title">
+                <DialogTitle disableTypography id='unenroll-dialog-title'>
                     Unenroll in {course.title}
                 </DialogTitle>
                 <Divider />
@@ -482,15 +482,15 @@ const DisplaySessionView = ({ course, session, handleToggleEditing }) => {
                 </DialogContent>
                 <DialogActions>
                     <ResponsiveButton
-                        variant="outlined"
-                        color="secondary"
+                        variant='outlined'
+                        color='secondary'
                         onClick={closeUnenrollDialog(true)}
                     >
                         Yes, unenroll
                     </ResponsiveButton>
                     <ResponsiveButton
-                        variant="outlined"
-                        color="primary"
+                        variant='outlined'
+                        color='primary'
                         onClick={closeUnenrollDialog(false)}
                     >
                         Cancel

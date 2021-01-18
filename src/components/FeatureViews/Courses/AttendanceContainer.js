@@ -75,12 +75,12 @@ const AttendanceIcon = ({ letter }) => {
         <Grid
             item
             xs={1}
-            alignContent="center"
+            alignContent='center'
             className={`${classes.iconBox} ${renderColor()}`}
         >
             <Typography
-                variant="body1"
-                align="center"
+                variant='body1'
+                align='center'
                 style={{ fontWeight: 500, color: 'black', marginTop: '.3em' }}
             >
                 {letter}
@@ -95,28 +95,28 @@ const AttendanceLegend = () => {
     return (
         <Grid
             container
-            direction="row"
-            justify="flex-start"
-            alignItems="center"
+            direction='row'
+            justify='flex-start'
+            alignItems='center'
         >
             <Grid item xs={1}>
-                <Checkbox disabled icon={<AttendanceIcon letter="P" />} />
+                <Checkbox disabled icon={<AttendanceIcon letter='P' />} />
             </Grid>
             <Grid item xs={1}>
                 <Typography
-                    variant="body2"
-                    align="center"
+                    variant='body2'
+                    align='center'
                     className={classes.attendanceStatusFont}
                 >
                     Present
                 </Typography>
             </Grid>
             <Grid item xs={1}>
-                <Checkbox disabled icon={<AttendanceIcon letter="T" />} />
+                <Checkbox disabled icon={<AttendanceIcon letter='T' />} />
             </Grid>
             <Grid item xs={1}>
                 <Typography
-                    variant="body2"
+                    variant='body2'
                     className={classes.attendanceStatusFont}
                     style={{ marginRight: '4em' }}
                 >
@@ -124,11 +124,11 @@ const AttendanceLegend = () => {
                 </Typography>
             </Grid>
             <Grid item xs={1}>
-                <Checkbox disabled icon={<AttendanceIcon letter="A" />} />
+                <Checkbox disabled icon={<AttendanceIcon letter='A' />} />
             </Grid>
             <Grid item xs={1}>
                 <Typography
-                    variant="body2"
+                    variant='body2'
                     className={classes.attendanceStatusFont}
                 >
                     Absent
@@ -154,10 +154,10 @@ const AttendanceContainer = () => {
                 >
                     <AccordionSummary
                         expandIcon={<ExpandMoreIcon />}
-                        aria-controls="panel1a-content"
-                        id="panel1a-header"
+                        aria-controls='panel1a-content'
+                        id='panel1a-header'
                     >
-                        <Typography variant="h4" className={classes.heading}>
+                        <Typography variant='h4' className={classes.heading}>
                             Attendance Overview
                         </Typography>
                     </AccordionSummary>
@@ -171,13 +171,13 @@ const AttendanceContainer = () => {
                 >
                     <AccordionSummary
                         expandIcon={<ExpandMoreIcon />}
-                        aria-controls="panel2a-content"
-                        id="panel2a-header"
+                        aria-controls='panel2a-content'
+                        id='panel2a-header'
                     >
-                        <Grid item xs={2} alignItems="flex-start">
+                        <Grid item xs={2} alignItems='flex-start'>
                             <Typography
-                                variant="h4"
-                                align="left"
+                                variant='h4'
+                                align='left'
                                 className={classes.heading}
                             >
                                 Attendance Tracker

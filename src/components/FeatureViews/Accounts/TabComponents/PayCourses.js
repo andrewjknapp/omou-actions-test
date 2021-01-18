@@ -69,11 +69,11 @@ const PayCourses = (props) => {
                 <Table component={Paper}>
                     <TableHead>
                         <TableRow>
-                            <TableCell align="left">Student</TableCell>
-                            <TableCell align="left">
+                            <TableCell align='left'>Student</TableCell>
+                            <TableCell align='left'>
                                 Unpaid&nbsp;Courses
                             </TableCell>
-                            <TableCell align="left">Tuition</TableCell>
+                            <TableCell align='left'>Tuition</TableCell>
                         </TableRow>
                     </TableHead>
                     <TableBody>
@@ -84,13 +84,13 @@ const PayCourses = (props) => {
                                 tuition,
                             }) => (
                                 <TableRow key={user_id}>
-                                    <TableCell align="left">
+                                    <TableCell align='left'>
                                         {first_name}&nbsp;{last_name}
                                     </TableCell>
-                                    <TableCell align="left">
+                                    <TableCell align='left'>
                                         {numUnpaid}
                                     </TableCell>
-                                    <TableCell align="left">
+                                    <TableCell align='left'>
                                         {tuition}
                                     </TableCell>
                                 </TableRow>

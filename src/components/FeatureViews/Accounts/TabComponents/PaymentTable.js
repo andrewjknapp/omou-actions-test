@@ -57,11 +57,11 @@ const PaymentTable = ({
     if (!paymentList) {
         return <Loading />;
     } else if (paymentList.length === 0) {
-        return <NoListAlert list="Payments" />;
+        return <NoListAlert list='Payments' />;
     }
 
     return (
-        <Grid className="payments-history" item md={12}>
+        <Grid className='payments-history' item md={12}>
             <Table>
                 <TableHead>
                     <TableRow>
@@ -86,7 +86,7 @@ const PaymentTable = ({
                             <TableCell>
                                 <Moment
                                     date={payment.created_at}
-                                    format="M/DD/YYYY"
+                                    format='M/DD/YYYY'
                                 />
                             </TableCell>
                             <TableCell>

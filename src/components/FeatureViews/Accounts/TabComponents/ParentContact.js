@@ -41,8 +41,8 @@ const ParentContact = () => {
         variables: { userID: accountID },
     });
 
-    if (loading) return <Loading loadingText="PARENT LOADING" small />;
-    if (error) return <LoadingError error="parent" />;
+    if (loading) return <Loading loadingText='PARENT LOADING' small />;
+    if (error) return <LoadingError error='parent' />;
 
     // Needs to take ID and check if its a parent
     const { student } = data;

@@ -9,7 +9,7 @@ import Typography from '@material-ui/core/Typography';
 const NoListAlert = ({ list }) => (
     <Grid item xs={12}>
         <Grow in>
-            <Paper className="info">
+            <Paper className='info'>
                 <Typography style={{ fontWeight: 700 }}>
                     No {list} Yet!
                 </Typography>

@@ -29,9 +29,9 @@ const Welcome = () => {
     return (
         <Container>
             <Box className={classes.Text}>
-                <Typography variant="h3">Welcome to Omou</Typography>
-                <Box fontSize="h5.fontSize" className={classes.Subtitle}>
-                    <Typography variant="p">
+                <Typography variant='h3'>Welcome to Omou</Typography>
+                <Box fontSize='h5.fontSize' className={classes.Subtitle}>
+                    <Typography variant='p'>
                         Let's import your data so you can start using Omou!
                     </Typography>
                 </Box>
@@ -39,21 +39,21 @@ const Welcome = () => {
             <Box mt={20}>
                 <ResponsiveButton
                     px={8}
-                    size="large"
-                    variant="outlined"
-                    color="primary"
+                    size='large'
+                    variant='outlined'
+                    color='primary'
                 >
                     Skip for now
                 </ResponsiveButton>
                 <ResponsiveButton
                     style={{ marginLeft: '15px' }}
                     px={8}
-                    size="large"
+                    size='large'
                     ml={5}
-                    variant="contained"
-                    color="primary"
+                    variant='contained'
+                    color='primary'
                     component={NavLinkNoDup}
-                    to="/onboarding/import"
+                    to='/onboarding/import'
                 >
                     Let's do it!
                 </ResponsiveButton>

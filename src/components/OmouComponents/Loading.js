@@ -7,25 +7,25 @@ import './Loading.scss';
 const Loading = ({ small = false, loadingText = '' }) => {
     if (small) {
         return (
-            <div className="small-load-wrap">
-                <div className="load-wrap">
-                    <div className="loading">
-                        <div className="bounceball"> </div>
-                        <div className="small-load-text">{loadingText}</div>
+            <div className='small-load-wrap'>
+                <div className='load-wrap'>
+                    <div className='loading'>
+                        <div className='bounceball'> </div>
+                        <div className='small-load-text'>{loadingText}</div>
                     </div>
                 </div>
             </div>
         );
     }
     return (
-        <div className="paper" style={{ height: '70vh', color: '43B5D' }}>
+        <div className='paper' style={{ height: '70vh', color: '43B5D' }}>
             <h1>
                 <span>o</span>
                 <span>m</span>
                 <span>o</span>
                 <span>u</span>
             </h1>
-            <Typography variant="h3">{loadingText}</Typography>
+            <Typography variant='h3'>{loadingText}</Typography>
         </div>
     );
 };

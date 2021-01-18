@@ -83,10 +83,10 @@ export default function MyPaymentHistory() {
     const { payments } = data;
 
     return (
-        <Grid container direction="row" spacing={4}>
+        <Grid container direction='row' spacing={4}>
             <Grid item xs={12} container>
                 <Grid item>
-                    <ButtonGroup variant="contained">
+                    <ButtonGroup variant='contained'>
                         <Button style={{ backgroundColor: omouBlue }}>
                             <CalendarIcon style={{ color: 'white' }} />
                         </Button>
@@ -99,7 +99,7 @@ export default function MyPaymentHistory() {
                         >
                             <Moment
                                 date={state[0].startDate}
-                                format="MM/DD/YYYY"
+                                format='MM/DD/YYYY'
                             />
                         </Button>
                         <Button
@@ -111,7 +111,7 @@ export default function MyPaymentHistory() {
                         >
                             <Moment
                                 date={state[0].endDate}
-                                format="MM/DD/YYYY"
+                                format='MM/DD/YYYY'
                             />
                         </Button>
                     </ButtonGroup>
@@ -124,9 +124,9 @@ export default function MyPaymentHistory() {
                         />
                         <DialogActions>
                             <ResponsiveButton
-                                variant="contained"
+                                variant='contained'
                                 onClick={handleSaveDateRange}
-                                color="primary"
+                                color='primary'
                             >
                                 Save & Close
                             </ResponsiveButton>
@@ -137,8 +137,8 @@ export default function MyPaymentHistory() {
             <Grid item xs={12}>
                 <PaymentTable
                     paymentList={payments}
-                    rootRoute="/my-payments/payment/"
-                    type="parent"
+                    rootRoute='/my-payments/payment/'
+                    type='parent'
                 />
             </Grid>
         </Grid>

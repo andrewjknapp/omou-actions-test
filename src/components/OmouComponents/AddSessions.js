@@ -99,7 +99,7 @@ const AddSessions = ({
             case 'button': {
                 return (
                     <Button
-                        className="button add-sessions"
+                        className='button add-sessions'
                         onClick={handleRegisterMoreSessions}
                     >
                         Add Sessions
@@ -122,11 +122,11 @@ const AddSessions = ({
         <>
             {renderComponent()}
             <Dialog
-                aria-labelledby="warn-discard-parent"
+                aria-labelledby='warn-discard-parent'
                 onClose={closeDiscardParentWarning(false)}
                 open={discardParentWarning}
             >
-                <DialogTitle disableTypography id="warn-discard-parent">
+                <DialogTitle disableTypography id='warn-discard-parent'>
                     "Finished registering parent?"
                 </DialogTitle>
                 <DialogContent>
@@ -143,13 +143,13 @@ const AddSessions = ({
                 </DialogContent>
                 <DialogActions>
                     <Button
-                        color="secondary"
+                        color='secondary'
                         onClick={closeDiscardParentWarning(true)}
                     >
                         Continue & Add Session
                     </Button>
                     <Button
-                        color="primary"
+                        color='primary'
                         onClick={closeDiscardParentWarning(false)}
                     >
                         Cancel

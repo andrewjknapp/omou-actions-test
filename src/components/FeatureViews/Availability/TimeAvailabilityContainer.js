@@ -249,16 +249,16 @@ export default function TimeAvailabilityContainer() {
         <TimeAvailabilityContext.Provider
             value={{ availabilitiesByDayOfWeek, updateAvailability }}
         >
-            <Grid item container justify="space-between" direction="row">
+            <Grid item container justify='space-between' direction='row'>
                 <Grid
                     item
                     container
-                    justify="flex-start"
-                    direction="column"
+                    justify='flex-start'
+                    direction='column'
                     xs={9}
                 >
                     <Grid item>
-                        <Typography variant="h4" align="left">
+                        <Typography variant='h4' align='left'>
                             Tutoring Hours
                         </Typography>
                     </Grid>
@@ -268,17 +268,17 @@ export default function TimeAvailabilityContainer() {
                                 <Checkbox
                                     checked={autoApprove}
                                     onChange={handleAutoApprove}
-                                    name="autoApprove"
-                                    color="primary"
+                                    name='autoApprove'
+                                    color='primary'
                                 />
                             }
-                            label="Auto Approve Upcoming Requests"
+                            label='Auto Approve Upcoming Requests'
                         />
                     </Grid>
                     <Grid item>
                         <Typography
                             style={{ fontStyle: 'italic', fontSize: '.8em' }}
-                            align="left"
+                            align='left'
                         >
                             By checking this box, I consent to auto-accept
                             upcoming requests that match with my availability.
@@ -287,13 +287,13 @@ export default function TimeAvailabilityContainer() {
                 </Grid>
                 <Grid item xs={3}>
                     <ResponsiveButton
-                        variant="outlined"
+                        variant='outlined'
                         style={{ marginRight: '10px' }}
                     >
                         reset all
                     </ResponsiveButton>
                     <ResponsiveButton
-                        variant="outlined"
+                        variant='outlined'
                         onClick={handleAvailability}
                     >
                         update
@@ -330,15 +330,15 @@ export default function TimeAvailabilityContainer() {
                                 <TableCell>
                                     <Moment
                                         date={availability.startTime}
-                                        format="h:mm A"
-                                        parse="HH:mm:ss"
+                                        format='h:mm A'
+                                        parse='HH:mm:ss'
                                     />
                                 </TableCell>
                                 <TableCell>
                                     <Moment
                                         date={availability.endTime}
-                                        format="h:mm A"
-                                        parse="HH:mm:ss"
+                                        format='h:mm A'
+                                        parse='HH:mm:ss'
                                     />
                                 </TableCell>
                             </TableRow>

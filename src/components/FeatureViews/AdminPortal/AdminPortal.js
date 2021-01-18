@@ -11,14 +11,14 @@ import Box from '@material-ui/core/Box';
 
 const AdminPortal = () => (
     <form>
-        <Grid container layout="row">
+        <Grid container layout='row'>
             <Grid item xs={12}>
                 <BackButton />
                 <hr />
             </Grid>
             <Grid item xs={12}>
-                <Box paddingTop="16px">
-                    <Typography align="left" variant="h1">
+                <Box paddingTop='16px'>
+                    <Typography align='left' variant='h1'>
                         Admin Portal
                     </Typography>
                 </Box>

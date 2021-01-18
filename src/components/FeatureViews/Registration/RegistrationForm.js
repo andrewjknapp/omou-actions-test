@@ -50,7 +50,7 @@ export default function RegistrationForm() {
     );
 
     if (!form || (id && initialData === null)) {
-        return <Redirect to="/PageNotFound" />;
+        return <Redirect to='/PageNotFound' />;
     }
 
     return (

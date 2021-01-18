@@ -6,7 +6,7 @@ import React, { Component } from 'react';
 class Gradebook extends Component {
     render() {
         return (
-            <div className="">
+            <div className=''>
                 <h1>Gradebook</h1>
             </div>
         );

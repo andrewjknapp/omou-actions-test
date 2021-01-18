@@ -257,12 +257,12 @@ const DiscountRow = ({ discount, type, classes }) => {
     );
 
     const viewDiscount = () => (
-        <Grid alignItems="center" container>
+        <Grid alignItems='center' container>
             <Grid item xs={3}>
-                <Typography align="left">{discount.name}</Typography>
+                <Typography align='left'>{discount.name}</Typography>
             </Grid>
             <Grid item xs={5}>
-                <Typography align="left">{discount.description}</Typography>
+                <Typography align='left'>{discount.description}</Typography>
             </Grid>
             <Grid item xs={2}>
                 <Switch
@@ -284,16 +284,16 @@ const DiscountRow = ({ discount, type, classes }) => {
             </Grid>
             <Grid item xs={2}>
                 <IconButton
-                    aria-controls="long-menu"
-                    aria-haspopup="true"
-                    aria-label="more"
+                    aria-controls='long-menu'
+                    aria-haspopup='true'
+                    aria-label='more'
                     onClick={handleClick}
                 >
                     <Options />
                 </IconButton>
                 <Menu
                     anchorEl={anchorEl}
-                    id="long-menu"
+                    id='long-menu'
                     keepMounted
                     onClick={handleToggleEdit}
                     open={open}
@@ -325,18 +325,18 @@ const DiscountRow = ({ discount, type, classes }) => {
                     return (
                         <TextField
                             onChange={handleTextChange(field, fieldName)}
-                            type="number"
+                            type='number'
                             value={field.value}
                         />
                     );
                 case 'date':
                     return (
                         <DatePicker
-                            format="MM/dd/yyyy"
+                            format='MM/dd/yyyy'
                             label={field.name}
-                            margin="normal"
+                            margin='normal'
                             onChange={onDateChange(field, fieldName)}
-                            openTo="day"
+                            openTo='day'
                             value={field.value}
                             views={['year', 'month', 'date']}
                         />
@@ -362,7 +362,7 @@ const DiscountRow = ({ discount, type, classes }) => {
 
     const editDiscount = () => (
         <>
-            <Grid alignItems="center" container>
+            <Grid alignItems='center' container>
                 <Grid item xs={3}>
                     <TextField
                         onChange={handleTextChange(DiscountFields.Name, 'Name')}
@@ -393,16 +393,16 @@ const DiscountRow = ({ discount, type, classes }) => {
                 </Grid>
                 <Grid item xs={2}>
                     <IconButton
-                        aria-controls="long-menu"
-                        aria-haspopup="true"
-                        aria-label="more"
+                        aria-controls='long-menu'
+                        aria-haspopup='true'
+                        aria-label='more'
                         onClick={handleEdit}
                     >
                         <Done />
                     </IconButton>
                 </Grid>
             </Grid>
-            <Grid alignItems="center" container spacing={2}>
+            <Grid alignItems='center' container spacing={2}>
                 {Object.entries(DiscountFields)
                     .filter(([fieldName]) => BaseFields.indexOf(fieldName) < 0)
                     .map(([fieldName, field]) => (
@@ -416,7 +416,7 @@ const DiscountRow = ({ discount, type, classes }) => {
 
     return (
         <Grid item key={discount.id} xs={12}>
-            <Paper className="category-row" square>
+            <Paper className='category-row' square>
                 {editing ? editDiscount() : viewDiscount()}
             </Paper>
             <Dialog onClose={handleDelete} open={deleteWarning}>
@@ -426,13 +426,13 @@ const DiscountRow = ({ discount, type, classes }) => {
                     </DialogTitle>
                     <DialogActions>
                         <ResponsiveButton
-                            variant="outlined"
+                            variant='outlined'
                             onClick={handleDeleteDiscount(discount.id, type)}
                         >
                             Yes, DELETE
                         </ResponsiveButton>
                         <ResponsiveButton
-                            variant="outlined"
+                            variant='outlined'
                             onClick={handleDelete}
                         >
                             No, Exit

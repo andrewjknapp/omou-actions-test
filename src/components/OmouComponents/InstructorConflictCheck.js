@@ -125,16 +125,16 @@ const InstructorConflictCheck = ({
                     </DialogContent>
                     <DialogActions>
                         <Button
-                            color="secondary"
+                            color='secondary'
                             onClick={onSubmit}
-                            variant="outlined"
+                            variant='outlined'
                         >
                             Continue anyways
                         </Button>
                         <Button
-                            color="primary"
+                            color='primary'
                             onClick={closeDialog}
-                            variant="outlined"
+                            variant='outlined'
                         >
                             Go back
                         </Button>

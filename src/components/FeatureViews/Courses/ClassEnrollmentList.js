@@ -73,8 +73,8 @@ const ClassEnrollmentList = ({
     return (
         <TableRow key={fullStudentName} style={{ wordBreak: 'break-word' }}>
             <TableCell
-                component="th"
-                scope="row"
+                component='th'
+                scope='row'
                 component={Link}
                 to={`/accounts/${accountType.toLowerCase()}/${studentId}`}
                 style={{ textDecoration: 'none', fontWeight: 700 }}
@@ -89,10 +89,10 @@ const ClassEnrollmentList = ({
                 {concatFullParentName}
             </TableCell>
             <TableCell>{phoneNumber}</TableCell>
-            <TableCell align="right" padding="none" size="small">
+            <TableCell align='right' padding='none' size='small'>
                 <Button
-                    aria-controls="simple-menu"
-                    aria-haspopup="true"
+                    aria-controls='simple-menu'
+                    aria-haspopup='true'
                     onClick={handleClick}
                 >
                     <MailOutlineIcon style={{ color: 'rgb(112,105,110)' }} />
@@ -105,7 +105,7 @@ const ClassEnrollmentList = ({
                     ]}
                 >
                     <Menu
-                        id="simple-menu"
+                        id='simple-menu'
                         anchorEl={anchorEl}
                         keepMounted
                         open={Boolean(anchorEl)}
@@ -132,9 +132,9 @@ const ClassEnrollmentList = ({
                 </AccessControlComponent>
             </TableCell>
             <TableCell
-                align="right"
-                padding="none"
-                size="small"
+                align='right'
+                padding='none'
+                size='small'
                 className={classes.icon}
             >
                 <Button disabled>
@@ -142,15 +142,15 @@ const ClassEnrollmentList = ({
                 </Button>
             </TableCell>
             <TableCell
-                align="right"
-                padding="none"
-                size="small"
+                align='right'
+                padding='none'
+                size='small'
                 className={classes.carrot}
             >
                 <Button>
                     <ExpandMoreIcon
                         style={{ color: omouBlue }}
-                        fontSize="large"
+                        fontSize='large'
                     />
                 </Button>
             </TableCell>
@@ -235,7 +235,7 @@ const Studentenrollment = ({ enrollmentList, loggedInUser }) => {
                 handleCloseForm={handleCloseModal}
                 accountType={typeOfAccount}
                 userId={userId}
-                origin="STUDENT_ENROLLMENT"
+                origin='STUDENT_ENROLLMENT'
                 posterId={loggedInUser}
             />
         </Grid>

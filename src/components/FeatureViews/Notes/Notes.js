@@ -413,11 +413,11 @@ const Notes = ({ ownerType, ownerID, isDashboard }) => {
     }, [deleteID, dispatch, hideWarning, ownerID, ownerType]);
 
     if (query.loading) {
-        return <Loading loadingText="NOTES LOADING" small />;
+        return <Loading loadingText='NOTES LOADING' small />;
     }
 
     if (query.error) {
-        return <LoadingError error="notes" />;
+        return <LoadingError error='notes' />;
     }
 
     // return (
@@ -523,25 +523,25 @@ const Notes = ({ ownerType, ownerID, isDashboard }) => {
     return (
         <Grid container item md={12} spacing={2}>
             <Dialog
-                aria-describedby="simple-modal-description"
-                aria-labelledby="simple-modal-title"
-                className="popup"
+                aria-describedby='simple-modal-description'
+                aria-labelledby='simple-modal-title'
+                className='popup'
                 fullWidth
-                maxWidth="xs"
+                maxWidth='xs'
                 onClose={hideWarning}
                 open={alert}
             >
                 <DialogTitle disableTypography>
                     <TextField
-                        className="textfield"
-                        id="standard-name"
+                        className='textfield'
+                        id='standard-name'
                         onChange={handleTitleUpdate}
-                        placeholder="Title"
+                        placeholder='Title'
                         value={noteTitle}
                     />
-                    <Tooltip interactive title="This is an Important Note!">
+                    <Tooltip interactive title='This is an Important Note!'>
                         <NotificationIcon
-                            className="notification"
+                            className='notification'
                             onClick={toggleImportant}
                             style={notificationColor}
                         />
@@ -549,26 +549,26 @@ const Notes = ({ ownerType, ownerID, isDashboard }) => {
                 </DialogTitle>
                 <DialogContent>
                     <InputBase
-                        className="note-body"
+                        className='note-body'
                         inputProps={{ 'aria-label': 'naked' }}
                         multiline
                         onChange={handleBodyUpdate}
-                        placeholder="Body (required)"
+                        placeholder='Body (required)'
                         required
                         rows={15}
                         value={noteBody}
-                        variant="filled"
+                        variant='filled'
                     />
                 </DialogContent>
                 <DialogActions>
-                    <ResponsiveButton onClick={hideWarning} variant="outlined">
+                    <ResponsiveButton onClick={hideWarning} variant='outlined'>
                         Cancel
                     </ResponsiveButton>
                     <ResponsiveButton
-                        color="primary"
+                        color='primary'
                         disabled={!noteBody || createResults.loading}
                         onClick={saveNote}
-                        variant="outlined"
+                        variant='outlined'
                     >
                         {createResults.loading ? 'Saving...' : 'Save'}
                     </ResponsiveButton>
@@ -580,11 +580,11 @@ const Notes = ({ ownerType, ownerID, isDashboard }) => {
                 </DialogActions>
             </Dialog>
             <Dialog
-                aria-describedby="simple-modal-description"
-                aria-labelledby="simple-modal-title"
-                className="delete-popup"
+                aria-describedby='simple-modal-description'
+                aria-labelledby='simple-modal-title'
+                className='delete-popup'
                 fullWidth
-                maxWidth="xs"
+                maxWidth='xs'
                 onClose={hideWarning}
                 open={deleteID !== null}
             >
@@ -598,16 +598,16 @@ const Notes = ({ ownerType, ownerID, isDashboard }) => {
                 </DialogContent>
                 <DialogActions className={classes.deleteActions}>
                     <ResponsiveButton
-                        color="primary"
+                        color='primary'
                         onClick={hideWarning}
-                        variant="contained"
+                        variant='contained'
                     >
                         Cancel
                     </ResponsiveButton>
                     <ResponsiveButton
                         className={classes.deleteButton}
                         onClick={handleDelete}
-                        variant="contained"
+                        variant='contained'
                     >
                         Delete
                     </ResponsiveButton>
@@ -621,20 +621,20 @@ const Notes = ({ ownerType, ownerID, isDashboard }) => {
             {isDashboard ? (
                 <>
                     <Grid item xs={9}>
-                        <Typography variant="h3" style={{ marginTop: '10px' }}>
+                        <Typography variant='h3' style={{ marginTop: '10px' }}>
                             My Tasks
                         </Typography>
                     </Grid>
                     <Grid item xs={3}>
                         <AssignmentTurnedInIcon
-                            fontSize="large"
+                            fontSize='large'
                             style={{ marginTop: '10px' }}
                         />
                     </Grid>
                     <Grid item xs={12}>
                         <AddItemButton
                             height={'100%'}
-                            width="inherit"
+                            width='inherit'
                             style={{ padding: 0 }}
                             onClick={openNewNote}
                         >
@@ -646,7 +646,7 @@ const Notes = ({ ownerType, ownerID, isDashboard }) => {
                 <Grid item md={3}>
                     <AddItemButton
                         height={200}
-                        width="inherit"
+                        width='inherit'
                         onClick={openNewNote}
                     >
                         + Add Note
@@ -663,12 +663,12 @@ const Notes = ({ ownerType, ownerID, isDashboard }) => {
                             elevation={2}
                         >
                             <Typography
-                                align="left"
+                                align='left'
                                 className={`noteHeader ${classes.notesTitle}`}
                             >
                                 {note.title}
                                 <Avatar
-                                    variant="square"
+                                    variant='square'
                                     className={`noteNotification ${
                                         isDashboard
                                             ? classes.notesNotification
@@ -687,7 +687,7 @@ const Notes = ({ ownerType, ownerID, isDashboard }) => {
                                     !
                                 </Avatar>
                             </Typography>
-                            <Typography align="left" className="body">
+                            <Typography align='left' className='body'>
                                 {note.body}
                             </Typography>
                             <Grid item xs={12}>
@@ -705,15 +705,15 @@ const Notes = ({ ownerType, ownerID, isDashboard }) => {
                                     <IconButton
                                         className={classes.icons}
                                         onClick={openDelete(note.id)}
-                                        size="small"
-                                        edge="start"
+                                        size='small'
+                                        edge='start'
                                     >
                                         <Delete />
                                     </IconButton>
                                     <IconButton
                                         className={classes.icons}
                                         onClick={openExistingNote(note)}
-                                        size="small"
+                                        size='small'
                                     >
                                         <EditIcon />
                                     </IconButton>
@@ -728,8 +728,8 @@ const Notes = ({ ownerType, ownerID, isDashboard }) => {
                                                 ? { color: '#43B5D9' }
                                                 : {}
                                         }
-                                        size="small"
-                                        edge="end"
+                                        size='small'
+                                        edge='end'
                                     >
                                         <DoneIcon />
                                     </IconButton>
@@ -742,14 +742,14 @@ const Notes = ({ ownerType, ownerID, isDashboard }) => {
                 !isDashboard &&
                 Object.values(notes).map((note) => (
                     <Grid item key={note.id || note.body} xs={3}>
-                        <Paper className="note" elevation={2}>
+                        <Paper className='note' elevation={2}>
                             <Typography
-                                align="left"
+                                align='left'
                                 className={`noteHeader ${classes.notesTitle}`}
                             >
                                 {note.title}
                                 <NotificationIcon
-                                    className="noteNotification"
+                                    className='noteNotification'
                                     onClick={toggleNoteField(
                                         note.id,
                                         'important'
@@ -759,26 +759,26 @@ const Notes = ({ ownerType, ownerID, isDashboard }) => {
                                     }
                                 />
                             </Typography>
-                            <Typography align="left" className="body">
+                            <Typography align='left' className='body'>
                                 {note.body}
                             </Typography>
                             <Typography
-                                className="date"
+                                className='date'
                                 style={{ fontWeight: '500' }}
                             >
                                 {numericDateString(note.timestamp)}
                             </Typography>
                             <div className={`actions ${classes.actionIcons}`}>
                                 <Delete
-                                    className="icon"
+                                    className='icon'
                                     onClick={openDelete(note.id)}
                                 />
                                 <EditIcon
-                                    className="icon"
+                                    className='icon'
                                     onClick={openExistingNote(note)}
                                 />
                                 <DoneIcon
-                                    className="icon"
+                                    className='icon'
                                     onClick={toggleNoteField(
                                         note.id,
                                         'complete'

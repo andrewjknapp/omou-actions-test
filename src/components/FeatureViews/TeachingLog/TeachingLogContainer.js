@@ -234,10 +234,10 @@ export default function TeachingLogContainer() {
 
     return (
         <BackgroundPaper>
-            <Grid container direction="row" spacing={4}>
-                <Grid item container justify="space-between">
+            <Grid container direction='row' spacing={4}>
+                <Grid item container justify='space-between'>
                     <Grid item>
-                        <ButtonGroup variant="contained">
+                        <ButtonGroup variant='contained'>
                             <Button style={{ backgroundColor: omouBlue }}>
                                 <CalendarIcon style={{ color: 'white' }} />
                             </Button>
@@ -250,7 +250,7 @@ export default function TeachingLogContainer() {
                             >
                                 <Moment
                                     date={state[0].startDate}
-                                    format="MM/DD/YYYY"
+                                    format='MM/DD/YYYY'
                                 />
                             </Button>
                             <Button
@@ -262,7 +262,7 @@ export default function TeachingLogContainer() {
                             >
                                 <Moment
                                     date={state[0].endDate}
-                                    format="MM/DD/YYYY"
+                                    format='MM/DD/YYYY'
                                 />
                             </Button>
                         </ButtonGroup>
@@ -280,7 +280,7 @@ export default function TeachingLogContainer() {
                             />
                             <DialogActions>
                                 <ResponsiveButton
-                                    variant="outlined"
+                                    variant='outlined'
                                     onClick={handleSaveDateRange}
                                 >
                                     Save & Close
@@ -296,40 +296,40 @@ export default function TeachingLogContainer() {
                                 filename={fileName}
                                 style={{ textDecorationLine: 'none' }}
                             >
-                                <ResponsiveButton variant="outlined">
+                                <ResponsiveButton variant='outlined'>
                                     Download
                                 </ResponsiveButton>
                             </CSVLink>
-                            <ResponsiveButton variant="outlined">
+                            <ResponsiveButton variant='outlined'>
                                 Print
                             </ResponsiveButton>
                         </ButtonGroup>
                     </Grid>
                 </Grid>
-                <Grid item container direction="row" justify="space-between">
+                <Grid item container direction='row' justify='space-between'>
                     <Grid item>
                         <Typography
-                            align="left"
+                            align='left'
                             className={classes.profileName}
                         >
                             {fullName(AuthUser.user)}
                         </Typography>
                         <Typography
-                            align="left"
+                            align='left'
                             className={classes.profileInfo}
                         >
                             <IDIcon />
                             {AuthUser.user.id}
                         </Typography>
                         <Typography
-                            align="left"
+                            align='left'
                             className={classes.profileInfo}
                         >
                             <PhoneIcon />
                             {AuthUser.phoneNumber}
                         </Typography>
                         <Typography
-                            align="left"
+                            align='left'
                             className={classes.profileInfo}
                         >
                             <EmailIcon />

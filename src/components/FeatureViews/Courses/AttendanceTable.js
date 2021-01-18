@@ -404,7 +404,7 @@ const AttendanceTable = ({ setIsEditing }) => {
             data-sessionId={sessionColumn.sessionId}
             data-attendanceId={sessionColumn.attendanceId}
             value={value}
-            size="small"
+            size='small'
             className={classes.buttonGroupStyle}
             onClick={handleClick}
             style={{
@@ -455,7 +455,7 @@ const AttendanceTable = ({ setIsEditing }) => {
 
     return (
         <TableContainer className={classes.table}>
-            <Table aria-label="simple table">
+            <Table aria-label='simple table'>
                 <TableHead>
                     <TableRow>
                         <TableCell style={{ color: 'black' }}>
@@ -485,11 +485,11 @@ const AttendanceTable = ({ setIsEditing }) => {
                                             onChange={handleEdit}
                                             checkedIcon={
                                                 <Check
-                                                    fontSize="small"
+                                                    fontSize='small'
                                                     style={{ color: 'white' }}
                                                 />
                                             }
-                                            icon={<Add fontSize="small" />}
+                                            icon={<Add fontSize='small' />}
                                             id={sessionId}
                                             disableRipple
                                             classes={{
@@ -525,13 +525,13 @@ const AttendanceTable = ({ setIsEditing }) => {
                 <TableBody>
                     {studentAttendanceDataToDisplay.map((row, studentIndex) => (
                         <TableRow key={row.studentName}>
-                            <TableCell component="th" scope="row">
+                            <TableCell component='th' scope='row'>
                                 {row.studentName}
                             </TableCell>
                             {row.attendanceList.map(
                                 (sessionColumn, attendanceIndex) => (
                                     <TableCell
-                                        align="center"
+                                        align='center'
                                         key={sessionColumn.attendanceId}
                                     >
                                         {!checkAttendanceEditStateToRednerAttendanceStatus(

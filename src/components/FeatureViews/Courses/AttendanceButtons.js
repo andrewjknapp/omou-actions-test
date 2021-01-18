@@ -98,8 +98,8 @@ export const StudentFilterOrSortDropdown = ({
         <Grid item xs={3}>
             <FormControl>
                 <Select
-                    labelId="student-management-sort-tab"
-                    id="student-management-sort-tab"
+                    labelId='student-management-sort-tab'
+                    id='student-management-sort-tab'
                     displayEmpty
                     value={sortByAlphabet}
                     open={open}
@@ -124,20 +124,20 @@ export const StudentFilterOrSortDropdown = ({
                     {sortByAlphabet === '' && (
                         <MenuItem
                             ListItemClasses={{ selected: classes.menuSelected }}
-                            value=""
+                            value=''
                         >
                             Student
                         </MenuItem>
                     )}
                     <MenuItem
                         ListItemClasses={{ selected: classes.menuSelected }}
-                        value="desc"
+                        value='desc'
                     >
                         Sort A-Z
                     </MenuItem>
                     <MenuItem
                         ListItemClasses={{ selected: classes.menuSelected }}
-                        value="asc"
+                        value='asc'
                     >
                         Sort Z-A
                     </MenuItem>
@@ -148,9 +148,9 @@ export const StudentFilterOrSortDropdown = ({
                             endAdornment: (
                                 <InputAdornment>
                                     <IconButton
-                                        type="submit"
+                                        type='submit'
                                         className={classes.iconButton}
-                                        aria-label="search"
+                                        aria-label='search'
                                     >
                                         <Search />
                                     </IconButton>
@@ -246,8 +246,8 @@ export const SessionDropdownButton = ({
     return (
         <>
             <IconButton
-                aria-controls="session-action"
-                aria-haspopup="true"
+                aria-controls='session-action'
+                aria-haspopup='true'
                 onClick={handleOpen}
                 ref={buttonRef}
                 disableRipple
@@ -262,7 +262,7 @@ export const SessionDropdownButton = ({
                 )}
             </IconButton>
             <Menu
-                id="session-action"
+                id='session-action'
                 anchorEl={buttonPosition}
                 keepMounted
                 open={Boolean(open)}
@@ -274,7 +274,7 @@ export const SessionDropdownButton = ({
             >
                 <MenuItem
                     onClick={handleSort}
-                    value="sort"
+                    value='sort'
                     data-session-id={id}
                     data-attendanceArrayIndex={index}
                     ListItemClasses={{ button: classes.menuSelect }}
@@ -283,7 +283,7 @@ export const SessionDropdownButton = ({
                 </MenuItem>
                 <MenuItem
                     onClick={handleClose}
-                    value="beginEdit"
+                    value='beginEdit'
                     data-session-id={id}
                     ListItemClasses={{ button: classes.menuSelect }}
                 >

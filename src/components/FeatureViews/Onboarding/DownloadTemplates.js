@@ -25,7 +25,7 @@ const DownloadTemplates = () => {
             <IconButton
                 iconStyle={classes.Icon}
                 className={classes.Icon}
-                aria-label="Accounts Template"
+                aria-label='Accounts Template'
             >
                 <PeopleIcon style={{ fontSize: '750%' }} />
                 <div className={classes.Label}>Accounts Template</div>
@@ -33,7 +33,7 @@ const DownloadTemplates = () => {
             <IconButton
                 iconStyle={classes.Icon}
                 className={classes.Icon}
-                aria-label="Accounts Template"
+                aria-label='Accounts Template'
             >
                 <MenuBookIcon style={{ fontSize: '750%' }} />
                 <div className={classes.Label}>Courses Template</div>
