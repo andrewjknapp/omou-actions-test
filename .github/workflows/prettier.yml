@@ -14,7 +14,6 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     # Use branch name for whatever purpose
-    - run: npm i
     - run: npm run prettify
     - run: git config --global user.email "pretty@pretty.com"
     - run: git config --global user.name "pretty"
