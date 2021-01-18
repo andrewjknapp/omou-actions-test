@@ -13,9 +13,8 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - uses: nelonoel/branch-name@v1.0.1
     # Use branch name for whatever purpose
-        - run: echo $GITHUB_BASE_REF
+    - run: echo $GITHUB_BASE_REF
     - run: echo $:{GITHUB_BASE_REF}
     # - run: echo $:{GITHUB_REF##*/}
     # - run: npm i
