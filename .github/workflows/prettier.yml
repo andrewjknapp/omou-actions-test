@@ -14,9 +14,11 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     # Use branch name for whatever purpose
+    - run: npm install prettier
     - run: npm run prettify
     - run: git config --global user.email "pretty@pretty.com"
     - run: git config --global user.name "pretty"
     - run: git add .
+    - run: git status
     - run: git commit -m "Prettified Code"
     # - run: git push origin $GITHUB_HEAD_REF
