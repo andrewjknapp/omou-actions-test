@@ -15,7 +15,7 @@ jobs:
         node-version: ${{ matrix.node-version }}
     # Use branch name for whatever purpose
     - run: npm install prettier
-    - run: git checkout refs/remotes/origin/testing
+    - run: git checkout refs/remotes/origin/testing-prettier
     - run: npm run prettify
     - run: git config --global user.email "pretty@pretty.com"
     - run: git config --global user.name "pretty"
