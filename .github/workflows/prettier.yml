@@ -1,25 +1,23 @@
-name: Prettier
+name: Format
 
 on: [pull_request]
 
 jobs:
-  build:
-
+  format:
     runs-on: ubuntu-latest
-
     steps:
-    - uses: actions/checkout@v2
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v1
-      with:
-        node-version: ${{ matrix.node-version }}
-    # Use branch name for whatever purpose
-    - run: npm install prettier
-    - run: git checkout refs/remotes/origin/testing-prettier
-    - run: npm run prettify
-    - run: git config --global user.email "pretty@pretty.com"
-    - run: git config --global user.name "pretty"
-    - run: git add .
-    - run: git status
-    - run: git commit -m "Prettified Code"
-    # - run: git push origin $GITHUB_HEAD_REF
+      - uses: actions/checkout@v2
+        with:
+          ref: ${{ github.head_ref }}
+      - uses: actions/setup-node@v1
+        with:
+          node-version: "12.x"
+      - name: Format
+        run: |
+          npm ci
+          npm run prettify
+      - name: Commit changes
+        uses: stefanzweifel/git-auto-commit-action@v4.1.2
+        with:
+          commit_message: Apply formatting changes
+          branch: ${{ github.head_ref }}
