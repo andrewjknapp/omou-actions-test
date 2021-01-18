@@ -1,25 +1,25 @@
-# Attribution: https://github.com/marketplace/actions/prettier-action 
+# # Attribution: https://github.com/marketplace/actions/prettier-action 
 
-name: Continuous Integration
+# name: Continuous Integration
 
-# This action runs on all pull requests
-on: [pull_request]
+# # This action runs on all pull requests
+# on: [pull_request]
 
-jobs:
-  prettier:
-    runs-on: ubuntu-latest
+# jobs:
+#   prettier:
+#     runs-on: ubuntu-latest
 
-    steps:
-    - name: Checkout
-      uses: actions/checkout@v2
-      with:
-        # Make sure the actual branch is checked out when running on pull requests
-        ref: ${{ github.head_ref }}
+#     steps:
+#     - name: Checkout
+#       uses: actions/checkout@v2
+#       with:
+#         # Make sure the actual branch is checked out when running on pull requests
+#         ref: ${{ github.head_ref }}
 
-    - name: Prettify code
-      uses: creyD/prettier_action@v3.1
-      with:
-        prettier_options: --write **/*.{js, md} --single-quote
-        commit_message: "Prettified Code"
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+#     - name: Prettify code
+#       uses: creyD/prettier_action@v3.1
+#       with:
+#         prettier_options: --write **/*.{js, md} --single-quote
+#         commit_message: "Prettified Code"
+#       env:
+#         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
