@@ -20,4 +20,4 @@ jobs:
     - run: git config --global user.name "pretty"
     - run: git add .
     - run: git commit -m "Prettified Code"
-    - run: git push origin $GITHUB_HEAD_REF
+    # - run: git push origin $GITHUB_HEAD_REF
