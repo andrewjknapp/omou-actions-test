@@ -13,10 +13,11 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - run: npm i
-    - run: npm run prettify
-    - run: git config --global user.email "pretty@pretty.com"
-    - run: git config --global user.name "pretty"
-    - run: git add .
-    - run: git commit -m "Prettified Code"
-    - run: git push origin HEAD:${GITHUB_REF##*/}
+    - run: echo $:{GITHUB_REF##*/}
+    # - run: npm i
+    # - run: npm run prettify
+    # - run: git config --global user.email "pretty@pretty.com"
+    # - run: git config --global user.name "pretty"
+    # - run: git add .
+    # - run: git commit -m "Prettified Code"
+    # - run: git push origin HEAD:${GITHUB_REF##*/}
