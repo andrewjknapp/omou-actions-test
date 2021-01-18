@@ -1,0 +1,22 @@
+# name: Prettier
+
+# on: [pull_request]
+
+# jobs:
+#   build:
+
+#     runs-on: ubuntu-latest
+
+#     steps:
+#     - uses: actions/checkout@v2
+#     - name: Use Node.js ${{ matrix.node-version }}
+#       uses: actions/setup-node@v1
+#       with:
+#         node-version: ${{ matrix.node-version }}
+#     - run: npm i
+#     - run: npm run prettify
+#     - run: git config --global user.email "pretty@pretty.com"
+#     - run: git config --global user.name "pretty"
+#     - run: git add .
+#     - run: git commit -m "Prettified Code"
+#     - run: git push origin ${GITHUB_REF##*/}
