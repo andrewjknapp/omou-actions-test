@@ -71,7 +71,7 @@
         "build": "react-scripts build",
         "test": "cypress open",
         "eject": "react-scripts eject",
-        "prettify": "prettier --write ."
+        "prettify": "prettier --write . --single-quote --tab-width 4"
     },
     "browserslist": {
         "production": [
